@@ -18,7 +18,7 @@ a {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: url(/jellycat/img/bg.svg);
+    background: url(/project/jellycat/img/bg.svg);
 }
 
 
@@ -47,7 +47,7 @@ header .logo {
     text-indent: -999px;
     overflow: hidden;
     margin: 0 0 0 40px;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(/project/jellycat/img/logo.svg) no-repeat;
 }
 
 header ul{
@@ -104,7 +104,7 @@ header ul{
     text-align: left;
     font-weight: 400;
     font-size: 0.9rem;
-    background: #5EDEF4 url(/jellycat/img/keyboard_arrow_right.svg) no-repeat 144px;
+    background: #5EDEF4 url(/project/jellycat/img/keyboard_arrow_right.svg) no-repeat 144px;
     background-size: 24px;
     border-radius: 5px;
     border: none;
@@ -147,22 +147,22 @@ header ul{
 }
 
 .about .inner .cards .card.c01{
-    background: url(/jellycat/img/card01.jpg) no-repeat;
+    background: url(/project/jellycat/img/card01.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 10%;
 }
 .about .inner .cards .card.c02{
-    background: url(/jellycat/img/card02.png) no-repeat;
+    background: url(/project/jellycat/img/card02.png) no-repeat;
     background-size: cover;
     background-position: 40% 50%;
 }
 .about .inner .cards .card.c03{
-    background: url(/jellycat/img/card03.jpg) no-repeat;
+    background: url(/project/jellycat/img/card03.jpg) no-repeat;
     background-size: cover;
     background-position: 10% 2%;
 }
 .about .inner .cards .card.c04{
-    background: url(/jellycat/img/card04.jpg) no-repeat;
+    background: url(/project/jellycat/img/card04.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 30%;
 }
@@ -176,7 +176,7 @@ header ul{
     border: none;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/keyboard_arrow_left.svg) no-repeat;
+    background: url(/project/jellycat/img/keyboard_arrow_left.svg) no-repeat;
     background-size: cover;
 }
 
@@ -189,7 +189,7 @@ header ul{
     border: none;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/keyboard_arrow_right.svg) no-repeat;
+    background: url(/project/jellycat/img/keyboard_arrow_right.svg) no-repeat;
     background-size: cover;
 }
 
@@ -243,7 +243,7 @@ header ul{
     border: none;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/keyboard_arrow_left.svg) no-repeat;
+    background: url(/project/jellycat/img/keyboard_arrow_left.svg) no-repeat;
     background-size: cover;
 }
 
@@ -253,7 +253,7 @@ header ul{
     border: none;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/keyboard_arrow_right.svg) no-repeat;
+    background: url(/project/jellycat/img/keyboard_arrow_right.svg) no-repeat;
     background-size: cover;
 }
 
@@ -315,7 +315,7 @@ header ul{
 
 .insta .inner .link {
     height: 32px;
-    background: url(/jellycat/img/insta_icon.svg) no-repeat ;
+    background: url(/project/jellycat/img/insta_icon.svg) no-repeat ;
     background-size: 32px;
     padding: 0 0 0 52px;
     font-weight: 500;
@@ -373,7 +373,7 @@ footer .inner {
     height: 54.87px;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(/project/jellycat/img/logo.svg) no-repeat;
 }
 
 .footer01 button {
