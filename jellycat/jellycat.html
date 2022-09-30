@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
-    <title>jellycat world</title>
+    <title>jellycat test</title>
     <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(function () {
-            $(".about .inner .next_b").click(function () {
+            $(".about .next_b").click(function () {
                 $(".cards div:first").insertAfter(".cards div:last");
             });
 
-            $(".about .inner .prev_b").click(function () {
+            $(".about .prev_b").click(function () {
                 $(".cards div:last").insertBefore(".cards div:first");
             });
         });
@@ -39,7 +39,10 @@
             <li><a href="#">친구들 만나기</a></li>
             <li><a href="#">소식</a></li>
             <li><a href="#">매장</a></li>
-            <li><a href="#">shop</a></li>
+            <li>
+                <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47" target="blank">
+                shop</a>
+            </li>
         </ul>
     </header>
     <div class="home">
@@ -63,34 +66,38 @@
         </div>
     </div>
     <div class="about">
+        <button class="prev_b">이전</button>
+        <button class="next_b">다음</button>
         <div class="inner">
-            <button class="prev_b">이전</button>
             <div class="cards">
                 <div class="card c01">
-                    1999년 런던에서<br>
-                    젤리와 고양이를 좋아하는 <br>
-                    한 아이의 상상에서 젤리캣이 탄생했습니다.
+                    <p>
+                    1999년 런던,<br>
+                    젤리캣은 젤리와 고양이를 좋아하는 <br>
+                    한 아이의 상상에서 시작됐습니다.
+                    </p>
                 </div>
                 <div class="card c02">
-                    귀여운 동물 캐릭터와 독특한 디자인으로 <br>
-                    누구나 사랑할 수 밖에 없는<br>
-                    매력을 가졌습니다.
-
-
+                    <p>
+                    그렇게 귀여운 디자인으로 <br>
+                    누구나 사랑할 수 밖에 없는 젤리캣 친구들이<br>
+                    하나 하나 태어났습니다.
+                    </p>
                 </div>
                 <div class="card c03">
+                    <p>
                     아이들에겐 꿈과 희망을<br>
-                    어른들에겐 순수한 동심을 주며<br>
-                    우리의 영원한 친구가 될 것입니다.
+                    어른들에겐 순수한 동심을 주는<br>
+                    우리의 영원한 친구
+                    </p>
                 </div>
                 <div class="card c04">
+                    <p>
                     매년 기발하고 사랑스러운 조합으로 <br>
-                    찾아오는 젤리캣 친구들. <br>
-                    <br>
-                    어떤 친구들이 있는지 만나보세요
+                    찾아오는 젤리캣 친구들을 만나보세요.
+                    </p>
                 </div>
             </div>
-            <button class="next_b">다음</button>
         </div>
     </div>
 
@@ -165,7 +172,7 @@
     </div>
     <div class="insta">
         <div class="inner">
-            <a href="#" class="link">@jellycat_korea</a>
+            <a href="https://instagram.com/jellycat_korea?igshid=YmMyMTA2M2Y=" class="link" target="_blank">@jellycat_korea</a>
             <div class="content">
                 <a href="#"><img src="/project/jellycat/img/instar01.png" alt="공룡인형"></a>
                 <a href="#"><img src="/project/jellycat/img/instar02.png" alt="고래인형"></a>
@@ -182,7 +189,7 @@
         <div class="inner">
             <div class="footer01">
                 <div class="info">
-                    <a href="https://instagram.com/jellycat_korea?igshid=YmMyMTA2M2Y=" class="btlogo" target="_blank">jellycat</a>
+                    <a href="#" class="btlogo">jellycat</a>
                     <p>상담가능시간 : 10:00 ~ 17:00 · 점심시간 12:00 ~ 13:00· 토요일 및 공휴일 휴무 <br>
                         Mail : Service@petitelin.com
                     </p>
