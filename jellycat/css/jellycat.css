@@ -19,6 +19,8 @@ a {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     background: url(/project/jellycat/img/bg.svg);
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 li {list-style: none;}
