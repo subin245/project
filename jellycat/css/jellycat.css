@@ -366,7 +366,7 @@ footer .inner {
     flex-direction: column;
     gap: 15px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .footer01 .info .btlogo {
@@ -401,7 +401,7 @@ footer .inner {
 .family_site li ul {
     display: none;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .family_site li ul.on{
