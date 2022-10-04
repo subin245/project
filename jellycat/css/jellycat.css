@@ -366,7 +366,7 @@ footer .inner {
     flex-direction: column;
     gap: 15px;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .footer01 .info .btlogo {
@@ -381,7 +381,7 @@ footer .inner {
     width: 200px;
     border: 1px solid #000;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
     right: 0;
     top: 0;
