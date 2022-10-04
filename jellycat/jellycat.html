@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
-    <title>jellycat korea</title>
+    <title>jellycat test</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat.css">
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         //about slide
@@ -32,17 +36,17 @@
 
 
         //footer family site menu
-        $(function() {
-            $(".family_site a.m").click(function() {
+        $(function () {
+            $(".family_site a.m").click(function () {
                 $(this).next().addBack().toggleClass('on').end()
-                        .find('.m, ul').removeClass('on').end()
-                        .parent().siblings().find('.m, ul').removeClass('on');
+                    .find('.m, ul').removeClass('on').end()
+                    .parent().siblings().find('.m, ul').removeClass('on');
                 return false;
             });
 
-             if($('.family_site a.m').hasClass('on')){
+            if ($('.family_site a.m').hasClass('on')) {
                 console.log('클래스 있음');
-            }else{
+            } else {
                 console.log('클래스 없음');
             }
         });
@@ -58,15 +62,20 @@
             <li><a href="#">소식</a></li>
             <li><a href="#">매장</a></li>
             <li>
-                <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47" target="blank">
-                shop</a>
+                <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
+                    target="blank">
+                    shop</a>
             </li>
         </ul>
     </header>
     <div class="home">
         <div class="inner">
             <div class="left">
-                <img src="/project/jellycat/img/simbol.svg" alt="jellycat">
+                <div class="animate__animated animate__wobble">
+                    <img src="/project/jellycat/img/shake.svg" alt="shake">
+                    <img src="/project/jellycat/img/jelly.svg" class="animate__animated animate__headShake" alt="jelly">
+                    <img src="/project/jellycat/img/cat.svg" alt="cat">
+                </div>
             </div>
             <div class="right">
                 <h1>안녕, 나는 젤리캣이야</h1>
@@ -90,29 +99,29 @@
             <div class="cards">
                 <div class="card c01">
                     <p>
-                    1999년 런던,<br>
-                    젤리캣은 젤리와 고양이를 좋아하는 <br>
-                    한 아이의 상상에서 시작됐습니다.
+                        1999년 런던,<br>
+                        젤리캣은 젤리와 고양이를 좋아하는 <br>
+                        한 아이의 상상에서 시작되었습니다.
                     </p>
                 </div>
                 <div class="card c02">
                     <p>
-                    그렇게 귀여운 디자인으로 <br>
-                    누구나 사랑할 수 밖에 없는 젤리캣 친구들이<br>
-                    하나 하나 태어났습니다.
+                        그렇게 귀여운 디자인으로 <br>
+                        누구나 사랑할 수 밖에 없는 젤리캣 친구들이<br>
+                        하나 하나 태어났습니다.
                     </p>
                 </div>
                 <div class="card c03">
                     <p>
-                    아이들에겐 꿈과 희망을<br>
-                    어른들에겐 순수한 동심을 주는<br>
-                    우리의 영원한 친구
+                        아이들에겐 꿈과 희망을<br>
+                        어른들에겐 순수한 동심을 주는<br>
+                        우리의 영원한 친구
                     </p>
                 </div>
                 <div class="card c04">
                     <p>
-                    매년 기발하고 사랑스러운 조합으로 <br>
-                    찾아오는 젤리캣 친구들을 만나보세요.
+                        매년 기발하고 사랑스러운 조합으로 <br>
+                        찾아오는 젤리캣 친구들을 만나보세요.
                     </p>
                 </div>
             </div>
@@ -190,7 +199,8 @@
     </div>
     <div class="insta">
         <div class="inner">
-            <a href="https://instagram.com/jellycat_korea?igshid=YmMyMTA2M2Y=" class="link" target="_blank">@jellycat_korea</a>
+            <a href="https://instagram.com/jellycat_korea?igshid=YmMyMTA2M2Y=" class="link"
+                target="_blank">@jellycat_korea</a>
             <div class="content">
                 <a href="#"><img src="/project/jellycat/img/instar01.png" alt="공룡인형"></a>
                 <a href="#"><img src="/project/jellycat/img/instar02.png" alt="고래인형"></a>
@@ -216,7 +226,9 @@
                     <li><a href="#" class="m">FAMILY SITE</a>
                         <ul>
                             <li><a href="http://www.moyuum.com/">모윰</a></li>
-                            <li><a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a></li>
+                            <li><a
+                                    href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a>
+                            </li>
                             <li><a href="http://www.sagepole.co.kr/">세이지폴</a></li>
                             <li><a href="http://www.erbababy.co.kr/">에바비바</a></li>
                             <li><a href="http://www.elprairie.co.kr/">엘프레리</a></li>

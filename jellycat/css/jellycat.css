@@ -15,6 +15,7 @@ a {
     color: #000;
 }
 
+li {list-style: none;}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -23,12 +24,11 @@ body {
     margin: 0 auto;
 }
 
-li {list-style: none;}
 
 button:hover{cursor: pointer;}
 
 .inner {
-    height: 960px;
+    height: 720px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,10 +37,14 @@ button:hover{cursor: pointer;}
 
 /* header */
 header {
-    height: 100px;
+    position: sticky;
+    z-index: 1;
+    height: 100px; 
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF4E4;
 }
 
 
@@ -71,24 +75,51 @@ header ul li a{
 }
 
 
-
 /* .home */
 
 
 .home .inner {
     gap: 45px;
+    margin-bottom: 100px;
 }
 
-.home .inner .left,
 .home .inner .right {
     display: flex;
-    width: 360px;
 }
 
-.home .inner .left img { 
-    flex: 0;
+.home .inner .left {
+    position: relative;
     width: 360px;
-    height: 252px;
+    height: 250px;
+}
+
+.home .inner .left img:nth-child(1) { 
+    width: 149px;
+    position: absolute;
+    top: 0;
+    left: 29.5%;
+}
+
+.home .inner .left img:nth-child(2) { 
+    width: 107px;
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+.animate__animated.animate__wobble {
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__headShake {
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+  }
+
+.home .inner .left img:nth-child(3) { 
+    width: 360px;
+    position: absolute;
+    top: 55px;
 }
 
 .home .inner .right {
@@ -129,6 +160,10 @@ header ul li a{
     position: relative;
 }
 
+.about .inner {
+    height: 600px;
+}
+
 .about .inner .cards {
     width: 100%;
     height: 100%;
@@ -136,7 +171,6 @@ header ul li a{
 }
 
 .about .inner .cards .card {
-    /* border-radius: 30px; */
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -211,7 +245,8 @@ header ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 960px;
+    /* height: 960px; */
+    margin-top: 200px;
 }
 
 .product .inner {
@@ -219,7 +254,6 @@ header ul li a{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 720px;
     gap: 10%;
     background: #FFFBF4;
     overflow: hidden;
@@ -323,6 +357,7 @@ header ul li a{
     height: 600px;
     flex-direction: column;
     gap: 50px;
+    overflow: hidden;
 }
 
 .insta .inner .link {
@@ -332,13 +367,13 @@ header ul li a{
     padding: 0 0 0 36px;
     font-weight: 500;
     font-size: 1.1rem;
-
 }
 
 .insta .inner .content {
     display: flex;
     gap: 30px;
     flex-wrap: nowrap;
+    animation: aniText 8s infinite linear;
 }
 
 
@@ -387,7 +422,6 @@ footer .inner {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 7px 20px;
     text-align: center;
 }
 
