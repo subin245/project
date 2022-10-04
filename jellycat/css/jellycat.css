@@ -324,13 +324,13 @@ header ul li a{
 }
 
 .insta .inner .link {
-    height: 32px;
-    background: url(/project/jellycat/img/insta_icon.svg) no-repeat ;
-    background-size: 32px;
-    padding: 0 0 0 52px;
+    height: 24px;
+    background: url(/project/jellycat/img/insta_icon.svg) no-repeat;
+    background-size: 24px;
+    padding: 0 0 0 36px;
     font-weight: 500;
-    font-size: 1.3rem;
-    text-decoration: underline;
+    font-size: 1.1rem;
+
 }
 
 .insta .inner .content {
