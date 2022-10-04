@@ -387,6 +387,7 @@ footer .inner {
     top: 0;
     padding: 7px 20px;
     text-align: center;
+    list-style: none;
 }
 
 .family_site a {
@@ -402,10 +403,12 @@ footer .inner {
     display: none;
     font-weight: 300;
     font-size: 1.1rem;
+    list-style: none;
 }
 
 .family_site li ul.on{
     display: block;
+    list-style: none;
 }
 
 .footer02 {
