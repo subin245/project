@@ -9,6 +9,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+        //about slide
         $(function () {
             $(".about .next_b").click(function () {
                 $(".cards div:first").insertAfter(".cards div:last");
@@ -19,6 +20,7 @@
             });
         });
 
+        //product slide
         $(function () {
             $(".bt .next_b").click(function () {
                 $(".friends a:first").insertAfter(".friends a:last");
@@ -27,6 +29,23 @@
             $(".bt .prev_b").click(function () {
                 $(".friends a:last").insertBefore(".friends a:first");
             });
+        });
+
+
+        //footer family site menu
+        $(function() {
+            $(".family_site a.m").click(function() {
+                $(this).next().addBack().toggleClass('on').end()
+                        .find('.m, ul').removeClass('on').end()
+                        .parent().siblings().find('.m, ul').removeClass('on');
+                return false;
+            });
+
+             if($('.family_site a.m').hasClass('on')){
+                console.log('클래스 있음');
+            }else{
+                console.log('클래스 없음');
+            }
         });
     </script>
 </head>
@@ -194,7 +213,22 @@
                         Mail : Service@petitelin.com
                     </p>
                 </div>
-                <button>FAMILY SITE</button>
+                <ul class="family_site">
+                    <li><a href="#" class="m">FAMILY SITE</a>
+                        <ul>
+                            <li><a href="http://www.moyuum.com/">모윰</a></li>
+                            <li><a
+                                    href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a>
+                            </li>
+                            <li><a href="http://www.sagepole.co.kr/">세이지폴</a></li>
+                            <li><a href="http://www.erbababy.co.kr/">에바비바</a></li>
+                            <li><a href="http://www.elprairie.co.kr/">엞프레리</a></li>
+                            <li><a href="http://www.wowcup.co.kr/">와우컵</a></li>
+                            <li><a href="#">젤리캣</a></li>
+                            <li><a href="http://www.hollekorea.co.kr/">홀레</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="footer02">
                 <div class="gp">

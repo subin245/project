@@ -356,6 +356,7 @@ footer .inner {
 
 .footer01{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 }
@@ -375,12 +376,35 @@ footer .inner {
     background: url(/project/jellycat/img/logo.svg) no-repeat;
 }
 
-.footer01 button {
-    padding: 10px 40px;
+.footer01 .family_site {
+    width: 200px;
     border: 1px solid #000;
-    background: transparent;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+.family_site a {
+    padding: 7px 20px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.family_site li ul {
+    display: none;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.family_site li ul.on{
+    display: block;
 }
 
 .footer02 {
