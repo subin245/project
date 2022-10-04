@@ -379,7 +379,7 @@ footer .inner {
 
 .footer01 .family_site {
     width: 170px;
-    border: 1px solid #000;
+    border: 0.5px solid #757575;
     font-weight: 500;
     font-size: 0.8rem;
     position: absolute;
