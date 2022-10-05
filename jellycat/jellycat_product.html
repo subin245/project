@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>jellycat</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/jellycat/css/jellycat_product.css">
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //about slide
+        $(function () {
+            $(".about .next_b").click(function () {
+                $(".cards div:first").insertAfter(".cards div:last");
+            });
+
+            $(".about .prev_b").click(function () {
+                $(".cards div:last").insertBefore(".cards div:first");
+            });
+        });
+
+
+        //footer family site menu
+        $(function () {
+            $(".family_site a.m").click(function () {
+                $(this).next().addBack().toggleClass('on').end()
+                    .find('.m, ul').removeClass('on').end()
+                    .parent().siblings().find('.m, ul').removeClass('on');
+                return false;
+            });
+
+            if ($('.family_site a.m').hasClass('on')) {
+                console.log('클래스 있음');
+            } else {
+                console.log('클래스 없음');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header class="nav">
+        <a href="/jellycat/jellycat.html" class="logo">logo</a>
+        <ul>
+            <li><a href="#">젤리캣은?</a></li>
+            <li><a href="/jellycat/jellycat_product.html">친구들 만나기</a></li>
+            <li><a href="/jellycat/jellycat_news.html">소식</a></li>
+            <li><a href="/jellycat/jellycat_store.html">매장</a></li>
+            <li>
+                <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
+                    target="blank">
+                    shop</a>
+            </li>
+        </ul>
+    </header>
+    <div class="product">
+        <h1>친구들 소개</h1>
+        <div class="list">
+            <a href="#">
+                <!-- <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="퍼들우들인형"> -->
+                <h4>퍼들우들</h4>
+            </a>
+            <a href="#">
+                <!-- <img src="/jellycat/img/Fossilly_T-Rex.png" alt="파실리인형"> -->
+                <h4>파실리</h4>
+            </a>
+            <a href="#">
+                <!-- <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="코디로이인형"> -->
+                <h4>코디로이</h4>
+            </a>
+            <a href="#">
+                <!-- <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="바쉬풀 버니 인형"> -->
+                <h4>바쉬풀 버니</h4>
+            </a>
+            <a href="#">
+                <!-- <img src="/jellycat/img/Huddles_Duck.png" alt="허들스 인형"> -->
+                <h4>허들스</h4>
+            </a>
+        </div>
+
+        <div class="friends">
+            <a href="#">
+                <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
+                <h4>퍼들우들 퍼피</h4>
+                <h5>00,000</h5>
+                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Fossilly_T-Rex.png" alt="공룡인형">
+                <h4>파실리 티렉스</h4>
+                <h5>00,000</h5>
+                <h6>팔이 조그만하지만 안기는 걸 좋아하는 공룡</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="여우인형">
+                <h4>코디로이 폭스</h4>
+                <h5>00,000</h5>
+                <h6>장난치는 걸 좋아하는 장난꾸러기 여우</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="은색토끼인형">
+                <h4>바쉬풀 실버 버니</h4>
+                <h5>00,000</h5>
+                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Huddles_Duck.png" alt="오리인형">
+                <h4>허들스 덕</h4>
+                <h5>00,000</h5>
+                <h6>안아주는걸 좋아하는 오리</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
+                <h4>퍼들우들 퍼피</h4>
+                <h5>00,000</h5>
+                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Fossilly_T-Rex.png" alt="공룡인형">
+                <h4>파실리 티렉스</h4>
+                <h5>00,000</h5>
+                <h6>팔이 조그만하지만 안기는 걸 좋아하는 공룡</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="여우인형">
+                <h4>코디로이 폭스</h4>
+                <h5>00,000</h5>
+                <h6>장난치는 걸 좋아하는 장난꾸러기 여우</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="은색토끼인형">
+                <h4>바쉬풀 실버 버니</h4>
+                <h5>00,000</h5>
+                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
+            </a>
+            <a href="#">
+                <img src="/jellycat/img/Huddles_Duck.png" alt="오리인형">
+                <h4>허들스 덕</h4>
+                <h5>00,000</h5>
+                <h6>안아주는걸 좋아하는 오리</h6>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="footer01">
+                <div class="info">
+                    <a href="#" class="btlogo">jellycat</a>
+                    <p>상담가능시간 : 10:00 ~ 17:00 · 점심시간 12:00 ~ 13:00· 토요일 및 공휴일 휴무 <br>
+                        Mail : Service@petitelin.com
+                    </p>
+                </div>
+                <ul class="family_site">
+                    <li><a href="#" class="m">FAMILY SITE</a>
+                        <ul>
+                            <li><a href="http://www.petitelinstore.com/">쁘띠엘린</a></li>
+                            <li><a href="http://www.moyuum.com/">모윰</a></li>
+                            <li><a
+                                    href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a>
+                            </li>
+                            <li><a href="http://www.sagepole.co.kr/">세이지폴</a></li>
+                            <li><a href="http://www.erbababy.co.kr/">에바비바</a></li>
+                            <li><a href="http://www.elprairie.co.kr/">엘프레리</a></li>
+                            <li><a href="http://www.wowcup.co.kr/">와우컵</a></li>
+                            <li><a href="#">젤리캣</a></li>
+                            <li><a href="http://www.hollekorea.co.kr/">홀레</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer02">
+                <div class="gp">
+                    <a href="#">이용안내</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">SITE MAP</a>
+                </div>
+                <p>
+                    서울특별시 서초구 서초대로 46길 19-12(서초동, 서초안빌딩, 5층) 대표이사:심석영 <br>
+                    개인정보관리 및 청소년 보호 책임자:김홍식 사업자등록번호:108-81-91594<br>
+                    통신판매업신고:제 2022-서울서초-1954호<br>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
