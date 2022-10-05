@@ -19,7 +19,7 @@ li {list-style: none;}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: url(/jellycat/img/bg.svg);
+    background: url(/project/jellycat/img/bg.svg);
     max-width: 1920px;
     min-width: 1024px;
     margin: 0 auto;
@@ -53,7 +53,7 @@ header .logo {
     text-indent: -999px;
     overflow: hidden;
     margin: auto 40px;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(/project/jellycat/img/logo.svg) no-repeat;
     background-position: center;
 }
 
@@ -108,7 +108,7 @@ footer .inner {
     height: 54.87px;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(/project/jellycat/img/logo.svg) no-repeat;
 }
 
 .footer01 .family_site {
