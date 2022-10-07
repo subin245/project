@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* 젤리캣 친구들 flex 태블릿 css */
+
+*{
+    padding: 0; margin: 0; 
+    /* outline: 1px solid rosybrown; */
+}
+
+body{
+    min-width: 100%;
+    height: 1200px;
+}
