@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>jellycat test</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat.css">
+    <link rel="stylesheet" type="text/css" href="/jellycat/css/jellycat.css">
     <!-- <link rel="stylesheet"  media="all and (max-width: 1024px)" href="/jellycat/css/jellycat_t.css"> -->
     <!-- <link rel="stylesheet" media="all and (max-width: 640px)" href="/jellycat/css/jellycat_m.css"> -->
 
 </head>
 
 <body>
+    <!-- nav -->
     <header class="nav">
-        <a href="/project/jellycat/jellycat.html" class="logo">logo</a>
+        <a href="/jellycat/jellycat.html" class="logo">logo</a>
         <ul>
             <li><a href="#">젤리캣은?</a></li>
-            <li><a href="/project/jellycat/jellycat_product.html">친구들 만나기</a></li>
-            <li><a href="/project/jellycat/jellycat_news.html">소식</a></li>
-            <li><a href="/project/jellycat/jellycat_store.html">매장</a></li>
+            <li><a href="/jellycat/jellycat_product.html">친구들 만나기</a></li>
+            <li><a href="/jellycat/jellycat_news.html">소식</a></li>
+            <li><a href="/jellycat/jellycat_store.html">매장</a></li>
             <li>
                 <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
-                target="blank">
-                shop</a>
+                    target="blank">
+                    shop</a>
             </li>
         </ul>
     </header>
+
+    <!-- home -->
     <div class="home">
         <div class="inner">
             <div class="img">
                 <div class="animate__animated animate__wobble">
-                    <img src="/project/jellycat/img/shake.svg" alt="shake">
-                    <img src="/project/jellycat/img/jelly.svg" class="animate__animated animate__headShake" alt="jelly">
-                    <img src="/project/jellycat/img/cat.svg" alt="cat">
+                    <img src="/jellycat/img/shake.svg" alt="shake">
+                    <img src="/jellycat/img/jelly.svg" class="animate__animated animate__headShake" alt="jelly">
+                    <img src="/jellycat/img/cat.svg" alt="cat">
                 </div>
             </div>
             <div class="txt">
@@ -51,141 +56,139 @@
             </div>
         </div>
     </div>
-    <div class="about">
-        <button class="prev_b">이전</button>
-        <button class="next_b">다음</button>
-        <div class="inner">
-            <div class="cards">
-                <img src="/project/jellycat/img/product/balloon.png" alt="프레임">
-                <div class="card c01">
+
+    <!-- about -->
+    <div class="swiper mySwiper01" id="about">
+        <div class="swiper-wrapper" id="inner">
+            <div class="swiper-slide" id="c01">
+                <div class="subtitle" data-swiper-parallax="-200">
                     <p>
                         1999년 런던,<br>
                         젤리캣은 젤리와 고양이를 좋아하는 <br>
                         한 아이의 상상에서 시작되었습니다.
                     </p>
                 </div>
-                <div class="card c02">
+            </div>
+            <div class="swiper-slide" id="c02">
+                <div class="subtitle" data-swiper-parallax="-200">
                     <p>
-                        그렇게 귀여운 디자인으로 <br>
-                        누구나 사랑할 수 밖에 없는 젤리캣 친구들이<br>
-                        하나 하나 태어났습니다.
+                        그렇게 누구나 사랑할 수 밖에 없는<br>
+                        젤리캣 친구들이 하나씩 찾아왔습니다.
                     </p>
                 </div>
-                <div class="card c03">
+            </div>
+            <div class="swiper-slide" id="c03">
+                <div class="subtitle" data-swiper-parallax="-200">
                     <p>
                         아이들에겐 꿈과 희망을<br>
                         어른들에겐 순수한 동심을 주는<br>
                         우리의 영원한 친구
                     </p>
                 </div>
-                <div class="card c04">
+            </div>
+            <div class="swiper-slide" id="c04">
+                <div class="subtitle" data-swiper-parallax="-200">
                     <p>
-                        매년 기발하고 사랑스러운 조합으로 <br>
-                        찾아오는 젤리캣 친구들을 만나보세요.
+                        매년 찾아오는 사랑스러운<br>
+                        젤리캣 친구들을 만나보세요.
                     </p>
                 </div>
             </div>
         </div>
-        <!-- <ul class="paging">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul> -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
     </div>
 
-    <div class="product">
-        <div class="inner">
-            <h1>친구들 소개</h1>
-            <div class="friends">
-                <a href="#">
-                    <img src="/project/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
-                    <h4>퍼들우들</h4>
-                    <h6>Fuddlewuddle</h6>
-                    <h5>복실복실한 친구들</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/Fossilly_T-Rex.png" alt="강아지인형">
-                    <h4>파실리</h4>
-                    <h6>Fossilly</h6>
-                    <h5>부드러운 친구들</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/Cordy_Roy_Fox.png" alt="강아지인형">
-                    <h4>코디로이</h4>
-                    <h6>Cordy Roy</h6>
-                    <h5>울퉁불퉁한 친구들</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/Bashful_Silver_Bunny.png" alt="강아지인형">
-                    <h4>바쉬풀 버니</h4>
-                    <h6>Bashful Bunny</h6>
-                    <h5>수줍은 토끼친구들</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/Huddles_Duck.png" alt="강아지인형">
-                    <h4>허들스</h4>
-                    <h6>Huddles</h6>
-                    <h5>아기를 안고 있는 친구들</h5>
-                </a>
+    <!-- product -->
+    <div class="swiper mySwiper02" id="product">
+        <h1>친구들 소개</h1>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
+                <h4>퍼들우들</h4>
+                <h6>Fuddlewuddle</h6>
+                <h5>복실복실한 친구들</h5>
             </div>
-            <div class="bt">
-                <button class="prev_b">이전</button>
-                <button class="next_b">다음</button>
+            <div class="swiper-slide">
+                <img src="/jellycat/img/Fossilly_T-Rex.png" alt="강아지인형">
+                <h4>파실리</h4>
+                <h6>Fossilly</h6>
+                <h5>부드러운 친구들</h5>
             </div>
-            <!-- <ul class="paging">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
+            <div class="swiper-slide">
+                <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="강아지인형">
+                <h4>코디로이</h4>
+                <h6>Cordy Roy</h6>
+                <h5>울퉁불퉁한 친구들</h5>
+            </div>
+            <div class="swiper-slide">
+                <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="강아지인형">
+                <h4>바쉬풀 버니</h4>
+                <h6>Bashful Bunny</h6>
+                <h5>수줍은 토끼친구들</h5>
+            </div>
+            <div class="swiper-slide">
+                <img src="/jellycat/img/Huddles_Duck.png" alt="강아지인형">
+                <h4>허들스</h4>
+                <h6>Huddles</h6>
+                <h5>아기를 안고 있는 친구들</h5>
+            </div>
         </div>
     </div>
+
+    <!-- news -->
     <div class="news">
         <div class="inner">
             <h1>젤리캣 소식</h1>
             <div class="content">
                 <a href="#">
-                    <img src="/project/jellycat/img/event01.jpg" alt="가을이벤트">
+                    <img src="/jellycat/img/news/event01.jpg" alt="가을이벤트">
                     <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
                     <h5>2022.00.00</h5>
                 </a>
                 <a href="#">
-                    <img src="/project/jellycat/img/notice01.jpg" alt="가을이벤트">
+                    <img src="/jellycat/img/news/notice01.jpg" alt="가을이벤트">
                     <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
                     <h5>2022.00.00</h5>
                 </a>
                 <a href="#">
-                    <img src="/project/jellycat/img/event03.jpg" alt="가을이벤트">
+                    <img src="/jellycat/img/news/event02.jpg" alt="가을이벤트">
                     <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
                     <h5>2022.00.00</h5>
                 </a>
                 <a href="#">
-                    <img src="/project/jellycat/img/event04.jpg" alt="가을이벤트">
+                    <img src="/jellycat/img/news/event03.jpg" alt="가을이벤트">
                     <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
                     <h5>2022.00.00</h5>
                 </a>
             </div>
-            <button>더보기</button>
+            <a class="button" href="/jellycat/jellycat_news.html">더보기</a>
         </div>
     </div>
+
+    <!-- insta -->
     <div class="insta">
         <div class="inner">
             <a href="https://instagram.com/jellycat_korea?igshid=YmMyMTA2M2Y=" class="link"
-            target="_blank">@jellycat_korea</a>
+                target="_blank">@jellycat_korea</a>
             <div class="content">
-                <a href="#"><img src="/project/jellycat/img/instar01.png" alt="공룡인형"></a>
-                <a href="#"><img src="/project/jellycat/img/instar02.png" alt="고래인형"></a>
-                <a href="#"><img src="/project/jellycat/img/instar03.png" alt="곰돌이인형"></a>
-                <a href="#"><img src="/project/jellycat/img/instar04.png" alt="꽃분홍토끼인형"></a>
-                <a href="#"><img src="/project/jellycat/img/instar05.png" alt="라벤더토끼인형"></a>
-                <a href="#"><img src="/project/jellycat/img/instar06.png" alt="아이보리토끼인형3개"></a>
-                <a href="#"><img src="/project/jellycat/img/instar07.png" alt="연분홍토끼인형3개"></a>
-                <a href="#"><img src="/project/jellycat/img/instar08.png" alt="베이지토끼인형3개"></a>
+                <a href="#"><img src="/jellycat/img/instar01.png" alt="공룡인형"></a>
+                <a href="#"><img src="/jellycat/img/instar02.png" alt="고래인형"></a>
+                <a href="#"><img src="/jellycat/img/instar03.png" alt="곰돌이인형"></a>
+                <a href="#"><img src="/jellycat/img/instar04.png" alt="꽃분홍토끼인형"></a>
+                <a href="#"><img src="/jellycat/img/instar05.png" alt="라벤더토끼인형"></a>
+                <a href="#"><img src="/jellycat/img/instar06.png" alt="아이보리토끼인형3개"></a>
+                <a href="#"><img src="/jellycat/img/instar07.png" alt="연분홍토끼인형3개"></a>
+                <a href="#"><img src="/jellycat/img/instar08.png" alt="베이지토끼인형3개"></a>
             </div>
         </div>
     </div>
+    
+    <!-- footer -->
     <footer>
         <div class="inner">
             <div class="footer01">
@@ -202,7 +205,7 @@
                             <li><a href="http://www.moyuum.com/">모윰</a></li>
                             <li><a
                                     href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a>
-                                </li>
+                            </li>
                             <li><a href="http://www.sagepole.co.kr/">세이지폴</a></li>
                             <li><a href="http://www.erbababy.co.kr/">에바비바</a></li>
                             <li><a href="http://www.elprairie.co.kr/">엘프레리</a></li>
@@ -228,9 +231,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/project/jellycat/js/jellycat.js"></script>
+    <script src="/jellycat/js/jellycat.js"></script>
+
 </body>
 
 </html>

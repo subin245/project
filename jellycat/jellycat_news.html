@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>jellycat</title>
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat_news.css">
-    <link rel="stylesheet"  media="all and (max-width: 1024px)" href="/project/jellycat/css/jellycat_t.css">
-    <link rel="stylesheet" media="all and (max-width: 640px)" href="/project/jellycat/css/jellycat_m.css">
+    <link rel="stylesheet" type="text/css" href="/jellycat/css/jellycat_news.css">
+    <link rel="stylesheet" media="all and (max-width: 1024px)" href="/jellycat/css/jellycat_t.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/jellycat/css/jellycat_m.css">
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-     //footer family site menu
+        $(function () {
+            $(".news .button button.all").click(function () {
+                $(".news .content .event").removeClass('hide'),
+                    $(".news .content .notice").removeClass('hide'),
+                    $(".news .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+
+            $(".news .button button.notice").click(function () {
+                $(".news .content .event").addClass('hide'),
+                    $(".news .content .notice").removeClass('hide'),
+                    $(".news .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+
+            $(".news .button button.event").click(function () {
+                $(".news .content .notice").addClass('hide'),
+                    $(".news .content .event").removeClass('hide'),
+                    $(".news .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+        });
+
+        //footer family site menu
         $(function () {
             $(".family_site a.m").click(function () {
                 $(this).next().addBack().toggleClass('on').end()
@@ -28,17 +51,18 @@
                 console.log('클래스 없음');
             }
         });
+
     </script>
 </head>
 
 <body>
     <header class="nav">
-        <a href="/project/jellycat/jellycat.html" class="logo">logo</a>
+        <a href="/jellycat/jellycat.html" class="logo">logo</a>
         <ul>
             <li><a href="#">젤리캣은?</a></li>
-            <li><a href="/project/jellycat/jellycat_product.html">친구들 만나기</a></li>
-            <li><a href="/project/jellycat/jellycat_news.html">소식</a></li>
-            <li><a href="/project/jellycat/jellycat_store.html">매장</a></li>
+            <li><a href="/jellycat/jellycat_product.html">친구들 만나기</a></li>
+            <li><a href="/jellycat/jellycat_news.html">소식</a></li>
+            <li><a href="/jellycat/jellycat_store.html">매장</a></li>
             <li>
                 <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
                     target="blank">
@@ -47,37 +71,53 @@
         </ul>
     </header>
     <div class="news">
-        <div class="inner">
+        <div class="side">
             <h1>젤리캣 소식</h1>
             <div class="button">
-                <button class="notice">공지</button>
+                <button class="all">전체</button>
                 <button class="event">이벤트</button>
-            </div>
-            <div class="content">
-                <a href="#">
-                    <img src="/project/jellycat/img/event01.jpg" alt="가을이벤트">
-                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
-                    <h5>2022.00.00</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/notice01.jpg" alt="가을이벤트">
-                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
-                    <h5>2022.00.00</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/event03.jpg" alt="가을이벤트">
-                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
-                    <h5>2022.00.00</h5>
-                </a>
-                <a href="#">
-                    <img src="/project/jellycat/img/event04.jpg" alt="가을이벤트">
-                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
-                    <h5>2022.00.00</h5>
-                </a>
+                <button class="notice">공지</button>
             </div>
         </div>
+        <div class="content">
+            <a href="#" class="event">
+                <img src="/jellycat/img/news/event01.jpg" alt="가을이벤트">
+                <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="notice">
+                <img src="/jellycat/img/news/notice01.jpg" alt="가을이벤트">
+                <h3>[Notice] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="event">
+                <img src="/jellycat/img/news/event02.jpg" alt="가을이벤트">
+                <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="event">
+                <img src="/jellycat/img/news/event03.jpg" alt="가을이벤트">
+                <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="notice">
+                <img src="/jellycat/img/news/notice02.jpg" alt="가을이벤트">
+                <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="notice">
+                <img src="/jellycat/img/news/notice03.jpg" alt="가을이벤트">
+                <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                <h5>2022.00.00</h5>
+            </a>
+            <a href="#" class="notice event">
+                <img src="#" alt="hidden">
+                <h3>-</h3>
+                <h5>-</h5>
+            </a>
+        </div>
     </div>
- 
+
     <footer>
         <div class="inner">
             <div class="footer01">

@@ -9,24 +9,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat_product.css">
+    <link rel="stylesheet" type="text/css" href="/jellycat/css/jellycat_product.css">
     <link rel="stylesheet"  media="all and (max-width: 1024px)" href="/jellycat/css/jellycat_product_t.css">
 
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        //about slide
         $(function () {
-            $(".about .next_b").click(function () {
-                $(".cards div:first").insertAfter(".cards div:last");
+            $(".product .list button.all").click(function() {
+                $(".product .friends a").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
             });
 
-            $(".about .prev_b").click(function () {
-                $(".cards div:last").insertBefore(".cards div:first");
+            $(".product .list button.Fuddlewuddle").click(function() {
+                $(".product .friends a").addClass('hide'),
+                $(".product .friends a.Fuddlewuddle").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
+            });
+
+            $(".product .list button.Fossilly").click(function() {
+                $(".product .friends a").addClass('hide'),
+                $(".product .friends a.Fossilly").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
+            });
+
+            $(".product .list button.Cordy_Roy").click(function() {
+                $(".product .friends a").addClass('hide'),
+                $(".product .friends a.Cordy_Roy").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
+            });
+
+            $(".product .list button.Bashful").click(function() {
+                $(".product .friends a").addClass('hide'),
+                $(".product .friends a.Bashful").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
+            });
+
+            $(".product .list button.Huddles").click(function() {
+                $(".product .friends a").addClass('hide'),
+                $(".product .friends a.Huddles").removeClass('hide'),
+                $(".product .list button").css("color","#000"),
+                $(this).css("color","#F9A13A")
             });
         });
-
 
         //footer family site menu
         $(function () {
@@ -43,17 +74,18 @@
                 console.log('클래스 없음');
             }
         });
+
     </script>
 </head>
 
 <body>
     <header class="nav">
-        <a href="/project/jellycat/jellycat.html" class="logo">logo</a>
+        <a href="/jellycat/jellycat.html" class="logo">logo</a>
         <ul>
             <li><a href="#">젤리캣은?</a></li>
-            <li><a href="/project/jellycat/jellycat_product.html">친구들 만나기</a></li>
-            <li><a href="/project/jellycat/jellycat_news.html">소식</a></li>
-            <li><a href="/project/jellycat/jellycat_store.html">매장</a></li>
+            <li><a href="/jellycat/jellycat_product.html">친구들 만나기</a></li>
+            <li><a href="/jellycat/jellycat_news.html">소식</a></li>
+            <li><a href="/jellycat/jellycat_store.html">매장</a></li>
             <li>
                 <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
                     target="blank">
@@ -64,85 +96,41 @@
     <div class="product">
         <h1>친구들 소개</h1>
         <div class="list">
-            <a href="#">
-                <!-- <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="퍼들우들인형"> -->
-                <h4>퍼들우들</h4>
-            </a>
-            <a href="#">
-                <!-- <img src="/jellycat/img/Fossilly_T-Rex.png" alt="파실리인형"> -->
-                <h4>파실리</h4>
-            </a>
-            <a href="#">
-                <!-- <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="코디로이인형"> -->
-                <h4>코디로이</h4>
-            </a>
-            <a href="#">
-                <!-- <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="바쉬풀 버니 인형"> -->
-                <h4>바쉬풀 버니</h4>
-            </a>
-            <a href="#">
-                <!-- <img src="/jellycat/img/Huddles_Duck.png" alt="허들스 인형"> -->
-                <h4>허들스</h4>
-            </a>
+            <button class="all">전체</button>
+            <button class="Fuddlewuddle">퍼들우들</button>
+            <button class="Fossilly">파실리</button>
+            <button class="Cordy_Roy">코디로이</button>
+            <button class="Bashful">바쉬풀 버니</button>
+            <button class="Huddles">허들스</button>
         </div>
 
         <div class="friends">
-            <a href="#">
-                <img src="/project/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
+            <a href="#" class="Fuddlewuddle">
+                <img src="/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
                 <h4>퍼들우들 퍼피</h4>
                 <h5>00,000</h5>
                 <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
             </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Fossilly_T-Rex.png" alt="공룡인형">
+            <a href="#" class="Fossilly">
+                <img src="/jellycat/img/Fossilly_T-Rex.png" alt="공룡인형">
                 <h4>파실리 티렉스</h4>
                 <h5>00,000</h5>
                 <h6>팔이 조그만하지만 안기는 걸 좋아하는 공룡</h6>
             </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Cordy_Roy_Fox.png" alt="여우인형">
+            <a href="#" class="Cordy_Roy">
+                <img src="/jellycat/img/Cordy_Roy_Fox.png" alt="여우인형">
                 <h4>코디로이 폭스</h4>
                 <h5>00,000</h5>
                 <h6>장난치는 걸 좋아하는 장난꾸러기 여우</h6>
             </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Bashful_Silver_Bunny.png" alt="은색토끼인형">
+            <a href="#" class="Bashful">
+                <img src="/jellycat/img/Bashful_Silver_Bunny.png" alt="은색토끼인형">
                 <h4>바쉬풀 실버 버니</h4>
                 <h5>00,000</h5>
                 <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
             </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Huddles_Duck.png" alt="오리인형">
-                <h4>허들스 덕</h4>
-                <h5>00,000</h5>
-                <h6>안아주는걸 좋아하는 오리</h6>
-            </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Fuddlewuddle_Puppy.png" alt="강아지인형">
-                <h4>퍼들우들 퍼피</h4>
-                <h5>00,000</h5>
-                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
-            </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Fossilly_T-Rex.png" alt="공룡인형">
-                <h4>파실리 티렉스</h4>
-                <h5>00,000</h5>
-                <h6>팔이 조그만하지만 안기는 걸 좋아하는 공룡</h6>
-            </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Cordy_Roy_Fox.png" alt="여우인형">
-                <h4>코디로이 폭스</h4>
-                <h5>00,000</h5>
-                <h6>장난치는 걸 좋아하는 장난꾸러기 여우</h6>
-            </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Bashful_Silver_Bunny.png" alt="은색토끼인형">
-                <h4>바쉬풀 실버 버니</h4>
-                <h5>00,000</h5>
-                <h6>귀엽고 사랑스러워 껴안고 싶은 강아지</h6>
-            </a>
-            <a href="#">
-                <img src="/project/jellycat/img/Huddles_Duck.png" alt="오리인형">
+            <a href="#" class="Huddles">
+                <img src="/jellycat/img/Huddles_Duck.png" alt="오리인형">
                 <h4>허들스 덕</h4>
                 <h5>00,000</h5>
                 <h6>안아주는걸 좋아하는 오리</h6>

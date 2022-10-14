@@ -28,6 +28,14 @@ body {
     margin: 0 auto;
 }
 
+@keyframes fadein {
+    0% { opacity: 0; transform: translate(0,20px);}
+    100% { opacity: 1; transform: translate(0,0);}
+}
+.news h1 { animation: fadein 0.5s; }
+.news .button { animation: fadein 0.8s;}
+.news .content a { animation: fadein 1s;}
+
 .inner {
     height: 720px;
     display: flex;
@@ -35,6 +43,7 @@ body {
     align-items: center;
 }
 
+header ul li:nth-of-type(3) a {color:#F9A13A;}
 button:hover{cursor: pointer; color:#F9A13A;}
 
 /* header */
@@ -166,14 +175,27 @@ footer .inner {
 
 
 /* .news */
-.news .inner {
-    height: 100%;
-    flex-direction: column;
-    row-gap: 40px;
-    margin: 80px 0 150px 0;
+.news {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    gap: 60px;
+    margin: 80px 30px 150px 30px;
+    height: auto;
 }
 
-.news .inner h1{
+.news .side {
+    position: sticky;
+    top: 180px;
+    display: flex;
+    z-index: 1;
+    width: 60vw;
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.news h1{
     text-align: center;
     font-size: 2.8rem;
     font-family: 'RixInooAriDuriR';
@@ -181,13 +203,14 @@ footer .inner {
     font-style: normal;
 }
 
-.news .inner .button {
-    width: 145px;
+.news .button {
+    width: 200px;
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
-.news .inner button {
+.news button {
     background: none;
     border: none;
     font-weight: 600;
@@ -195,28 +218,45 @@ footer .inner {
     text-align: center;
 }
 
-.news .inner .content {
+/* content design */
+.news .content {
     display: flex;
-    width: 780px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
     row-gap: 90px;
+    width: 130vw;
+    margin-top: 50px;
 }
 
-.news .inner .content h3{
+.news .content a {
+    width: 20vw;
+}
+
+.news .content h3{
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.1vw;
     margin: 5px 0 2px 0;
 }
 
-.news .inner .content h5{
+.news .content h5{
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.news .inner a img {
-    width: 360px;
-    height: 360px;
+.news .content a img {
+    width: 100%;
+    height: auto;
 }
 
+.news .content a:nth-last-child(1) {visibility: hidden;}
+
+.news .content .event.hide,
+.news .content .notice.hide {
+    display: none;
+}
+
+.news .button button.all {
+    color: #F9A13A;
+}

@@ -28,6 +28,14 @@ body {
     margin: 0 auto;
 }
 
+@keyframes fadein {
+    0% { opacity: 0; transform: translate(0,20px);}
+    100% { opacity: 1; transform: translate(0,0);}
+}
+.product h1 { animation: fadein 0.5s; }
+.product button { animation: fadein 0.8s;}
+.product .friends { animation: fadein 1s;}
+
 .inner {
     height: 720px;
     display: flex;
@@ -76,8 +84,11 @@ header ul li a{
     height: 100%;
 }
 
+header ul li:nth-of-type(2) a {color:#F9A13A;}
+
 header ul li a:hover,
 .product .list a h4:hover {color:#F9A13A;}
+
 
 /* footer */
 footer {
@@ -175,33 +186,38 @@ footer .inner {
     flex-direction: column;
     width: 100%;
     gap: 40px;
-    margin: 80px 0 150px 0;
+    margin: 80px 30px 150px 30px;
     height: auto;
 }
 
-.product .list {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    position: relative;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    padding: 15px 35px;
-    border-radius: 20px;
-}
-
-
 .product h1 {
+    /* position: sticky; */
     text-align: center;
     font-size: 2.8rem;
     font-family: 'RixInooAriDuriR';
     font-weight: normal;
     font-style: normal;
+    /* z-index: 1; */
+    top: 25px;
 }
 
-.product .list a {padding: 15px;}
-.product .list a img {height: 100px;}
-.product .list a h4{ font-weight: 500;font-size: 0.9rem; }
+.product .list {
+    position: sticky;
+    display: flex;
+    border-radius: 999px;
+    justify-content: center;
+    background-color: #FFF4E499;
+    top: 120px;
+}
+
+.product .list button {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1vw;
+    text-align: center;
+    padding: 20px;
+}
 
 .product .friends {
     display: flex;
@@ -219,18 +235,26 @@ footer .inner {
     text-align: center;
     flex-direction: column;
     gap: 2px;
-    padding: 50px;
+    padding: 30px;
     width: 30%;
     /* min-height: 200px; */
 }
 
-/* .product .friends a img {
-    height: 100%;
-    size
-} */
-.product .friends a h4 { font-weight: 600;font-size: 0.9rem; }
-.product .friends a h5 { font-weight: 400;font-size: 0.9rem; }
-.product .friends a h6 { font-weight: 400;font-size: 0.8rem; }
+.product .friends a h4 { font-weight: 600;font-size: 1vw; }
+.product .friends a h5 { font-weight: 400;font-size: 0.9vw; }
+.product .friends a h6 {
+    font-weight: 400;
+    font-size: 0.7vw;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
 
 
+.product .friends a.hide {
+    display: none;
+}
 
+.product .list button.all {
+    color: #F9A13A;
+}

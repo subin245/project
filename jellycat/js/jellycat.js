@@ -1,63 +1,61 @@
-// Header
-$(document).scroll(function() {
-    var scroll = $(window).scrollTop();
-      if (scroll > 300){
-        $( "header" ).addClass( "hideBar" );
-      }
-      else if (scroll < 299){
-        $( "header" ).removeClass( "hideBar" );
-      }
-  });
-
-  
+// // Header
+// $(document).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll > 300) {
+//         $("header").addClass("hideBar");
+//     }
+//     else if (scroll < 299) {
+//         $("header").removeClass("hideBar");
+//     }
+// });
 
 
-//about slide
-$(function () {
-    $(".about .next_b").click(function () {
-        $(".cards div:first").insertAfter(".cards div:last");
-    });
+// <-- Initialize Swiper -->
 
-    $(".about .prev_b").click(function () {
-        $(".cards div:last").insertBefore(".cards div:first");
-    });
+// about
+var swiper = new Swiper(".mySwiper01", {
+    speed: 800,
+    parallax: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
-//about paging
-$(function () {
-    $(".about .cards div:first").show();
-    $("ul.paging li").click(function () {
-        $(this).addClass("on").siblings().removeClass("on");
-        var imgIndex = $(this).index();
-        $(".cards div").eq(imgIndex).stop(true).fadeIn().siblings().fadeOut();
-    }).hover(function() {
-        $(this).addClass("on").siblings().removeClass("on").end();
-    });
+// product
+var swiper = new Swiper(".mySwiper02", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            slidesPerGroup: 1,
+        },
+        1240: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+        },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
-//product slide button
-$(function () {
-    $(".bt .next_b").click(function () {
-        $(".friends a:first").insertAfter(".friends a:last");
-    });
-
-    $(".bt .prev_b").click(function () {
-        $(".friends a:last").insertBefore(".friends a:first");
-    });
-});
-
-////////////////// product slide paging
-$(function () {
-    $(".friends a:first").show();
-    $("ul.paging li").click(function () {
-        $(this).addClass("on").siblings().removeClass("on");
-        var imgIndex = $(this).index();
-        $(".friends a").eq(imgIndex).stop(true).fadeIn().siblings().fadeOut();
-    });
-    $("ul.paging li").hover(function() {
-        $(this).addClass("on").siblings().removeClass("on");
-    });
-});
 
 //footer family site menu
 $(function () {

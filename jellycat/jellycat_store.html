@@ -5,12 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>jellycat</title>
-    <link rel="stylesheet" type="text/css" href="/project/jellycat/css/jellycat_store.css">
+    <link rel="stylesheet" type="text/css" href="/jellycat/css/jellycat_store.css">
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-     //footer family site menu
+        // side button
+        $(function () {
+            $(".store .button button.all").click(function () {
+                $(".store .gp .card.event").removeClass('hide'),
+                    $(".store .gp .card.gyeonggi").removeClass('hide'),
+                    $(".store .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+
+            $(".store .button button.seoul").click(function () {
+                $(".store .gp .card.gyeonggi").addClass('hide'),
+                    $(".store .gp .card.seoul").removeClass('hide'),
+                    $(".store .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+
+            $(".store .button button.gyeonggi").click(function () {
+                $(".store .gp .card.seoul").addClass('hide'),
+                    $(".store .gp .card.gyeonggi").removeClass('hide'),
+                    $(".store .button button").css("color", "#000"),
+                    $(this).css("color", "#F9A13A");
+            });
+        });
+
+        //footer family site menu
         $(function () {
             $(".family_site a.m").click(function () {
                 $(this).next().addBack().toggleClass('on').end()
@@ -25,17 +49,18 @@
                 console.log('클래스 없음');
             }
         });
+
     </script>
 </head>
 
 <body>
     <header class="nav">
-        <a href="/project/jellycat/jellycat.html" class="logo">logo</a>
+        <a href="/jellycat/jellycat.html" class="logo">logo</a>
         <ul>
             <li><a href="#">젤리캣은?</a></li>
-            <li><a href="/project/jellycat/jellycat_product.html">친구들 만나기</a></li>
-            <li><a href="/project/jellycat/jellycat_news.html">소식</a></li>
-            <li><a href="/project/jellycat/jellycat_store.html">매장</a></li>
+            <li><a href="/jellycat/jellycat_product.html">친구들 만나기</a></li>
+            <li><a href="/jellycat/jellycat_news.html">소식</a></li>
+            <li><a href="/jellycat/jellycat_store.html">매장</a></li>
             <li>
                 <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
                     target="blank">
@@ -44,37 +69,84 @@
         </ul>
     </header>
     <div class="store">
-        <h1>오프라인 매장</h1>
-        <div class="button">
-            <button class="seoul">서울</button>
-            <button class="gyeonggi">경기</button>
+        <div class="side">
+            <h1>오프라인 매장</h1>
+            <div class="button">
+                <button class="all">전체</button>
+                <button class="seoul">서울</button>
+                <button class="gyeonggi">경기</button>
+            </div>
         </div>
         <div class="gp">
-            <div class="card c01">
-                <img src="/project/jellycat/img/store/sin_gangnam.jpg" alt="강남점 매장사진">
+            <div class="card seoul">
+                <div class="img">신세계백화점 강남점 매장 사진</div>
                 <div class="text">
                     <h3>신세계백화점 강남점</h3>
-                    <h4>서울특별시 서초구 신반포로 176 10층</h4>
+                    <h4>서울시 서초구 신반포로 176 10층</h4>
                     <h5>02-3479-1107</h5>
-                    <a href="https://goo.gl/maps/aqBfsbt3L4fxT1UKA" target="_blank">map</a>
+                    <div class="link">
+                        <a href="02-3479-1107" class="tel">전화걸기</a>
+                        <a href="https://goo.gl/maps/aqBfsbt3L4fxT1UKA" target="_blank" class="map">지도보기</a>
+                    </div>
                 </div>
             </div>
-            <div class="card c02">
-                <img src="/project/jellycat/img/store/hyundai_chunho.jpg" alt="강남점 매장사진">
+            <div class="card seoul">
+                <div class="img">현대백화점 천호점 매장 사진</div>
                 <div class="text">
                     <h3>현대백화점 천호점</h3>
                     <h4>서울시 강동구 천호대로 1005 8층</h4>
                     <h5>02-2225-7841</h5>
-                    <a href="https://goo.gl/maps/XRV3Di7kLJuEYsAr7" target="_blank">map</a>
+                    <div class="link">
+                        <a href="02-2225-7841" class="tel">전화걸기</a>
+                        <a href="https://goo.gl/maps/XRV3Di7kLJuEYsAr7" target="_blank" class="map">지도보기</a>
+                    </div>
                 </div>
             </div>
-            <div class="card c03">
-                <img src="/project/jellycat/img/store/lotte_nowon.jpg" alt="강남점 매장사진">
+            <div class="card seoul">
+                <div class="img">롯데백화점 노원점 매장 사진</div>
                 <div class="text">
                     <h3>롯데백화점 노원점</h3>
-                    <h4>서울특별시 노원구 동일로 1414 6층</h4>
+                    <h4>서울시 노원구 동일로 1414 6층</h4>
                     <h5>02-950-2617</h5>
-                    <a href="https://goo.gl/maps/16epbVDm5YV7BjJX9" target="_blank">map</a>
+                    <div class="link">
+                        <a href="02-950-2617" class="tel">전화걸기</a>
+                        <a href="https://goo.gl/maps/16epbVDm5YV7BjJX9" target="_blank" class="map">지도보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card gyeonggi">
+                <div class="img">롯데백화점 평촌점 매장 사진</div>
+                <div class="text">
+                    <h3>롯데백화점 평촌점</h3>
+                    <h4>경기도 안양시 동안구 호계동 1039 6층</h4>
+                    <h5>031-8086-9650</h5>
+                    <div class="link">
+                        <a href="031-8086-9650" class="tel">전화걸기</a>
+                        <a href="https://goo.gl/maps/VGADD4Dq4LGQcWff7" target="_blank" class="map">지도보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card gyeonggi">
+                <div class="img">스타필드 하남점 매장 사진</div>
+                <div class="text">
+                    <h3>스타필드 하남점</h3>
+                    <h4>경기도 하남시 미사대로 750 3층</h4>
+                    <h5>031-8069-4000</h5>
+                    <div class="link">
+                        <a href="031-8069-4000" class="tel">전화걸기</a>
+                        <a href="https://goo.gl/maps/SSC2ir8SSHPgxrZ16" target="_blank" class="map">지도보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card gyeonggi">
+                <div class="img">스타필드 고양점 매장 사진</div>
+                <div class="text">
+                    <h3>스타필드 고양점</h3>
+                    <h4>경기도 고양시 덕양구 고양대로 1955 3층</h4>
+                    <h5>-</h5>
+                    <div class="link">
+                        <a href="https://goo.gl/maps/Unj965Rxun79UGbc6" target="_blank" class="map">지도보기</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +165,9 @@
                         <ul>
                             <li><a href="http://www.petitelinstore.com/">쁘띠엘린</a></li>
                             <li><a href="http://www.moyuum.com/">모윰</a></li>
-                            <li><a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a></li>
+                            <li><a
+                                    href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=2&thisCategory=44">밀로앤개비</a>
+                            </li>
                             <li><a href="http://www.sagepole.co.kr/">세이지폴</a></li>
                             <li><a href="http://www.erbababy.co.kr/">에바비바</a></li>
                             <li><a href="http://www.elprairie.co.kr/">엘프레리</a></li>

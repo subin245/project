@@ -5,6 +5,14 @@
     font-family: 'RixInooAriDuriR';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
 }
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+}
 
 * {
     box-sizing: border-box;
@@ -18,7 +26,10 @@ a {
     color: #000;
 }
 
-li {list-style: none;}
+li {
+    list-style: none;
+}
+
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -28,20 +39,29 @@ body {
     margin: 0 auto;
 }
 
-.inner {
-    height: 720px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes fadein {
+    0% { opacity: 0; transform: translate(0,20px);}
+    100% { opacity: 1; transform: translate(0,0);}
+}
+.store h1 { animation: fadein 0.5s; }
+.store .button { animation: fadein 0.8s;}
+.store .card { animation: fadein 1s;}
+
+
+header ul li:nth-of-type(4) a {
+    color: #F9A13A;
 }
 
-button:hover{cursor: pointer; color:#F9A13A;}
+button:hover {
+    cursor: pointer;
+    color: #F9A13A;
+}
 
 /* header */
 header {
     position: sticky;
     z-index: 1;
-    height: 100px; 
+    height: 100px;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -60,7 +80,7 @@ header .logo {
     background-position: center;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
     margin: 0 40px 0 0;
@@ -69,14 +89,16 @@ header ul{
     font-size: 1.1rem;
 }
 
-header ul li a{
+header ul li a {
     display: flex;
     align-items: center;
     padding: 0 20px;
     height: 100%;
 }
 
-header ul li a:hover {color:#F9A13A;}
+header ul li a:hover {
+    color: #F9A13A;
+}
 
 /* footer */
 footer {
@@ -90,9 +112,9 @@ footer .inner {
     height: auto;
     margin: 0 auto;
     flex-direction: column;
-    }
+}
 
-.footer01{
+.footer01 {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -141,7 +163,7 @@ footer .inner {
     padding: 0 0 10px 0;
 }
 
-.family_site li ul.on{
+.family_site li ul.on {
     display: block;
 }
 
@@ -151,7 +173,7 @@ footer .inner {
     display: block;
 }
 
-.footer02 div a{
+.footer02 div a {
     margin: 0 35px 0 0;
     font-weight: 500;
     font-size: 0.9rem;
@@ -170,11 +192,21 @@ footer .inner {
 .store {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
-    margin: 80px 0 150px 0;
+    margin: 80px 30px 150px 30px;
     height: auto;
+}
+
+.store .side {
+    position: sticky;
+    top: 180px;
+    display: flex;
+    z-index: 1;
+    width: 60vw;
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .store h1 {
@@ -186,9 +218,10 @@ footer .inner {
 }
 
 .store .button {
-    width: 145px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .store button {
@@ -199,39 +232,95 @@ footer .inner {
     text-align: center;
 }
 
+/* card design */
 .store .gp {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
+    width: 130vw;
+    margin-top: 80px;
 }
 
 .store .gp .card {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     background: #FFF;
-    padding: 25px 35px;
+    padding: 20px 20px;
     border-radius: 20px;
+    max-width: 870px;
 }
 
-.store .gp img {
-    width: 480px;
+.store .gp .card .img {
+    width: 30vw;
     height: 240px;
+    text-indent: -999px;
+    overflow: hidden;
     border-radius: 10px;
 }
 
-.store .gp .text {position: relative; width: 290px;}
-.store .gp .text h3 {font-weight: 600; font-size: 1.1rem; margin-bottom: 10px;}
-.store .gp .text h4,
-.store .gp .text h5 {font-weight: 400; font-size: 0.9rem; margin-bottom: 5px;}
-.store .gp .text a  {
+.store .gp .card:nth-child(1) .img{background: url(/jellycat/img/store/sin_gangnam.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(2) .img{background: url(/jellycat/img/store/hyundai_chunho.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(3) .img{background: url(/jellycat/img/store/lotte_nowon.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(4) .img{background: url(/jellycat/img/store/lotte_Pyeongchon.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(5) .img{background: url(/jellycat/img/store/star_hanam.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(6) .img{background: url(/jellycat/img/store/star_goyang.jpg) no-repeat 50% / cover;}
+
+.store .gp .text {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 18vw;
+    height: 240px;
+}
+.store .gp .text h3 {
+    margin: 5px 0 5px 0;
+    font-size: 1.7vw;
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 300;
+    font-style: normal;
+}
+.store .gp .text h4,
+.store .gp .text h5 {
+    font-weight: 300;
+    /* font-size: 0.9rem; */
+    font-size: 0.9vw;
+    margin-bottom: 2px;
+}
+.store .gp .text .link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     position: absolute;
+    /* font-size: 1.5rem; */
+    font-size: 1.5vw;
+    font-family: 'RixInooAriDuriR';
+    font-weight: normal;
+    font-style: normal;
     bottom: 0;
-    width: 24px;
-    height: 24px;
-    text-indent: -999px;
-    overflow: hidden;
-    background: url(/jellycat/img/store/map.svg) no-repeat;
-    background-position: center;
+    gap: 20%;
+}
+
+.store .button button.all {
+    color: #F9A13A;
+}
+
+.store .gp .card.seoul.hide,
+.store .gp .card.gyeonggi.hide {
+    display: none;
+}
+
+/* hover */
+.store .gp .card:hover,
+.store .gp .card:hover a {
+    color: #5EDEF4;
+    background: rgb(34, 34, 34);
+    transition: all 0.3s ease-in-out;
+    text-shadow: none;
+}
+
+.store .gp .card a:hover {
+    color: #F9A13A;
+    text-shadow: none;
 }
