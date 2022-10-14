@@ -9,6 +9,13 @@
 //     }
 // });
 
+    // 메뉴버튼모양변경
+  $(document).ready(function() {    
+    $('.menuBt').click(function() {
+        $('.menuBt').toggleClass('active');
+        $('.menu').toggleClass('active');
+    });
+  });
 
 // <-- Initialize Swiper -->
 
@@ -39,12 +46,12 @@ var swiper = new Swiper(".mySwiper02", {
         clickable: true,
     },
     breakpoints: {
-        768: {
+        641: {
             slidesPerView: 3,
             spaceBetween: 5,
             slidesPerGroup: 1,
         },
-        1240: {
+        1024: {
             slidesPerView: 5,
             spaceBetween: 10,
             slidesPerGroup: 1,

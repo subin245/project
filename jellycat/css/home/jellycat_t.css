@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 젤리캣 home 태블릿 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body { min-width: 640px; } 
+
+/* header */
+header .logo {
+    width: 100px;
+    height: 60px;
+    background: url(/jellycat/img/simbol.svg) no-repeat;
+}
+
+header ul{
+    font-size: 0.9rem;
+}
+
+header ul li a{
+    padding: 0 15px;
+}
+
+/* 버튼 클림,,, */
+/* header ul li a:hover {color:#F9A13A;} */
+
+
+/* .about - swiper use*/
+.swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
+    font-size: 1.5rem; 
+
+    letter-spacing: 0.05rem;
+
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 300;
+    font-style: normal;
+
+    color: #FFF;
+}
+
+/* .home */
+.home .inner .txt h1 {font-size: 2.3rem;}
+.home .inner .txt p {font-size: 1.2rem;}
+
+/* .product */
+.swiper.mySwiper02 .swiper-wrapper .swiper-slide img {
+    height: 24vw;
+}
+
+
+/* .news */
+.news .inner .content {
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.news .inner .content a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+
+.news .inner .content h3 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin: 5px 0 2px 0;
+}
+
+.news .inner .content h5 {
+    font-weight: 500;
+    font-size: 0.5rem;
+    left: 0;
+    color: rgba(0, 0, 0, 0.5);
+}

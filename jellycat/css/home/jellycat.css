@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* 젤리캣 home pc */
+
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Gothic+Coding:wght@400;700&family=Gamja+Flower&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css');
 @font-face {
@@ -18,7 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 a {
@@ -76,7 +78,7 @@ header.hideBar {
 /* header */
 header {
     position: sticky;
-    z-index: 1;
+    z-index: 999;
     height: 100px; 
     top: 0;
     display: flex;
@@ -85,6 +87,7 @@ header {
     background-color: #FFF4E4;
 }
 
+header .menuBt {display: none;}
 
 header .logo {
     width: 190px;
@@ -132,9 +135,7 @@ header ul li a:hover {color:#F9A13A;}
     position: absolute;
     width: 360px;
     height: 250px;
-    /* right: 50%; */
     top: 15%;
-    /* transform: translate(-50%, -50%); */
 }
 
 .home .inner .img img:nth-child(1) {
@@ -170,9 +171,9 @@ header ul li a:hover {color:#F9A13A;}
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* justify-content: center; */
     text-align: center;
-    bottom: 15%;
+    /* bottom: 15%; */
+    margin-top: 200px;
     gap: 8px;
 }
 
@@ -186,7 +187,6 @@ header ul li a:hover {color:#F9A13A;}
 .home .inner .txt p {
     font-weight: 400;
     font-size: 1.4rem;
-    /* line-height: 1.3rem; */
     background-color: transparent;
 }
 
@@ -232,8 +232,7 @@ header ul li a:hover {color:#F9A13A;}
 .swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
     display: flex;
     justify-content: center;
-    /* text-align: center; */
-    /* font-weight: 200;*/
+
     font-size: 2.5rem; 
 
     letter-spacing: 0.05rem;
@@ -268,7 +267,7 @@ header ul li a:hover {color:#F9A13A;}
 
 .swiper.mySwiper01 .swiper-button-prev {
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 50%;
     width: 50px;
     height: 50px;
@@ -281,7 +280,7 @@ header ul li a:hover {color:#F9A13A;}
 
 .swiper.mySwiper01 .swiper-button-next {
     position: absolute;
-    right: 20%;
+    right: 10%;
     top: 50%;
     width: 50px;
     height: 50px;
@@ -348,7 +347,7 @@ header ul li a:hover {color:#F9A13A;}
 }
 
 .swiper.mySwiper02 .swiper-wrapper .swiper-slide img {
-    height: 240px;
+    height: 18vw;
 }
 
 .swiper.mySwiper02 .swiper-wrapper .swiper-slide h4 {
@@ -369,7 +368,7 @@ header ul li a:hover {color:#F9A13A;}
 
 /* .news */
 .news .inner {
-    height: 1500px;
+    height: auto;
     flex-direction: column;
     row-gap: 90px;
 }
@@ -385,7 +384,7 @@ header ul li a:hover {color:#F9A13A;}
 
 .news .inner .content {
     display: flex;
-    width: 780px;
+    width: 50vw;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 90px;
@@ -403,10 +402,15 @@ header ul li a:hover {color:#F9A13A;}
     color: rgba(0, 0, 0, 0.5);
 }
 
-.news .inner a img {
-    width: 360px;
-    height: 360px;
+.news .inner .content a {
+    width: 20vw;
 }
+
+.news .inner a img {
+    width: 100%;
+    height: auto;
+}
+
 
 .news .inner .button {
     background-color: #5EDEF4;
@@ -469,12 +473,12 @@ header ul li a:hover {color:#F9A13A;}
 /* footer */
 footer {
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 80px 0;
+    padding: 80px 40px;
 }
 
 footer .inner {
     display: block;
-    width: 1200px;
+    /* width: 1200px; */
     height: auto;
     margin: 0 auto;
     flex-direction: column;
