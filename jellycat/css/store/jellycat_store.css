@@ -33,7 +33,7 @@ li {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: url(/jellycat/img/bg.svg);
+    background: url(../jellycat/img/bg.svg);
     max-width: 1920px;
     min-width: 1024px;
     margin: 0 auto;
@@ -76,7 +76,7 @@ header .logo {
     text-indent: -999px;
     overflow: hidden;
     margin: auto 40px;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(../jellycat/img/logo.svg) no-repeat;
     background-position: center;
 }
 
@@ -133,7 +133,7 @@ footer .inner {
     height: 54.87px;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(../jellycat/img/logo.svg) no-repeat;
 }
 
 .footer01 .family_site {
@@ -260,12 +260,12 @@ footer .inner {
     border-radius: 10px;
 }
 
-.store .gp .card:nth-child(1) .img{background: url(/jellycat/img/store/sin_gangnam.jpg) no-repeat 50% / cover;}
-.store .gp .card:nth-child(2) .img{background: url(/jellycat/img/store/hyundai_chunho.jpg) no-repeat 50% / cover;}
-.store .gp .card:nth-child(3) .img{background: url(/jellycat/img/store/lotte_nowon.jpg) no-repeat 50% / cover;}
-.store .gp .card:nth-child(4) .img{background: url(/jellycat/img/store/lotte_Pyeongchon.jpg) no-repeat 50% / cover;}
-.store .gp .card:nth-child(5) .img{background: url(/jellycat/img/store/star_hanam.jpg) no-repeat 50% / cover;}
-.store .gp .card:nth-child(6) .img{background: url(/jellycat/img/store/star_goyang.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(1) .img{background: url(../jellycat/img/store/sin_gangnam.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(2) .img{background: url(../jellycat/img/store/hyundai_chunho.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(3) .img{background: url(../jellycat/img/store/lotte_nowon.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(4) .img{background: url(../jellycat/img/store/lotte_Pyeongchon.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(5) .img{background: url(../jellycat/img/store/star_hanam.jpg) no-repeat 50% / cover;}
+.store .gp .card:nth-child(6) .img{background: url(../jellycat/img/store/star_goyang.jpg) no-repeat 50% / cover;}
 
 .store .gp .text {
     display: flex;

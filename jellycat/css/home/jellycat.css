@@ -35,7 +35,7 @@ li {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: url(/jellycat/img/bg.svg);
+    background: url(../jellycat/img/bg.svg);
     max-width: 1920px;
     min-width: 1024px;
     margin: 0 auto;
@@ -95,7 +95,7 @@ header .logo {
     text-indent: -999px;
     overflow: hidden;
     margin: auto 40px;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(../jellycat/img/logo.svg) no-repeat;
     background-position: center;
 }
 
@@ -245,22 +245,22 @@ header ul li a:hover {color:#F9A13A;}
 }
 
 .swiper.mySwiper01 .swiper-wrapper #c01 {
-    background: url(/jellycat/img/card01.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
+    background: url(../jellycat/img/card01.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-position: 50% 10%;
 }
 .swiper.mySwiper01 .swiper-wrapper #c02 {
-    background: url(/jellycat/img/card02.png) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
+    background: url(../jellycat/img/card02.png) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-position: 40% 50%;
 }
 .swiper.mySwiper01 .swiper-wrapper #c03 {
-    background: url(/jellycat/img/card03.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
+    background: url(../jellycat/img/card03.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-position: 10% 2%;
 }
 .swiper.mySwiper01 .swiper-wrapper #c04 {
-    background: url(/jellycat/img/card04.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
+    background: url(../jellycat/img/card04.jpg) no-repeat center center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-position: 50% 30%;
 }
@@ -274,7 +274,7 @@ header ul li a:hover {color:#F9A13A;}
     border: none;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/keyboard_arrow_left.svg) no-repeat;
+    background: url(../jellycat/img/keyboard_arrow_left.svg) no-repeat;
     background-size: cover;
 }
 
@@ -431,7 +431,7 @@ header ul li a:hover {color:#F9A13A;}
 }
 
 .insta .inner .link {
-    background: url(/jellycat/img/insta_icon.svg) no-repeat;
+    background: url(../jellycat/img/insta_icon.svg) no-repeat;
     background-size: 2.3rem;
     padding: 0 0 0 50px;
     font-family: 'RixInooAriDuriR';
@@ -503,7 +503,7 @@ footer .inner {
     height: 54.87px;
     text-indent: -999px;
     overflow: hidden;
-    background: url(/jellycat/img/logo.svg) no-repeat;
+    background: url(../jellycat/img/logo.svg) no-repeat;
 }
 
 .footer01 .family_site {

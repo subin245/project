@@ -14,7 +14,7 @@ body { min-width: 640px; }
 header .logo {
     width: 100px;
     height: 60px;
-    background: url(/jellycat/img/simbol.svg) no-repeat;
+    background: url(../jellycat/img/simbol.svg) no-repeat;
 }
 
 header ul{
