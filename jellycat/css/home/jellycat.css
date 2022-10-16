@@ -35,7 +35,7 @@ li {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: url(/jellycat/img/bg.svg);
+    background: url(../jellycat/img/bg.svg);
     max-width: 1920px;
     min-width: 1024px;
     margin: 0 auto;
