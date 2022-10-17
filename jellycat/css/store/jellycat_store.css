@@ -100,15 +100,16 @@ header ul li a:hover {
     color: #F9A13A;
 }
 
+
 /* footer */
 footer {
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 80px 0;
+    padding: 80px 40px;
 }
 
 footer .inner {
     display: block;
-    width: 1200px;
+    /* width: 1200px; */
     height: auto;
     margin: 0 auto;
     flex-direction: column;
@@ -184,8 +185,6 @@ footer .inner {
     font-weight: 300;
     font-size: 0.9rem;
 }
-
-
 
 
 /* .store */

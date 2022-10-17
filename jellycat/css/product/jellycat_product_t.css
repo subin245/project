@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* 젤리캣 product 태블릿 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body { min-width: 640px; } 
+
+/* header */
+header .logo {
+    width: 100px;
+    height: 60px;
+    background: url(../../../jellycat/img/simbol.svg) no-repeat;
+}
+
+header ul{
+    font-size: 0.9rem;
+}
+
+header ul li a{
+    padding: 0 15px;
+}
+
+/* 버튼 클릭,,, */
+/* header ul li a:hover {color:#F9A13A;} */
+
+/* .product */
+
+.product .list button {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.product .friends a{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2px;
+    padding: 20px;
+    width: 50%;
+}
+
+.product .friends a h6 {
+    display: none;
+}

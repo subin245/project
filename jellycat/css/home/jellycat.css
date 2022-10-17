@@ -36,9 +36,6 @@ li {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     background: url(../../../jellycat/img/bg.svg);
-    /* background: url(../jellycat/img/bg.svg); */
-    /* background: url(project/jellycat/img/bg.svg); */
-    /* background: url(./jellycat/img/bg.svg); */
     max-width: 1920px;
     min-width: 1024px;
     margin: 0 auto;
@@ -81,7 +78,7 @@ header.hideBar {
 /* header */
 header {
     position: sticky;
-    z-index: 999;
+    z-index: 2;
     height: 100px; 
     top: 0;
     display: flex;

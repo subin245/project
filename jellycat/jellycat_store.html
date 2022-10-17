@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>jellycat</title>
     <link rel="stylesheet" type="text/css" href="../jellycat/css/store/jellycat_store.css">
+    <link rel="stylesheet" media="all and (max-width: 1024px)" href="../jellycat/css/store/jellycat_store_t.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="../jellycat/css/store/jellycat_store_m.css">
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -54,20 +56,30 @@
 </head>
 
 <body>
+    <!-- nav -->
     <header class="nav">
         <a href="../jellycat/jellycat.html" class="logo">logo</a>
-        <ul>
-            <li><a href="#">젤리캣은?</a></li>
-            <li><a href="../jellycat/jellycat_product.html">친구들 만나기</a></li>
-            <li><a href="../jellycat/jellycat_news.html">소식</a></li>
-            <li><a href="../jellycat/jellycat_store.html">매장</a></li>
-            <li>
-                <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
-                    target="blank">
-                    shop</a>
-            </li>
-        </ul>
+        <!-- 모바일용 메뉴버튼 -->
+        <a href="#" class="menuBt">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">젤리캣은?</a></li>
+                <li><a href="../jellycat/jellycat_product.html">친구들 만나기</a></li>
+                <li><a href="../jellycat/jellycat_news.html">소식</a></li>
+                <li><a href="../jellycat/jellycat_store.html">매장</a></li>
+                <li>
+                    <a href="http://www.petitelinstore.com/_vir0001/process/shopmain.asp?iniCategory=47&thisCategory=47"
+                        target="blank">
+                        shop</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    
     <div class="store">
         <div class="side">
             <h1>오프라인 매장</h1>
@@ -193,6 +205,12 @@
             </div>
         </div>
     </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../jellycat/js/jellycat.js"></script>
 </body>
 
 </html>

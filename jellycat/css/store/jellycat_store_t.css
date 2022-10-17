@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* 젤리캣 store 태블릿 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body { min-width: 640px; } 
+
+/* header */
+header .logo {
+    width: 100px;
+    height: 60px;
+    background: url(../../../jellycat/img/simbol.svg) no-repeat;
+}
+
+header ul{
+    font-size: 0.9rem;
+}
+
+header ul li a{
+    padding: 0 15px;
+}
+
+/* 버튼 클릭,,, */
+/* header ul li a:hover {color:#F9A13A;} */
+
+
+/* .about - swiper use*/
+.swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
+    font-size: 1.5rem; 
+
+    letter-spacing: 0.05rem;
+
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 300;
+    font-style: normal;
+
+    color: #FFF;
+}
