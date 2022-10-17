@@ -129,7 +129,7 @@ header .menuBt {
 
 /* .about */
 .swiper.mySwiper01 .swiper-wrapper {
-    height: 420px;
+    height: 540px;
 }
 
 .swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
@@ -167,6 +167,7 @@ header .menuBt {
 
 /* .news */
 .news .inner {
+    height: 540px;
     row-gap: 30px;
 }
 
