@@ -172,6 +172,8 @@ header ul li a:hover {color:#F9A13A;}
     flex-direction: column;
     position: absolute;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     /* bottom: 15%; */
     margin-top: 200px;
     gap: 8px;
