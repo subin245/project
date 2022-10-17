@@ -518,7 +518,7 @@ footer .inner {
     text-align: center;
 }
 
-.family_site a {
+.family_site .m {
     padding: 5px 0;
     text-align: center;
     margin: auto;
@@ -536,6 +536,10 @@ footer .inner {
 
 .family_site li ul.on {
     display: block;
+}
+
+.family_site li ul li a:hover {
+    color: #F9A13A;
 }
 
 .footer02 {
