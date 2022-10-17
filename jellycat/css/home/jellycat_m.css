@@ -109,7 +109,7 @@ header .menuBt {
 .home .inner .txt p {
     font-size: 1rem;
     line-height: 25px;
-    width: 60%;
+    width: 240px;
 }
 .home .inner .txt p:nth-child(2) {display: none;}
 
@@ -155,4 +155,48 @@ header .menuBt {
 
 .insta .inner .content a img{
     height: 150px;
+}
+
+/* footer */
+.footer01 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer01 .info {
+    font-size: 0.6rem;
+}
+
+.footer01 .info .btlogo {
+    height: 30px;
+}
+
+.footer01 .family_site {
+    width: 170px;
+    border: 0.5px solid #757575;
+    font-weight: 500;
+    font-size: 0.8rem;
+    position: relative;
+    /* right: 50%;
+    top: 50%; */
+    text-align: center;
+}
+
+.footer02 {
+    flex-direction: column;
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer02 div a {
+    margin: 0 10px 0 0;
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+.footer02 p {
+    margin: 10px 0 0 0;
+    font-weight: 300;
+    font-size: 0.5rem;
 }
