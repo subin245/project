@@ -531,12 +531,12 @@ footer .inner {
     display: none;
     font-weight: 300;
     font-size: 0.8rem;
-    padding: 0 0 10px 0;
 }
 
 .family_site li ul.on {
     display: block;
 }
+.family_site li ul li {margin: 5px 0;}
 
 .family_site li ul li a:hover {
     color: #F9A13A;

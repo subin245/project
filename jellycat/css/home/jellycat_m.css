@@ -223,15 +223,8 @@ header .menuBt {
 }
 
 /* footer */
-.footer01 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
 .footer01 .info {
     font-size: 0.6rem;
-    width: 100%;
 }
 
 .footer01 .info .btlogo {
@@ -239,48 +232,13 @@ header .menuBt {
 }
 
 .footer01 .family_site {
-    width: 100%;
-    font-weight: 500;
     font-size: 0.8rem;
-    position: relative;
-    justify-content: center;
-}
-
-.family_site a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
-.family_site li ul {
-    display: none;
-    font-weight: 300;
-    font-size: 0.8rem;
-    padding: 0 0 10px 0;
-}
-
-.family_site li ul.on {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 10px;
-}
-
-.footer02 {
-    flex-direction: column;
-    margin-top: 10px;
-    display: flex;
 }
 
 .footer02 div a {
-    margin: 0 10px 0 0;
-    font-weight: 500;
     font-size: 0.6rem;
 }
 
 .footer02 p {
-    margin: 10px 0 0 0;
-    font-weight: 300;
     font-size: 0.5rem;
 }
