@@ -235,6 +235,11 @@ header .menuBt {
     font-size: 0.8rem;
 }
 
+.family_site li ul.on {
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
 .footer02 div a {
     font-size: 0.6rem;
 }
