@@ -105,6 +105,19 @@ header .menuBt {
 
 
 /* .home */
+.home .inner {
+    height: 540px;
+}
+.home .inner .txt {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 330px;
+
+}
 .home .inner .txt h1 {font-size: 1.5rem;}
 .home .inner .txt p {
     font-size: 1rem;
