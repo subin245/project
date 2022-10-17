@@ -182,9 +182,6 @@ header .menuBt {
     width: 100%;
 }
 
-.news .inner .content a::after {
-    width: 100%;
-}
 
 .news .inner a img {
     display: none;
@@ -192,6 +189,14 @@ header .menuBt {
 
 .news .inner .button {
     font-size: 0.5rem;
+}
+.news .inner a {
+    padding: 2px 15px;
+}
+.news .inner a:hover {
+    background-color: #000;
+    border-radius: 999px;
+    color:#F9A13A;
 }
 
 /* .insta */

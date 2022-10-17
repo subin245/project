@@ -401,7 +401,7 @@ header ul li a:hover {color:#F9A13A;}
 .news .inner .content h5 {
     font-weight: 500;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
 }
 
 .news .inner .content a {
