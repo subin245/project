@@ -105,9 +105,9 @@ header .menuBt {
 
 
 /* .home */
-.home .inner .txt h1 {font-size: 2rem;}
+.home .inner .txt h1 {font-size: 1.5rem;}
 .home .inner .txt p {font-size: 1rem;}
-
+.home .inner .txt p:nth-child(2) {display: none;}
 
 /* .product */
 .swiper.mySwiper02 .swiper-wrapper .swiper-slide img {
