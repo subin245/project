@@ -139,10 +139,18 @@ header .menuBt {
     padding-top: 50px;
 }
 
+.swiper.mySwiper02 .swiper-pagination {
+    padding-bottom: 20px;
+}
+
 .swiper.mySwiper02 .swiper-wrapper .swiper-slide img {
     height: 50vw;
 }
 
+.swiper.mySwiper02 .swiper-button-prev,
+.swiper.mySwiper02 .swiper-button-next {
+    display: none;
+}
 
 /* .news */
 .news .inner {
