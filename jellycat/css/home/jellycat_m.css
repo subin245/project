@@ -120,8 +120,8 @@ header .menuBt {
 }
 
 .swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
-    font-size: 0.8rem; 
-    line-height: 20px;
+    font-size: 1rem; 
+    line-height: 25px;
     letter-spacing: 0.05rem;
 }
 .swiper.mySwiper01 .swiper-button-prev,
