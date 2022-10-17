@@ -256,7 +256,9 @@ header .menuBt {
 
 .family_site li ul.on {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
+    flex-wrap: wrap;
     flex-direction: row;
     margin: 0 10px;
 }
