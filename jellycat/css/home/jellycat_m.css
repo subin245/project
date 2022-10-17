@@ -11,13 +11,13 @@
 body {
     min-width: 320px;
     overflow-x: hidden;
-    margin: 0 20px;
 } 
 
 /* header */
 header {
     display: block;
     height: 60px;
+    margin: 0 20px;
 }
 header .logo {
     position: fixed;
@@ -116,22 +116,45 @@ header .menuBt {
 
 /* .about */
 .swiper.mySwiper01 .swiper-wrapper .swiper-slide p {
-    font-size: 1.2rem; 
-    line-height: 30px;
+    font-size: 0.8rem; 
+    line-height: 20px;
     letter-spacing: 0.05rem;
 }
-.swiper.mySwiper01 .swiper-button-prev {
-    left: 3%;
-    top: 50%;
-}
+.swiper.mySwiper01 .swiper-button-prev,
 .swiper.mySwiper01 .swiper-button-next {
-    right: 3%;
-    top: 50%;
+    display: none;
 }
 
 /* .product */
 .swiper.mySwiper02 .swiper-wrapper .swiper-slide img {
     height: 50vw;
+}
+
+/* .news */
+.news .inner {
+    row-gap: 30px;
+}
+
+.news .inner .content {
+    display: flex;
+    row-gap: 10px;
+}
+.news .inner .content a {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news .inner .content a::after {
+    width: 100%;
+}
+
+.news .inner a img {
+    display: none;
+}
+
+.news .inner .button {
+    font-size: 0.5rem;
 }
 
 /* .insta */
