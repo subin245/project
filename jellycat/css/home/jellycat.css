@@ -485,7 +485,6 @@ header ul li a:hover {color:#F9A13A;}
     }
 }
 
-
 /* footer */
 footer {
     background-color: rgba(255, 255, 255, 0.5);
@@ -532,7 +531,7 @@ footer .inner {
 .footer01 .family_site {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
     border: 0.5px solid #757575;
     font-weight: 500;
     font-size: 0.8rem;
@@ -592,4 +591,5 @@ footer a:hover {
     margin: 5px 0 0 0;
     font-weight: 300;
     font-size: 0.8rem;
+    text-align: center;
 }

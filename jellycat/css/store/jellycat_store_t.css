@@ -41,3 +41,43 @@ header ul li a{
 
     color: #FFF;
 }
+
+/* footer */
+.footer01 .info {
+    font-size: 0.8rem;
+}
+
+.footer01 .info .btlogo {
+    height: 40px;
+}
+
+.footer01 .family_site {
+    width: 50%;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.family_site a {
+    text-align: center;
+}
+
+.family_site li ul.on {
+    font-size: 0.8rem;
+}
+
+.family_site li ul li {margin: 0;}
+
+.footer02 {
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer02 div a {
+    margin: 0 10px 0 0;
+    font-size: 0.7rem;
+}
+
+.footer02 p {
+    margin: 10px 0 0 0;
+    font-size: 0.6rem;
+}

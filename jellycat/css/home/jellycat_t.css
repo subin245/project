@@ -93,6 +93,7 @@ header ul li a{
 }
 
 .footer01 .family_site {
+    width: 50%;
     font-size: 0.9rem;
     justify-content: center;
 }

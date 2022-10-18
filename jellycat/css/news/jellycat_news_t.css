@@ -38,6 +38,7 @@ header ul li a{
 }
 
 .footer01 .family_site {
+    width: 50%;
     font-size: 0.9rem;
     justify-content: center;
 }
@@ -59,12 +60,12 @@ header ul li a{
 
 .footer02 div a {
     margin: 0 10px 0 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .footer02 p {
     margin: 10px 0 0 0;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 /* .about - swiper use*/

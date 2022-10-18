@@ -11,25 +11,58 @@
 body { min-width: 320px; overflow-x: hidden;} 
 
 /* header */
-
 header {
     display: block;
     height: 60px;
+    /* margin: 0 20px; */
 }
-
 header .logo {
     position: fixed;
     top: 12px;
     height: 40px;
-    margin: auto 20px;
+    margin: auto 30px;
 }
 
+header nav {
+    position: fixed;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+header nav.active{
+    position: fixed; 
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0);
+}  
+
+header nav ul{
+    padding: 80px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header ul li a{
+    color: #5EDEF4;;
+}
+
+header ul li {
+    padding: 15px 0;
+    font-size: 1.2rem; 
+}
+
+/* 모바일용 메뉴버튼 & 애니메이션 */
 header .menuBt {
     display: block;
     position: fixed;
     right: 0;
     top: 16px;
-    margin: auto 20px;
+    margin: auto 30px;
     width: 33px;
     height: 30px;
     z-index: 999;
@@ -68,35 +101,59 @@ header .menuBt {
 } 
 
 
-header nav {
-    z-index: 2;
-    transform: translate(100%,0);
-    transition: all 0.5s ease;
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
+/* footer */
+.footer01 .info {
+    font-size: 0.8rem;
+    width: 80%;
 }
 
+.footer01 .info .btlogo {
+    height: 50px;
+}
 
-header nav ul{
-    margin: 60px 20px;
+.footer01 .family_site {
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.family_site li ul.on {
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.footer02 .gp{
+    width: 80%;
+}
+
+.footer02 .gp a {
+    font-size: 0.8rem;
+}
+
+.footer02 .info2 {
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    border: 0.5px solid #757575;
+    margin: 10px;
+    width: 80%;
 }
 
-
-header ul li {
-    padding: 8px 0;
+.footer02 .pHide {
+    display: flex;
     font-weight: 500;
-    font-size: 1.2rem; 
+    font-size: 0.8rem;
+    margin: 5px;
+    justify-content: center;
 }
 
-header ul li a{
-    color: #5EDEF4;;
+.footer02 .pHide:hover {
+    cursor: pointer;
 }
 
-header nav.active{ 
-    width: 100vw;
-    height: 100vh;
-    transform: translate(0,0);
+.footer02 .txt {
+    display: none;
+}
+
+.footer02 .txt.on {
+    display: inline-block;
+    font-size: 0.7rem;
 }
