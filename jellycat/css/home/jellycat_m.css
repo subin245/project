@@ -224,17 +224,17 @@ header .menuBt {
 
 /* footer */
 .footer01 .info {
-    font-size: 0.6rem;
-    width: 95%;
+    font-size: 0.8rem;
+    width: 80%;
 }
 
 .footer01 .info .btlogo {
-    height: 30px;
+    height: 50px;
 }
 
 .footer01 .family_site {
     font-size: 0.8rem;
-    width: 95%;
+    width: 80%;
 }
 
 .family_site li ul.on {
