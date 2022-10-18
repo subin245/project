@@ -449,12 +449,14 @@ header ul li a:hover {color:#F9A13A;}
 
 .insta .inner .imgGp {
     display: flex;
+    position: relative;
     flex-direction: row;
     gap: 30px;
 }
 
 .insta .inner .content:first-child {
     display: flex;
+    position: absolute;
     gap: 30px;
     flex-wrap: nowrap;
     animation: marquee 30s linear infinite;
@@ -462,8 +464,10 @@ header ul li a:hover {color:#F9A13A;}
 
 .insta .inner .content:last-child {
     display: flex;
+    position: absolute;
     gap: 30px;
     flex-wrap: nowrap;
+    left: 0;
     transform: translateX(-100%);
     animation: marquee 30s linear infinite;
 }
@@ -478,12 +482,12 @@ header ul li a:hover {color:#F9A13A;}
         transform: translateX(-100%);
     }
 }
-@media (hover: hover) and (min-width: 700px) {
+/* @media (hover: hover) and (min-width: 700px) {
     .insta .inner .content p{
         -webkit-transform: translateY(calc(100% - 8rem));
         transform: translateY(calc(100% - 8rem));
     }
-}
+} */
 
 /* footer */
 footer {
