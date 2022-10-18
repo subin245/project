@@ -225,7 +225,7 @@ header .menuBt {
 /* footer */
 .footer01 .info {
     font-size: 0.6rem;
-    width: 90%;
+    width: 95%;
 }
 
 .footer01 .info .btlogo {
@@ -234,7 +234,7 @@ header .menuBt {
 
 .footer01 .family_site {
     font-size: 0.8rem;
-    width: 90%;
+    width: 95%;
 }
 
 .family_site li ul.on {
@@ -243,7 +243,7 @@ header .menuBt {
 }
 
 .footer02 div{
-    width: 90%;
+    width: 95%;
 }
 
 .footer02 .gp a {
@@ -255,7 +255,7 @@ header .menuBt {
     flex-direction: column;
     border: 0.5px solid #757575;
     margin: 10px;
-    width: 90%;
+    width: 95%;
 }
 
 .footer02 .pHide {
