@@ -242,8 +242,8 @@ header .menuBt {
     justify-content: center;
 }
 
-.footer02 div{
-    width: 95%;
+.footer02 .gp{
+    width: 80%;
 }
 
 .footer02 .gp a {
@@ -255,7 +255,7 @@ header .menuBt {
     flex-direction: column;
     border: 0.5px solid #757575;
     margin: 10px;
-    width: 95%;
+    width: 80%;
 }
 
 .footer02 .pHide {

@@ -447,10 +447,24 @@ header ul li a:hover {color:#F9A13A;}
     color:#F9A13A;
 }
 
-.insta .inner .content {
+.insta .inner .imgGp {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.insta .inner .content:first-child {
     display: flex;
     gap: 30px;
     flex-wrap: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.insta .inner .content:last-child {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    transform: translateX(-100%);
     animation: marquee 30s linear infinite;
 }
 
@@ -458,10 +472,10 @@ header ul li a:hover {color:#F9A13A;}
 
 @keyframes marquee {
     from {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 @media (hover: hover) and (min-width: 700px) {
@@ -562,7 +576,7 @@ footer a:hover {
 }
 .footer02 .pHide{display: none;}
 
-.footer02 div{
+.footer02 .gp{
     width: 50%;
     text-align: center;
 }
