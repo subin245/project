@@ -20,7 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 a {
@@ -490,8 +490,9 @@ footer .inner {
     position: relative;
     justify-content: space-between;    
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    text-align: center;
 }
 
 
@@ -501,44 +502,43 @@ footer .inner {
     gap: 15px;
     font-weight: 400;
     font-size: 0.9rem;
+    width: 50%;
 }
 
 .footer01 .info .btlogo {
-    width: auto;
+    width: 200px;
+    margin: 0 auto;
     height: 55px;
     text-indent: -999px;
     overflow: hidden;
     background: url(../../../jellycat/img/logo.svg) no-repeat;
+    background-position: center;
 }
 
 .footer01 .family_site {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 50%;
     border: 0.5px solid #757575;
     font-weight: 500;
     font-size: 0.8rem;
-    position: relative;
-    text-align: left;
+    text-align: center;
+    padding: 5px 0;
 }
 
-.family_site .m {
-    padding: 5px 10px;
-    margin: auto;
-}
 
 .family_site a {
     display: inline-block;
     width: 100%;
 }
 
-.family_site li ul {
+.family_site ul {
     display: none;
     font-weight: 300;
     font-size: 0.8rem;
 }
 
-.family_site li ul.on {
+.family_site ul.on {
     display: flex;
     font-weight: 300;
     font-size: 0.8rem;
@@ -547,26 +547,35 @@ footer .inner {
     flex-wrap: wrap;
     margin: 10px;
 }
-.family_site li ul li {margin: 5px 0;}
 
-.family_site li ul li a:hover {
+.family_site ul li {margin: 5px 0;}
+
+footer a:hover {
     color: #F9A13A;
 }
 
 .footer02 {
     flex-direction: column;
     margin-top: 40px;
-    display: block;
+    display: flex;
+    align-items: center;
+}
+.footer02 .pHide{display: none;}
+
+.footer02 div{
+    width: 50%;
+    text-align: center;
 }
 
-.footer02 div a {
-    margin: 0 35px 0 0;
+.footer02 .gp a {
+    padding: 0 10px;
+    display: inline-block;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .footer02 p {
     margin: 5px 0 0 0;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }

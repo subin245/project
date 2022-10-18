@@ -28,6 +28,44 @@ header ul li a{
 /* 버튼 클릭,,, */
 /* header ul li a:hover {color:#F9A13A;} */
 
+/* footer */
+.footer01 .info {
+    font-size: 0.8rem;
+}
+
+.footer01 .info .btlogo {
+    height: 40px;
+}
+
+.footer01 .family_site {
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.family_site a {
+    text-align: center;
+}
+
+.family_site li ul.on {
+    font-size: 0.8rem;
+}
+
+.family_site li ul li {margin: 0;}
+
+.footer02 {
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer02 div a {
+    margin: 0 10px 0 0;
+    font-size: 0.8rem;
+}
+
+.footer02 p {
+    margin: 10px 0 0 0;
+    font-size: 0.7rem;
+}
 
 /* .about - swiper use*/
 .swiper.mySwiper01 .swiper-wrapper .swiper-slide p {

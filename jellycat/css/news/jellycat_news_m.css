@@ -100,3 +100,29 @@ header nav.active{
     height: 100vh;
     transform: translate(0,0);
 }
+
+/* footer */
+.footer01 .info {
+    font-size: 0.6rem;
+}
+
+.footer01 .info .btlogo {
+    height: 30px;
+}
+
+.footer01 .family_site {
+    font-size: 0.8rem;
+}
+
+.family_site li ul.on {
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.footer02 div a {
+    font-size: 0.6rem;
+}
+
+.footer02 p {
+    font-size: 0.5rem;
+}

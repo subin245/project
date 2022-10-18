@@ -96,7 +96,6 @@ footer {
 
 footer .inner {
     display: block;
-    /* width: 1200px; */
     height: auto;
     margin: 0 auto;
     flex-direction: column;
@@ -105,61 +104,84 @@ footer .inner {
 .footer01 {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-between;    
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
+    text-align: center;
 }
+
+
 .footer01 .info {
     display: flex;
     flex-direction: column;
     gap: 15px;
     font-weight: 400;
     font-size: 0.9rem;
+    width: 50%;
 }
 
 .footer01 .info .btlogo {
-    width: 190px;
-    height: 54.87px;
+    width: 200px;
+    margin: 0 auto;
+    height: 55px;
     text-indent: -999px;
     overflow: hidden;
     background: url(../../../jellycat/img/logo.svg) no-repeat;
+    background-position: center;
 }
 
 .footer01 .family_site {
-    width: 170px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     border: 0.5px solid #757575;
     font-weight: 500;
     font-size: 0.8rem;
-    position: absolute;
-    right: 0;
-    top: 0;
     text-align: center;
+    padding: 5px 0;
 }
+
 
 .family_site a {
-    padding: 5px 0;
-    text-align: center;
-    margin: auto;
-    display: block;
+    display: inline-block;
     width: 100%;
-    text-align: center;
 }
 
-.family_site li ul {
+.family_site ul {
     display: none;
     font-weight: 300;
     font-size: 0.8rem;
-    padding: 0 0 10px 0;
 }
 
-.family_site li ul.on {
-    display: block;
+.family_site ul.on {
+    display: flex;
+    font-weight: 300;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.family_site ul li {margin: 5px 0;}
+
+.family_site ul li a:hover {
+    color: #F9A13A;
 }
 
 .footer02 {
     flex-direction: column;
     margin-top: 40px;
-    display: block;
+    display: flex;
+    align-items: center;
 }
+.footer02 .gp,
+.footer02 p{
+    width: 50%;
+    text-align: center;
+}
+
 
 .footer02 div a {
     margin: 0 35px 0 0;

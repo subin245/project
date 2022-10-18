@@ -73,9 +73,10 @@ $(function () {
         return false;
     });
 
-    if ($('.family_site a.m').hasClass('on')) {
-        console.log('클래스 있음');
-    } else {
-        console.log('클래스 없음');
-    }
+    $(".footer02 .pHide").click(function () {
+        $(".footer02 p").next().addBack().toggleClass('on').end()
+            .find(".footer02 p").removeClass('on').end()
+            .parent().siblings().find(".footer02 p").removeClass('on');
+        return false;
+    });
 });
