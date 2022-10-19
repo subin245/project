@@ -92,6 +92,6 @@ footer .inner { width: 300px;}
 
 .product .friends a img {
     -webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
