@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8"; 
 /* 젤리캣 product 태블릿 */
 
 * {
@@ -88,4 +88,10 @@ footer .inner { width: 300px;}
 
 .product .friends a h6 {
     display: none;
+}
+
+.product .friends a img {
+    -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
