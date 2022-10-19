@@ -10,10 +10,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none; */
+    /* border: 1px solid red; */
 }
 
 a {
@@ -209,6 +209,7 @@ footer a:hover {
     gap: 40px;
     margin: 80px 30px 150px 30px;
     height: auto;
+    -webkit-appearance: none;
 }
 
 .product h1 {
