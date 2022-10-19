@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 a {
@@ -279,4 +279,12 @@ footer a:hover {
 
 .product .list button.all {
     color: #F9A13A;
+}
+
+/* hover */
+.product .friends a:hover {
+    color: #5EDEF4;
+    background: rgb(34, 34, 34);
+    transition: all 0.3s ease-in-out;
+    text-shadow: none;
 }
