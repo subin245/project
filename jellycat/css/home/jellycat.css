@@ -476,7 +476,7 @@ header ul li a:hover {color:#F9A13A;}
 
 @keyframes marquee {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     to {
         transform: translateX(-100%);
@@ -500,6 +500,7 @@ footer .inner {
     height: auto;
     margin: 0 auto;
     flex-direction: column;
+    width: 600px;
 }
 
 .footer01 {
@@ -519,7 +520,7 @@ footer .inner {
     gap: 15px;
     font-weight: 400;
     font-size: 0.9rem;
-    width: 50%;
+    width: 100%;
 }
 
 .footer01 .info .btlogo {
@@ -535,7 +536,7 @@ footer .inner {
 .footer01 .family_site {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 600px;
     border: 0.5px solid #757575;
     font-weight: 500;
     font-size: 0.8rem;
@@ -560,9 +561,7 @@ footer .inner {
     font-weight: 300;
     font-size: 0.8rem;
     justify-content: space-evenly;
-    gap: 15px;
     flex-wrap: wrap;
-    margin: 10px;
 }
 
 .family_site ul li {margin: 5px 0;}
@@ -580,7 +579,7 @@ footer a:hover {
 .footer02 .pHide{display: none;}
 
 .footer02 .gp{
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 

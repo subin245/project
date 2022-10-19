@@ -223,9 +223,10 @@ header .menuBt {
 }
 
 /* footer */
+footer .inner { width: 360px;}
+
 .footer01 .info {
     font-size: 0.8rem;
-    width: 80%;
 }
 
 .footer01 .info .btlogo {
@@ -234,20 +235,16 @@ header .menuBt {
 
 .footer01 .family_site {
     font-size: 0.8rem;
-    width: 80%;
 }
 
-.family_site li ul.on {
+.family_site ul.on {
     font-size: 0.8rem;
     justify-content: center;
-}
-
-.footer02 .gp{
-    width: 80%;
+    gap: 0 10px;
 }
 
 .footer02 .gp a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .footer02 .info2 {
@@ -255,14 +252,14 @@ header .menuBt {
     flex-direction: column;
     border: 0.5px solid #757575;
     margin: 10px;
-    width: 80%;
+    width: 360px;
+    padding: 5px 0;
 }
 
 .footer02 .pHide {
     display: flex;
     font-weight: 500;
     font-size: 0.8rem;
-    margin: 5px;
     justify-content: center;
 }
 

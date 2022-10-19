@@ -29,6 +29,7 @@ header ul li a{
 /* header ul li a:hover {color:#F9A13A;} */
 
 /* footer */
+footer .inner { width: 300px;}
 .footer01 .info {
     font-size: 0.8rem;
 }
@@ -38,7 +39,7 @@ header ul li a{
 }
 
 .footer01 .family_site {
-    width: 50%;
+    width: 100%;
     font-size: 0.9rem;
     justify-content: center;
 }
