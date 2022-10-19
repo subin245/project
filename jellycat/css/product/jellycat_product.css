@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 a {
@@ -234,7 +234,7 @@ footer a:hover {
     background: none;
     border: none;
     font-weight: 600;
-    font-size: 1.1vw;
+    font-size: 1rem;
     text-align: center;
     padding: 20px;
 }
@@ -242,12 +242,12 @@ footer a:hover {
 .product .friends {
     display: flex;
     justify-content: center;
-    width: 80%;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* border: 1px solid #000; */
+    /* border-radius: 20px; */
     padding: 60px;
-    border-radius: 20px;
-    /* margin: 0 auto; */
+    gap: 20px;
 }
 
 .product .friends a{
@@ -255,15 +255,12 @@ footer a:hover {
     text-align: center;
     flex-direction: column;
     gap: 2px;
-    padding: 30px;
-    width: 30%;
+    padding: 20px;
+    width: 240px;
+    border-radius: 20px;
+    background-color: #fff;
+    /* width: 30%; */
     /* min-height: 200px; */
-}
-
-.product .friends a img {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .product .friends a h4 { font-weight: 600;font-size: 1vw; }
