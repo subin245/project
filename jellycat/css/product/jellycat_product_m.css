@@ -160,6 +160,17 @@ footer .inner { width: 360px;}
     gap: 15px;
 }
 
+.product .list {
+    top: 55px;
+}
+
+.product .list button {
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 10px;
+}
+
 .product .friends a{
     flex-wrap: nowrap;
     flex-direction: column;

@@ -223,10 +223,11 @@ footer a:hover {
 .product .list {
     position: sticky;
     display: flex;
-    border-radius: 999px;
+    z-index: 3;
+    width: 100%;
     justify-content: center;
-    background-color: #FFF4E499;
-    top: 120px;
+    background-color: #FFF4E4;
+    top: 85px;
 }
 
 .product .list button {
