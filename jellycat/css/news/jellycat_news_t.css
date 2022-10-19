@@ -81,3 +81,17 @@ footer .inner { width: 300px;}
 
     color: #FFF;
 }
+
+/* .news */
+.news h1{
+    width: 210px;
+    font-size: 2rem;
+}
+
+.news .button {
+    width: 210px;
+}
+
+.news button {
+    font-size: 1rem;
+}

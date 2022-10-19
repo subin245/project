@@ -82,3 +82,17 @@ footer .inner { width: 300px;}
     margin: 10px 0 0 0;
     font-size: 0.6rem;
 }
+
+/* .store */
+.store h1 {
+    width: 210px;
+    font-size: 2rem;
+}
+
+.store .button {
+    width: 210px;
+}
+
+.store button {
+    font-size: 1rem;
+}
