@@ -174,14 +174,13 @@ footer .inner { width: 360px;}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     row-gap: 30px;
     width: 100%;
     margin-top: 0;
 }
 
 .news .content a {
-    width: 100%;
+    width: 70%;
 }
 
 .news .content h3{
