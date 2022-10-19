@@ -258,6 +258,12 @@ footer a:hover {
     /* min-height: 200px; */
 }
 
+.product .friends a img {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .product .friends a h4 { font-weight: 600;font-size: 1vw; }
 .product .friends a h5 { font-weight: 400;font-size: 0.9vw; }
 .product .friends a h6 {
