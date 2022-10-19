@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 a {
@@ -211,7 +211,6 @@ footer a:hover {
 }
 
 .product h1 {
-    /* position: sticky; */
     text-align: center;
     font-size: 2.8rem;
     font-family: 'RixInooAriDuriR';
@@ -246,7 +245,7 @@ footer a:hover {
     /* background-color: rgba(255, 255, 255, 0.5); */
     /* border: 1px solid #000; */
     /* border-radius: 20px; */
-    padding: 60px;
+    padding: 30px;
     gap: 20px;
 }
 
@@ -263,11 +262,11 @@ footer a:hover {
     /* min-height: 200px; */
 }
 
-.product .friends a h4 { font-weight: 600;font-size: 1vw; }
-.product .friends a h5 { font-weight: 400;font-size: 0.9vw; }
+.product .friends a h4 { font-weight: 600;font-size: 0.9rem; }
+.product .friends a h5 { font-weight: 400;font-size: 0.7rem; }
 .product .friends a h6 {
     font-weight: 400;
-    font-size: 0.7vw;
+    font-size: 0.6rem;
     overflow: hidden;
     white-space: nowrap; 
     text-overflow: ellipsis; 
