@@ -250,13 +250,12 @@ footer a:hover {
 }
 
 .product .friends a{
-    /* display: flex; */
+    display: flex;
     text-align: center;
     flex-direction: column;
     gap: 2px;
     padding: 30px;
     width: 30%;
-    height: auto;
     /* min-height: 200px; */
 }
 
