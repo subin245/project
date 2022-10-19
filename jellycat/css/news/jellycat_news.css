@@ -276,8 +276,12 @@ footer a:hover {
 }
 .news .content h3{
     font-weight: 500;
-    font-size: 1.1vw; 
+    font-size: 0.91rem; 
     margin: 5px 0 2px 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .news .content h5{
