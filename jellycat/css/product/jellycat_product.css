@@ -10,9 +10,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
     /* border: 1px solid red; */
 }
 
@@ -259,14 +256,15 @@ footer a:hover {
     gap: 2px;
     padding: 30px;
     width: 30%;
-    min-height: 200px;
+    height: auto;
+    /* min-height: 200px; */
 }
 
-/* .product .friends a img {
+.product .friends a img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-} */
+}
 
 .product .friends a h4 { font-weight: 600;font-size: 1vw; }
 .product .friends a h5 { font-weight: 400;font-size: 0.9vw; }
