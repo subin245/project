@@ -1,14 +1,22 @@
 @charset "UTF-8";
 /* 코레일 home pc */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: 1px solid red;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-.inner {max-width: 1200px;}
+.inner {
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -17,6 +25,7 @@ a {
 li {
     list-style: none;
 }
+
 
 .sec01,
 .sec02,
@@ -28,16 +37,29 @@ footer {
 }
 
 /* header */
-/* header {
-    display: flex;
-    flex-direction: column;
-
-} */
+header .top {
+    background-color: #093B82;
+}
 
 header .top .inner,
 header .nav .inner{
     display: flex;
     justify-content: space-between;
+}
+
+header .top .inner div a{
+    height: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+/* header .top .inner div a::after{
+
+} */
+
+header .nav .inner .logo{
+    background: url(/korail/img/logo/logo_temporary.svg) no-repeat / cover;
 }
 
 header .left.side {
