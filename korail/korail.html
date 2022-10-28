@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>Let's Korail</title>
+    <link rel="stylesheet" type="text/css" href="/korail/css/korail.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="inner">
+                <div class="left">
+                    <a href="#">코레일 홈페이지</a>
+                    <a href="#">기업은행</a>
+                </div>
+                <div class="right">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                    <select name="lang" id="lang">
+                        <option>언어</option>
+                        <option>한국어</option>
+                        <option>English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="inner">
+                <a href="#">logo</a>
+                <div>
+                    <a href="#">승차권예매</a>
+                    <a href="#">관광열차</a>
+                    <a href="#">자유여행</a>
+                    <a href="#">여행상품</a>
+                    <a href="#">코레일소식</a>
+                    <a href="#">전체메뉴</a>
+                </div>
+            </div>
+        </div>
+        <div class="left side">
+            <a href="#">페이스북</a>
+            <a href="#">유투브</a>
+            <a href="#">인스타그램</a>
+            <a href="#">블로그</a>
+            <a href="#">트위터</a>
+        </div>
+        <div class="right side">
+            <a href="#">종합이용안내</a>
+            <a href="#">코레일멤버십</a>
+            <a href="#">기차역정보</a>
+            <a href="#">노선정보</a>
+        </div>
+    </header>
+    <div class="inner">
+        <!-- 할게 많네..? -->
+        <div class="sec01">
+            <div class="ticket">
+                <div class="common">
+                    <h5>일반승차권</h5>
+                    <div class="direct">
+                        <div>출발역</div>
+                        <div>도착역</div>
+                        <div>가는날</div>
+                        <div>가는시간</div>
+                        <div>검색</div>
+                        <div class="option">
+                            <div>인접역포함</div>
+                            <ul class="tab">
+                                <li>전체</li>
+                                <li>KTX/SRT</li>
+                                <li>ITX-청춘</li>
+                                <li>새마을호/ITX-새마을</li>
+                                <li>무궁화호/누리호</li>
+                                <li>통근열차</li>
+                            </ul>
+                            <div>
+                                <div class="People">
+                                    <h5>인원정보</h5>
+                                    <p>어른 <input type="number" min="0" value="1"></p>
+                                    <p>만 6세~ 12세 <input type="number" min="0" value="0"></p>
+                                    <p>만 6세 미만 <input type="number" min="0" value="0"></p>
+                                    <p>민 65세이상 <input type="number" min="0" value="0"></p>
+                                </div>
+                                <div class="obstacle">
+                                    <h5>장애정도</h5>
+                                    <p>중증 <input type="number" min="0" value="0"></p>
+                                    <p>경증 <input type="number" min="0" value="0"></p>
+                                </div>
+                                <div class="seat">
+                                    <h5>좌석종류</h5>
+                                    <select name="seat" id="seatCommon">
+                                        <option value="">기본</option>
+                                        <option value="">1인석</option>
+                                        <option value="">창측좌석</option>
+                                        <option value="">내측좌석</option>
+                                    </select>
+                                    <select name="seat" id="seatDirection">
+                                        <option value="">좌석방향</option>
+                                        <option value="">순방향석</option>
+                                        <option value="">역방향석</option>
+                                    </select>
+                                    <select name="seat" id="seatAdd">
+                                        <option value="">기본</option>
+                                        <option value="">유아동반</option>
+                                        <option value="">편한대화</option>
+                                        <option value="">노트북</option>
+                                        <option value="">수동휠체어석</option>
+                                        <option value="">전동휠체어석</option>
+                                        <option value="">수유실인접</option>
+                                        <option value="">2층석</option>
+                                        <option value="">자전거거치대</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer"></div>
+                    <div class="roundTrip"></div>
+                </div>
+                <div class="discont">
+                    <h5>할인승차권</h5>
+                    <div class="1"></div>
+                    <div class="2"></div>
+                    <div class="3"></div>
+                    <div class="4"></div>
+                    <div class="5"></div>
+                    <div class="6"></div>
+                    <div class="7"></div>
+                </div>
+                <div class="fourGp">
+                    <h5>4인동반석</h5>
+                </div>
+                <div class="trip">
+                    <h5>관광열차</h5>
+                    <div class="1"></div>
+                    <div class="2"></div>
+                    <div class="3"></div>
+                    <div class="4"></div>
+                    <div class="5"></div>
+                    <div class="6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sec02">
+            <h1>관광열차</h1>
+            <h3>특색있는 열차와 함께하는 여행</h3>
+            <div class="train">
+                <a href="#">동해산타열차</a>
+                <a href="#">서해금빛열차</a>
+                <a href="#">백두대간협곡열차</a>
+                <a href="#">남도해양열차</a>
+                <a href="#">정선아리랑열차</a>
+                <a href="#">바다열차</a>
+                <a href="#">국악와인열차</a>
+            </div>
+        </div>
+        <div class="sec03">
+            <h1>자유여행</h1>
+            <h3>가고싶은 곳으로 자유롭게 떠나는 여행</h3>
+            <div class="card">
+                <div class="nailro">
+                    <h1>내일로 두번째 이야기</h1>
+                    <p>전 국민 누구나 즐기는 7일간의 자유여행!<br>
+                    보다 더 자유롭고 편안해진 내일로를 경험해보세요.</p>
+                    <div>
+                        <div class="01">
+                            <h5>누구나 언제든지</h5>
+                            <p>전 국민 누구나 이용할 수
+                                있도록 이용연령 확대<br>
+                                <br>
+                                연중운영으로 이용기간 확대</p>
+                        </div>
+                        <div class="02">
+                            <h5>높은 자유도</h5>
+                            <p>유효기간내에 3일을 직접
+                                선택하여 패스를 사용하는
+                                ‘선택 3일권’ 신설로 더욱
+                                자유로워졌습니다.</p>
+                        </div>
+                        <div class="03">
+                            <h5>좌석지정 가능</h5>
+                            <p>KTX와 일반열차의 좌석을
+                                무료로 지저할 수 있게되어
+                                편의성이 향상되었습니다.
+                                (KTX : 1일 1회, 총 2회)
+                                (일반열차 : 1일 2회)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="traintrip">
+                    <h6>국내 최초 실시간 기차예약</h6>
+                    <h1>기차여행 만들기</h1>
+                    <div class="icon gp">
+                        <div class="main">기차</div>
+                        <div class="sub">숙박</div>
+                        <div class="sub">렌터카</div>
+                        <div class="sub">입장권</div>
+                    </div>
+                    <h5>렌터카를 포함하여 예약시 추가할인 5,000원!</h5>
+                    <h4>최대 35%할인 받으러가기</h4>
+                </div>
+            </div>
+        </div>
+        <div class="sec04">
+            <div class="list01">
+                <h1>여행상품</h1>
+                <h3>KTX-연계서비스</h3>
+                <div class="card">
+                    <div>레일텔</div>
+                    <div>레일쉽</div>
+                </div>
+            </div>
+            <div class="list02">
+                <h3>추천 국내패키지</h3>
+                <ul class="BT">
+                    <li><a href="#">수도권</a></li>
+                    <li><a href="#">강원권</a></li>
+                    <li><a href="#">충청권</a></li>
+                    <li><a href="#">경상권</a></li>
+                    <li><a href="#">전라권</a></li>
+                    <li><a href="#">제주권</a></li>
+                </ul>
+                <div class="pkg">
+                    <div class="P01">
+                        <img src="#" alt="서울 주심가 캡슐호텔">
+                        <h3>KTX왕복+더캡슐 레일텔 (1박2일)</h3>
+                        <div class="tag box">
+                            <p>#레일텔</p>
+                            <p>#캡슐호텔</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="price">
+                                <div class="number">55,600</div>
+                                <div class="won">원</div>
+                            </div>
+                            <div class="inquiry">문의 : 한국철도공사</div>
+                        </div>
+                    </div>
+                    <div class="P02">
+                        <img src="#" alt="한옥마을투어">
+                        <h3>한복입고 경복궁/북촌 한옥마을 투어</h3>
+                        <div class="tag box">
+                            <p>#레일티켓</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="price">
+                                <div class="number">34,600</div>
+                                <div class="won">원</div>
+                            </div>
+                            <div class="inquiry">문의 : 한국철도공사</div>
+                        </div>
+                    </div>
+                    <div class="P03">
+                        <img src="#" alt="서울 주심가 캡슐호텔">
+                        <h3>서울시티투어 순환형 (경부선)</h3>
+                        <div class="tag box">
+                            <p>#레일티켓</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="price">
+                                <div class="number">98,700</div>
+                                <div class="won">원</div>
+                            </div>
+                            <div class="inquiry">문의 : 한국철도공사</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec05">
+            <div class="1_Notice">
+                <div class="notice01">
+                    <h5>공지사항</h5>
+                    <ul>
+                        <li><a href="#">휠케어석(전동포함) 이용제한 역 알림</a></li>
+                        <li><a href="#">한국철도공사 사치 스미싱 주의 안내</a></li>
+                        <li><a href="#">관광벨트열차 임시 운휴 알림</a></li>
+                        <li><a href="#">KTX 및 일반열차 운행 조정 알림(2차)</a></li>
+                        <li><a href="#">KTX 및 일반열차 운행 조정 알림</a></li>
+                    </ul>
+                </div>
+                <div class="notice02">
+                    <h5>모집공고</h5>
+                    <ul>
+                        <li><a href="#">관광전용열차 운영사업자 1차 모집공고</a></li>
+                        <li><a href="#">2023 팔도장터 지원 철도관광사업 참여 지자체 모집 공고</a></li>
+                        <li><a href="#">태풍 ‘힌남노’등 관련 특별재난지역 자원 봉사자 지원 안내</a></li>
+                        <li><a href="#">철도시민안전지킴이 모집공고(~9/23)</a></li>
+                        <li><a href="#">집중호우(‘22.8월) 관련 특별재난지역 자원봉사자 지원 안내</a></li>
+                    </ul>
+                </div>
+                <div class="notice03">
+                    <h5>이벤트</h5>
+                    <ul>
+                        <li><a href="#">대한민국 아이디어 공모전 [KORAIL을 부탁해] 결과발표</a></li>
+                        <li><a href="#">2022년 10월 페이코포인트 결제 프로모션 안내</a></li>
+                        <li><a href="#">KTX 고객 9억명 돌파 기념 프로모션</a></li>
+                        <li><a href="#">2022년 9월 내통장결제 프로모션 알림 (9.19 ~ 9.28)</a></li>
+                        <li><a href="#">그린카드 승차권결제 10%할인 프로모션 시행 알림</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="2_consult">
+                <div class="call">
+                    <div class="common">
+                        <h5>일반전화상담</h5>
+                        <p>1544-7788</p>
+                    </div>
+                    <div class="ARS">
+                        <h5>자동응답(ARS)</h5>
+                        <p>1544-1188</p>
+                    </div>
+                </div>
+                <div class="time">
+                    <h5>운영시간</h5>
+                    <p>상담원상담 : 06:00 ~ 22:00</p>
+                    <p>A R S삳담 : 00:00 ~ 24:00</p>
+                </div>
+            </div>
+            <ul class="3_bt">
+                <li><a href="#">회의실 이용</a></li>
+                <li><a href="#">유실물</a></li>
+                <li><a href="#">KTX특송</a></li>
+                <li><a href="#">예약보관금 찾기</a></li>
+                <li><a href="#">열차운영/시간표</a></li>
+                <li><a href="#">광역철도 노선운영</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="F01">
+            <ul class="terms">
+                <li><a href="#">고객서비스 현장</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">홈페이지이용약관</a></li>
+                <li><a href="#">여객운송약관/부속약관</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">광고안내</a></li>
+                <li><a href="#">저작권정책</a></li>
+                <li><a href="#">러브포인트</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <ul class="family site">
+                <li><a href="#">코레일 Family</a></li>
+                <li><a href="#">코레일 홈페이지</a></li>
+                <li><a href="#">물류정보</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">이사회 커뮤니티</a></li>
+                <li><a href="#">조달/입찰</a></li>
+                <li><a href="#">철도박물관</a></li>
+                <li><a href="#">코레일뉴스</a></li>
+                <li><a href="#">코레일웹진</a></li>
+            </ul>
+        </div>
+        <div class="F02">
+            <div class="logo">레츠코레일 로고</div>
+            <ul class="info">
+                <li>대표자 : 나희승</li>
+                <li>사호 : 한국철도공사</li>
+                <li>사업자등록 : 314-82-10024</li>
+                <li>통신판매업신고 : 대전동구-0233호</li>
+                <li>주소 : (34618) 대전광역시 동구 중앙로 240</li>
+                <li>TEL : 1544-7788</li>
+                <li>FAX : 02-361-8385</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

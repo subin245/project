@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 코레일 home pc */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+.inner {max-width: 1200px;}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.sec01,
+.sec02,
+.sec03,
+.sec04,
+.sec05,
+footer {
+    display : none;
+}
+
+/* header */
+/* header {
+    display: flex;
+    flex-direction: column;
+
+} */
+
+header .top .inner,
+header .nav .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .left.side {
+    display: flex;
+}
