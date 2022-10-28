@@ -60,98 +60,100 @@
     <div class="inner content">
         <!-- 할게 많네..? -->
         <div class="sec01">
-            <ul class="ticket">
-                <li><h5>일반승차권</h5></li>
-                <li><h5>할인승차권</h5></li>
-                <li><h5>4인동반석</h5></li>
-                <li><h5>관광열차</h5></li>
-            </ul>
-            <div class="select">
-                <div class="common">
-                    <ul class="tab">
-                        <li>직통</li>
-                        <li>환승</li>
-                        <li>왕복</li>
-                    </ul>
-                    <div class="direct">
-                        <div>출발역</div>
-                        <div>도착역</div>
-                        <div>가는날</div>
-                        <div>가는시간</div>
-                        <div>검색</div>
-                        <div class="option">
-                            <div>인접역포함</div>
-                            <ul class="tab">
-                                <li>전체</li>
-                                <li>KTX/SRT</li>
-                                <li>ITX-청춘</li>
-                                <li>새마을호/ITX-새마을</li>
-                                <li>무궁화호/누리호</li>
-                                <li>통근열차</li>
-                            </ul>
-                            <div>
-                                <div class="People">
-                                    <h5>인원정보</h5>
-                                    <p>어른 <input type="number" min="0" value="1"></p>
-                                    <p>만 6세~ 12세 <input type="number" min="0" value="0"></p>
-                                    <p>만 6세 미만 <input type="number" min="0" value="0"></p>
-                                    <p>민 65세이상 <input type="number" min="0" value="0"></p>
-                                </div>
-                                <div class="obstacle">
-                                    <h5>장애정도</h5>
-                                    <p>중증 <input type="number" min="0" value="0"></p>
-                                    <p>경증 <input type="number" min="0" value="0"></p>
-                                </div>
-                                <div class="seat">
-                                    <h5>좌석종류</h5>
-                                    <select name="seat" id="seatCommon">
-                                        <option value="">기본</option>
-                                        <option value="">1인석</option>
-                                        <option value="">창측좌석</option>
-                                        <option value="">내측좌석</option>
-                                    </select>
-                                    <select name="seat" id="seatDirection">
-                                        <option value="">좌석방향</option>
-                                        <option value="">순방향석</option>
-                                        <option value="">역방향석</option>
-                                    </select>
-                                    <select name="seat" id="seatAdd">
-                                        <option value="">기본</option>
-                                        <option value="">유아동반</option>
-                                        <option value="">편한대화</option>
-                                        <option value="">노트북</option>
-                                        <option value="">수동휠체어석</option>
-                                        <option value="">전동휠체어석</option>
-                                        <option value="">수유실인접</option>
-                                        <option value="">2층석</option>
-                                        <option value="">자전거거치대</option>
-                                    </select>
+            <div class="inner">
+                <ul class="ticket">
+                    <li><h5>일반승차권</h5></li>
+                    <li><h5>할인승차권</h5></li>
+                    <li><h5>4인동반석</h5></li>
+                    <li><h5>관광열차</h5></li>
+                </ul>
+                <div class="select">
+                    <div class="common">
+                        <ul class="tab">
+                            <li><a href="#">직통</a></li>
+                            <li><a href="#">환승</a></li>
+                            <li><a href="#">왕복</a></li>
+                        </ul>
+                        <div class="direct">
+                            <div>출발역</div>
+                            <div>도착역</div>
+                            <div>가는날</div>
+                            <div>가는시간</div>
+                            <div>검색</div>
+                            <div class="option">
+                                <div>인접역포함</div>
+                                <ul class="tab">
+                                    <li>전체</li>
+                                    <li>KTX/SRT</li>
+                                    <li>ITX-청춘</li>
+                                    <li>새마을호/ITX-새마을</li>
+                                    <li>무궁화호/누리호</li>
+                                    <li>통근열차</li>
+                                </ul>
+                                <div>
+                                    <div class="People">
+                                        <h5>인원정보</h5>
+                                        <p>어른 <input type="number" min="0" value="1"></p>
+                                        <p>만 6세~ 12세 <input type="number" min="0" value="0"></p>
+                                        <p>만 6세 미만 <input type="number" min="0" value="0"></p>
+                                        <p>민 65세이상 <input type="number" min="0" value="0"></p>
+                                    </div>
+                                    <div class="obstacle">
+                                        <h5>장애정도</h5>
+                                        <p>중증 <input type="number" min="0" value="0"></p>
+                                        <p>경증 <input type="number" min="0" value="0"></p>
+                                    </div>
+                                    <div class="seat">
+                                        <h5>좌석종류</h5>
+                                        <select name="seat" id="seatCommon">
+                                            <option value="">기본</option>
+                                            <option value="">1인석</option>
+                                            <option value="">창측좌석</option>
+                                            <option value="">내측좌석</option>
+                                        </select>
+                                        <select name="seat" id="seatDirection">
+                                            <option value="">좌석방향</option>
+                                            <option value="">순방향석</option>
+                                            <option value="">역방향석</option>
+                                        </select>
+                                        <select name="seat" id="seatAdd">
+                                            <option value="">기본</option>
+                                            <option value="">유아동반</option>
+                                            <option value="">편한대화</option>
+                                            <option value="">노트북</option>
+                                            <option value="">수동휠체어석</option>
+                                            <option value="">전동휠체어석</option>
+                                            <option value="">수유실인접</option>
+                                            <option value="">2층석</option>
+                                            <option value="">자전거거치대</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="transfer"></div>
+                        <div class="roundTrip"></div>
                     </div>
-                    <div class="transfer"></div>
-                    <div class="roundTrip"></div>
-                </div>
-                <div class="discont">
-                    <div class="1"></div>
-                    <div class="2"></div>
-                    <div class="3"></div>
-                    <div class="4"></div>
-                    <div class="5"></div>
-                    <div class="6"></div>
-                    <div class="7"></div>
-                </div>
-                <div class="fourGp">
-                    <h5>(아직내용안넣음)</h5>
-                </div>
-                <div class="trip">
-                    <div class="1"></div>
-                    <div class="2"></div>
-                    <div class="3"></div>
-                    <div class="4"></div>
-                    <div class="5"></div>
-                    <div class="6"></div>
+                    <div class="discont">
+                        <div class="1"></div>
+                        <div class="2"></div>
+                        <div class="3"></div>
+                        <div class="4"></div>
+                        <div class="5"></div>
+                        <div class="6"></div>
+                        <div class="7"></div>
+                    </div>
+                    <div class="fourGp">
+                        <h5>(아직내용안넣음)</h5>
+                    </div>
+                    <div class="trip">
+                        <div class="1"></div>
+                        <div class="2"></div>
+                        <div class="3"></div>
+                        <div class="4"></div>
+                        <div class="5"></div>
+                        <div class="6"></div>
+                    </div>
                 </div>
             </div>
         </div>
