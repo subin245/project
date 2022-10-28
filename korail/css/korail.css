@@ -28,12 +28,6 @@ h1 { font-weight: 700; font-size: 2.625rem;}
 h2 { font-weight: 500; font-size: 1.5rem;}
 h3 { font-weight: 400; font-size: 1.125rem;}
 
-.sec01 .ticket,
-.sec05 .Notice ul .Notice02,
-.sec05 .Notice ul .Notice03,
-footer {
-    display : none;
-}
 
 /* header */
 header .top {
@@ -68,7 +62,6 @@ header .nav .inner .logo{
 }
 
 header .nav .inner .menu {
-    height: 110px;
     margin: auto 0;
 }
 
@@ -109,12 +102,28 @@ header .side .right.side {
 } */
 
 /* .sec01 */
-.sec01 {
-    height: 850px;
+.sec01 { height: 850px;}
+/* /////////////////////////// */
+.sec01 .ticket .select .common .option,
+.sec01 .discont,
+.sec01 .fourGp,
+.sec01 .trip {
+    display : none;}
+/* /////////////////////////// */
+
+.sec01 .ticket {
+    display: flex;
 }
 
-/* .sec02 */
+.sec01 .ticket .select .common .tab {
+    display: flex;
+    flex-direction: row;
+}
 
+.sec01 .ticket .select .common .tab li{
+    display: inline-block;
+}
+/* .sec02 */
 .sec02 {
     overflow: hidden;
 }
@@ -249,6 +258,12 @@ header .side .right.side {
     gap: 20px;
 }
 
+/* ///////////////////////////// */
+.sec05 .Notice ul .Notice02,
+.sec05 .Notice ul .Notice03 {
+    display : none;}
+/* ///////////////////////////// */
+
 .sec05 .Notice {
     display: flex;
     flex-direction: column;
@@ -319,5 +334,24 @@ header .side .right.side {
     align-items: center;
     height: 72px;
     border-radius: 20px;
-
 }
+
+/* footer */
+footer {
+    background-color: #D7D7D7;
+    padding: 50px 0 ;
+}
+footer,
+footer .F01 .terms,
+footer .F02,
+footer .F02 .info {
+    display: flex
+}
+
+footer .F01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .F01 .family.site{display: none;}
