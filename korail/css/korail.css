@@ -12,25 +12,23 @@
 }
 
 .inner {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 auto;
 }
-a {
-    text-decoration: none;
-    color: #000;
-}
 
-li {
-    list-style: none;
-}
+a { text-decoration: none; color: #000;}
 
+li {list-style: none;}
 
-.sec01,
-.sec02,
-.sec03,
-.sec04,
+h1 { font-weight: 700; font-size: 2.625rem;}
+h2 { font-weight: 500; font-size: 1.5rem;}
+h3 { font-weight: 400; font-size: 1.125rem;}
+
+.sec01 .ticket,
 .sec05,
 footer {
     display : none;
@@ -43,7 +41,6 @@ header .top {
 
 header .top .inner,
 header .nav .inner{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -59,9 +56,117 @@ header .top .inner div a{
 } */
 
 header .nav .inner .logo{
-    background: url(/korail/img/logo/logo_temporary.svg) no-repeat / cover;
+    height: 110px;
+    width: 204px;
+    background: url(../img/logo/temporary.svg) no-repeat center;
+    text-indent: -999px;
+    overflow: hidden;
 }
 
-header .left.side {
+header .nav .inner .menu {
+    height: 110px;
+    margin: auto 0;
+}
+
+header .nav .inner .menu a{
+    display: inline-block;
+    padding: 20px;
+}
+
+header .nav .inner .menu a:last-child {margin : 0;}
+
+
+header .left.side,
+header .right.side {
     display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+/* .inner.content {
+    padding: 80px 0;
+} */
+
+/* .sec01 */
+.sec01 {
+    height: 850px;
+}
+
+/* .sec02 */
+
+.sec02 {
+    overflow: hidden;
+}
+
+.sec02 h3 {
+    margin: 25px 0;
+}
+
+.sec02 .train {
+    display: flex;
+    gap: 30px;
+}
+
+.sec02 .train a {
+    flex: 1 0 175px;
+    border-radius: 999px;
+    height: 175px;
+    color: #fff;
+    background-color: gray;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .sec03 */
+.sec03 .card{
+    display: flex;
+}
+.sec03 .card .nailro,
+.sec03 .card .traintrip {
+    flex: 0 0 1100px;
+    border-radius: 30px;
+    height: 540px;
+    background-color: bisque;
+    padding: 30px;
+}
+
+.sec03 .card .nailro .text.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec03 .card .nailro .text.card div{
+    padding: 30px;
+    color: #fff;
+    background-color: #62ADD0;
+    width: 330px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+/* .sec04 */
+.sec04 .list01 .card {
+    display: flex;
+    gap: 20px;
+}
+
+.sec04 .list01 .card div{
+    flex: 1;
+    height: 340px;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.sec04 .list02 .BT {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sec04 .list02 .BT a{
+    padding : 5px 20px;
+    border-radius: 999px;
 }
