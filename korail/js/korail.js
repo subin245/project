@@ -14,9 +14,10 @@ var swiper = new Swiper(".mySwiper01", {
 
 
   var swiper = new Swiper(".mySwiper02", {
+    slidesPerView: "auto",
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
-      dynamicBullets: true,
+      clickable: true,
     },
   });

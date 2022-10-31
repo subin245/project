@@ -34,7 +34,7 @@ h2 { font-weight: 500; font-size: 1.5rem;}
 h3 { font-weight: 400; font-size: 1.125rem;}
 
 
-/* header */
+/*  //////////header ////////// */
 
 
 header .top {
@@ -105,7 +105,7 @@ header .side .right.side {
 
 /* .event배경으로 깔린거 */
 .swiper.mySwiper01 {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
   }
 
@@ -137,22 +137,22 @@ header .side .right.side {
   }
   
 
-/* .sec01 */
+/*  //////////.sec01 ////////// */
 .sec01 { 
     position: relative;
 }
 
-/* /////////////////////////// */
+/*  */
 .sec01 .inner .select .common .option,
 .sec01 .inner .select .discont,
 .sec01 .inner .select .fourGp,
 .sec01 .inner .select .trip
 {display: none;}
 
-/* /////////////////////////// */
+/*  */
 
 
-/* .sec01 티켓버튼 */
+/* 티켓버튼 */
 .sec01 .inner{
     position: absolute;
     bottom: 0;
@@ -257,7 +257,7 @@ header .side .right.side {
 
 .sec01 .select .common .direct .button:hover {cursor: pointer;}
 
-/* .sec02 */
+/*  //////////.sec02 ////////// */
 .sec02 {
     overflow: hidden;
 }
@@ -284,35 +284,7 @@ header .side .right.side {
     align-items: center;
 }
 
-/* .sec03 */
-
-/* 스와이퍼 이전작업 */
-/* .sec03 .card{
-    display: flex;
-}
-.sec03 .card .nailro,
-.sec03 .card .traintrip {
-    flex: 0 0 1100px;
-    border-radius: 30px;
-    height: 540px;
-    background-color: bisque;
-    padding: 30px;
-}
-
-.sec03 .card .nailro .text.card {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sec03 .card .nailro .text.card div{
-    padding: 30px;
-    color: #fff;
-    background-color: #62ADD0;
-    width: 330px;
-    height: 280px;
-    border-radius: 20px;
-} */
-
+/* ////////// .sec03  //////////*/
 .sec03{
     position: relative;
 }
@@ -320,11 +292,9 @@ header .side .right.side {
 .swiper.mySwiper02 {
     width: 100%;
     height: 540px;
-    border-radius: 30px;
 }
 
 .swiper.mySwiper02 .swiper-slide {
-    background-color: #62ADD0;
     text-align: center;
     font-size: 18px;
 
@@ -350,7 +320,111 @@ header .side .right.side {
     object-fit: cover;
   }
 
-/* .sec04 */
+.swiper.mySwiper02 .swiper-slide:nth-child(1),
+.swiper.mySwiper02 .swiper-slide:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 1100px;
+    border-radius: 30px;
+    height: 540px;
+    background-color: bisque;
+    padding: 30px;
+}
+
+/* 내일로 두번째 이야기 */
+.swiper.mySwiper02 .swiper-slide:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/home/travel/nailo.png) no-repeat center /cover;
+    gap: 20px;
+    color: #fff;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(1) h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(1) p {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div{
+    padding: 20px;
+    color: #fff;
+    background-color: #62ADD0;
+    width: 330px;
+    height: 240px;
+    border-radius: 20px;
+}
+.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div h5{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div p{
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* 기차여행 만들기 */
+.swiper.mySwiper02 .swiper-slide:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/home/travel/train_trip.png) no-repeat center /cover;
+    gap: 20px;
+    color: #fff;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) h6 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 60px;
+    text-align: center;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) .icon.gp {
+    width: 782.82px;
+    height: 215.82px;
+    background: url(../img/home/travel/train_trip_icon.png);
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) h5 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) h4 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: underline;
+    color: #D91A1A;
+}
+
+/* //////////.sec04////////// */
+.sec04 .list01{
+    margin-bottom: 80px;
+}
+
+.sec04 .list01 h2,
+.sec04 .list02 .BT{margin: 25px 0;}
+
 .sec04 .list01 .card {
     display: flex;
     gap: 20px;
@@ -359,8 +433,16 @@ header .side .right.side {
 .sec04 .list01 .card div{
     flex: 1;
     height: 340px;
-    background-color: gray;
     border-radius: 30px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.sec04 .list01 .card div:nth-child(1) {
+    background: url(../img/home/package/service/railtel.JPG) no-repeat 50% 10% / cover;
+}
+.sec04 .list01 .card div:nth-child(2) {
+    background: url(../img/home/package/service/railship.JPG) no-repeat 50% 0 / cover;
 }
 
 .sec04 .list02 .BT {
@@ -424,18 +506,18 @@ header .side .right.side {
 .sec04 .list02 .pkg > div .txt .bottom .price .won{font-weight: 400; font-size: 1.125rem;}
 .sec04 .list02 .pkg > div .txt .bottom .inquiry{font-weight: 400; font-size: 0.9375rem; line-height: 33px; color: #616161;}
 
-/* .sec05 */
+/*  //////////.sec05 ////////// */
 .sec05 {
     display: flex;
     align-items: flex-end;
     gap: 20px;
 }
 
-/* ///////////////////////////// */
+/*  */
 .sec05 .Notice ul .Notice02,
 .sec05 .Notice ul .Notice03 {
     display : none;}
-/* ///////////////////////////// */
+/* */
 
 .sec05 .Notice {
     display: flex;
@@ -473,7 +555,7 @@ header .side .right.side {
     font-size: 0.9px;
 }
 
-/* //////////////////////// */
+/* 상담 2nd section */
 
 .sec05 .consult {
     display: flex;
@@ -492,7 +574,7 @@ header .side .right.side {
     padding: 20px;
 }
 
-/* //////////////////////// */
+/* 버튼 3rd section */
 
 .sec05 .bt {
     display: flex;
@@ -502,14 +584,14 @@ header .side .right.side {
 }
 .sec05 .bt a {
     display: flex;
-    flex: 1 1 180px;
+    flex: 1 1 40%;
     justify-content: center;
     align-items: center;
     height: 72px;
     border-radius: 20px;
 }
 
-/* footer */
+/* ////////// footer ////////// */
 footer {
     background-color: #D7D7D7;
     padding: 50px 0 ;
