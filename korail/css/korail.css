@@ -12,6 +12,7 @@
 }
 
 body {min-width: 1024px;}
+
 .inner {
     display: flex;
     flex-direction: column;
@@ -19,6 +20,7 @@ body {min-width: 1024px;}
     text-align: center;
     /* align-items: center; */
     margin: 0 auto;
+    position: relative;
 }
 
 .inner.content { gap: 80px;}
@@ -101,24 +103,64 @@ header .side .right.side {
     right: 0;
 }  
 
+/* .event배경으로 깔린거 */
+.swiper.mySwiper01 {
+    width: 100vw;
+    height: 80vh;
+  }
+
+.swiper.mySwiper01 .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper.mySwiper01 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper.mySwiper01 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
 /* .sec01 */
-.sec01 { height: 850px;}
-.sec01 .inner{
-    position: absolute;
-    bottom: 0;
-    width: 1160px;
+.sec01 { 
+    position: relative;
 }
 
 /* /////////////////////////// */
-.sec01 .select .common .direct .option{display: none;}
+.sec01 .inner .select .common .option,
+.sec01 .inner .select .discont,
+.sec01 .inner .select .fourGp,
+.sec01 .inner .select .trip
+{display: none;}
 
-.sec01 .discont,
-.sec01 .fourGp,
-.sec01 .trip {
-    display : none;}
 /* /////////////////////////// */
 
+
+/* .sec01 티켓버튼 */
+.sec01 .inner{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+    margin-bottom: 30px;
+}
 .sec01 .ticket { 
     display: flex;
 }
@@ -141,8 +183,7 @@ header .side .right.side {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1160px;
-    height: 290px;
+    padding: 30px;
     background-color: #fff;
     border-radius: 0 30px 30px 30px;
 }
@@ -162,17 +203,25 @@ header .side .right.side {
     font-weight: 600;
     font-size: 1.3125rem;
 }
-.sec01 .select .common .direct{
-    display: flex;
-    width: 1124px;
-    padding: 30px 20px 20px 20px;
-    gap: 30px;
 
+.sec01 .select .common .direct {
+    display: flex;
+    flex-direction: column;
     border-radius: 0 30px 30px 30px;
-    background-color: #62ADD0
+    background-color: #62ADD0;
+    padding: 30px 20px 15px 20px;
+    gap: 20px;
 }
 
-.sec01 .select .common .direct div {
+.sec01 .select .common .direct .basic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1124px;
+    gap: 30px;
+}
+
+.sec01 .select .common .direct .basic div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,8 +231,8 @@ header .side .right.side {
     font-weight: 600;
     font-size: 1.125rem;
 }
-.sec01 .select .common .direct .D03 {
-    width: 180px;
+.sec01 .select .common .direct .basic .D03 {
+    width: 150px;
     height: 120px;
     background-color: #093B82;
     color: #fff;
@@ -193,13 +242,20 @@ header .side .right.side {
     font-size: 1.5rem;
 }
 
-.sec01 .select .common .direct div div{
-    width: 435px;
+.sec01 .select .common .direct .basic div div{
+    width: 420px;
     height: 50px;
     border-radius: 10px;
     background-color: #fff;
 }
 
+.sec01 .select .common .direct .button {
+    background: url(../img/home/event/ticket/option_arrow.png) no-repeat center;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sec01 .select .common .direct .button:hover {cursor: pointer;}
 
 /* .sec02 */
 .sec02 {
@@ -229,7 +285,9 @@ header .side .right.side {
 }
 
 /* .sec03 */
-.sec03 .card{
+
+/* 스와이퍼 이전작업 */
+/* .sec03 .card{
     display: flex;
 }
 .sec03 .card .nailro,
@@ -253,7 +311,44 @@ header .side .right.side {
     width: 330px;
     height: 280px;
     border-radius: 20px;
+} */
+
+.sec03{
+    position: relative;
 }
+
+.swiper.mySwiper02 {
+    width: 100%;
+    height: 540px;
+    border-radius: 30px;
+}
+
+.swiper.mySwiper02 .swiper-slide {
+    background-color: #62ADD0;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper.mySwiper02 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 /* .sec04 */
 .sec04 .list01 .card {

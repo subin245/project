@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>Let's Korail</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="../korail/css/korail.css">
 </head>
 
@@ -57,6 +60,18 @@
             </div>
         </div>
     </header>
+    <div class="swiper mySwiper01">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../korail/img/home/event/event01.png" alt="댕댕이랑 기차여행"></div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div> -->
+    </div>
     <div class="inner content">
         <!-- 할게 많네..? -->
         <div class="sec01">
@@ -75,15 +90,18 @@
                             <li><a href="#">왕복</a></li>
                         </ul>
                         <div class="direct">
-                            <div class="D01">
-                                <div>출발역</div>
-                                <div>가는날</div>
+                            <div class="basic">
+                                <div class="D01">
+                                    <div>출발역</div>
+                                    <div>가는날</div>
+                                </div>
+                                <div class="D02">
+                                    <div>도착역</div>
+                                    <div>가는시간</div>
+                                </div>
+                                <div class="D03">검색</div>
                             </div>
-                            <div class="D02">
-                                <div>도착역</div>
-                                <div>가는시간</div>
-                            </div>
-                            <div class="D03">검색</div>
+                            <div class="button">option</div>
                             <div class="option">
                                 <div>인접역포함</div>
                                 <ul class="tab">
@@ -177,7 +195,18 @@
         <div class="sec03">
             <h1>자유여행</h1>
             <h3>가고싶은 곳으로 자유롭게 떠나는 여행</h3>
-            <div class="card">
+            <div class="swiper mySwiper02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    내일로 두번째 이야기
+                  </div>
+                  <div class="swiper-slide">
+                    국내 최초 실시간 기차예약
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            <!-- <div class="card">
                 <div class="nailro">
                     <h1>내일로 두번째 이야기</h1>
                     <p>전 국민 누구나 즐기는 7일간의 자유여행!<br>
@@ -220,7 +249,7 @@
                     <h5>렌터카를 포함하여 예약시 추가할인 5,000원!</h5>
                     <h4>최대 35%할인 받으러가기</h4>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="sec04">
             <div class="list01">
@@ -413,6 +442,12 @@
             </div>
         </div>
     </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../korail/js/korail.js"></script>
 </body>
 
 </html>
