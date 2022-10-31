@@ -7,10 +7,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+body {min-width: 1024px;}
 .inner {
     display: flex;
     flex-direction: column;
@@ -19,6 +20,8 @@
     /* align-items: center; */
     margin: 0 auto;
 }
+
+.inner.content { gap: 80px;}
 
 a { text-decoration: none; color: #000;}
 
@@ -30,6 +33,8 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 
 
 /* header */
+
+
 header .top {
     background-color: #093B82;
 }
@@ -114,16 +119,85 @@ header .side .right.side {
     display : none;}
 /* /////////////////////////// */
 
-.sec01 .ticket {
+.sec01 .ticket { 
     display: flex;
+}
+
+.sec01 .ticket li h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 1.3125rem;
+
+    border-radius: 30px 30px 0 0;
+    background-color: #093B82;
+    color: #fff;
+}
+.sec01 .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1160px;
+    height: 290px;
+    background-color: #fff;
+    border-radius: 0 30px 30px 30px;
 }
 
 .sec01 .select .common .tab {
     display: flex;
-    flex-direction: row;
+}
+.sec01 .select .common .tab li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    background-color: #D4EBF6;
+    border-radius: 20px 20px 0 0;
+
+    font-weight: 600;
+    font-size: 1.3125rem;
 }
 .sec01 .select .common .direct{
     display: flex;
+    width: 1124px;
+    padding: 30px 20px 20px 20px;
+    gap: 30px;
+
+    border-radius: 0 30px 30px 30px;
+    background-color: #62ADD0
+}
+
+.sec01 .select .common .direct div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.sec01 .select .common .direct .D03 {
+    width: 180px;
+    height: 120px;
+    background-color: #093B82;
+    color: #fff;
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.sec01 .select .common .direct div div{
+    width: 435px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 
@@ -359,3 +433,7 @@ footer .F01 {
 
 
 footer .F01 .family.site{display: none;}
+
+
+/* ///////////////////////////////////////// */
+header .side {display:none;}
