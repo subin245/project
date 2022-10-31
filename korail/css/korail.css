@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -266,35 +266,90 @@ header .side .right.side {
     margin: 25px 0;
 }
 
-.sec02 .train {
-    display: flex;
-    gap: 30px;
-}
+.swiper.mySwiper02 {
+    width: 100%;
+    height: 100%;
+  }
 
-.sec02 .train a {
-    flex: 1 0 175px;
+.swiper.mySwiper02 .swiper-slide {
     border-radius: 999px;
     height: 175px;
     color: #fff;
     background-color: gray;
-    margin: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper.mySwiper02 .swiper-slide:nth-child(1) {
+    background: url(../img/home/train/Train_east_sea_santa_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
 }
+
+.swiper.mySwiper02 .swiper-slide:nth-child(2) {
+    background: url(../img/home/train/Train_west_gold_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(3) {
+    background: url(../img/home/train/Train_V_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(4) {
+    background: url(../img/home/train/Train_S_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(5) {
+    background: url(../img/home/train/Train_A_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(6) {
+    background: url(../img/home/train/Train_sea_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.swiper.mySwiper02 .swiper-slide:nth-child(7) {
+    background: url(../img/home/train/Train_gugak_wine_thum.JPG) no-repeat center / cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/* .swiper.mySwiper02 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
 
 /* ////////// .sec03  //////////*/
-.sec03{
-    position: relative;
-}
+.sec03{position: relative;}
 
-.swiper.mySwiper02 {
+.sec03 h3 { margin: 25px 0}
+
+.swiper.mySwiper03 {
     width: 100%;
     height: 540px;
 }
 
-.swiper.mySwiper02 .swiper-slide {
+.swiper.mySwiper03 .swiper-slide {
     text-align: center;
     font-size: 18px;
 
@@ -313,15 +368,15 @@ header .side .right.side {
     align-items: center;
   }
 
-  .swiper.mySwiper02 .swiper-slide img {
+  .swiper.mySwiper03 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(1),
-.swiper.mySwiper02 .swiper-slide:nth-child(2) {
+.swiper.mySwiper03 .swiper-slide:nth-child(1),
+.swiper.mySwiper03 .swiper-slide:nth-child(2) {
     display: flex;
     flex-direction: column;
     flex: 0 0 1100px;
@@ -332,7 +387,7 @@ header .side .right.side {
 }
 
 /* 내일로 두번째 이야기 */
-.swiper.mySwiper02 .swiper-slide:nth-child(1) {
+.swiper.mySwiper03 .swiper-slide:nth-child(1) {
     display: flex;
     flex-direction: column;
     background: url(../img/home/travel/nailo.png) no-repeat center /cover;
@@ -340,25 +395,25 @@ header .side .right.side {
     color: #fff;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(1) h1 {
+.swiper.mySwiper03 .swiper-slide:nth-child(1) h1 {
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(1) p {
+.swiper.mySwiper03 .swiper-slide:nth-child(1) p {
     font-weight: 300;
     font-size: 0.9rem;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card {
+.swiper.mySwiper03 .swiper-slide:nth-child(1) .text.card {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 50px;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div{
+.swiper.mySwiper03 .swiper-slide:nth-child(1) .text.card div{
     padding: 20px;
     color: #fff;
     background-color: #62ADD0;
@@ -366,11 +421,11 @@ header .side .right.side {
     height: 240px;
     border-radius: 20px;
 }
-.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div h5{
+.swiper.mySwiper03 .swiper-slide:nth-child(1) .text.card div h5{
     font-weight: 700;
     font-size: 1.7rem;
 }
-.swiper.mySwiper02 .swiper-slide:nth-child(1) .text.card div p{
+.swiper.mySwiper03 .swiper-slide:nth-child(1) .text.card div p{
     font-weight: 200;
     font-size: 1rem;
     text-align: left;
@@ -378,7 +433,7 @@ header .side .right.side {
 }
 
 /* 기차여행 만들기 */
-.swiper.mySwiper02 .swiper-slide:nth-child(2) {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) {
     display: flex;
     flex-direction: column;
     background: url(../img/home/travel/train_trip.png) no-repeat center /cover;
@@ -386,31 +441,31 @@ header .side .right.side {
     color: #fff;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(2) h6 {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) h6 {
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 60px;
     text-align: center;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(2) h1 {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) h1 {
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(2) .icon.gp {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) .icon.gp {
     width: 782.82px;
     height: 215.82px;
     background: url(../img/home/travel/train_trip_icon.png);
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(2) h5 {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) h5 {
     font-weight: 500;
     font-size: 0.9rem;
 }
 
-.swiper.mySwiper02 .swiper-slide:nth-child(2) h4 {
+.swiper.mySwiper03 .swiper-slide:nth-child(2) h4 {
     font-weight: 600;
     font-size: 2.1rem;
     text-decoration: underline;
