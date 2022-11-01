@@ -23,14 +23,14 @@ body {min-width: 1024px;}
     position: relative;
 }
 
-.inner.content { gap: 80px;}
+.inner.content { gap: 100px;}
 
 a { text-decoration: none; color: #000;}
 
 li {list-style: none;}
 
-h1 { font-weight: 700; font-size: 2.625rem;}
-h2 { font-weight: 500; font-size: 1.5rem;}
+h1 { font-weight: 700; font-size: 2.1rem;}
+h2 { font-weight: 400; font-size: 1.1rem;}
 h3 { font-weight: 400; font-size: 1.125rem;}
 
 
@@ -80,7 +80,6 @@ header .nav .inner .menu a{
 header .nav .inner .menu a:last-child {margin : 0;}
 
 header .side {
-    /* width: 1200px; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -170,12 +169,12 @@ header .side .right.side {
     align-items: center;
     justify-content: center;
 
-    width: 180px;
-    height: 60px;
-    font-weight: 600;
-    font-size: 1.3125rem;
+    width: 160px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 1.2rem;
 
-    border-radius: 30px 30px 0 0;
+    border-radius: 10px 10px 0 0;
     background-color: #093B82;
     color: #fff;
 }
@@ -183,42 +182,38 @@ header .side .right.side {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px 30px;
     background-color: #fff;
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 10px 10px 10px;
 }
 
 .sec01 .select .common .tab {
     display: flex;
+    gap: 30px;
 }
 .sec01 .select .common .tab li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 45px;
-    background-color: #D4EBF6;
-    border-radius: 20px 20px 0 0;
 
-    font-weight: 600;
-    font-size: 1.3125rem;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .sec01 .select .common .direct {
     display: flex;
     flex-direction: column;
-    border-radius: 0 30px 30px 30px;
-    background-color: #62ADD0;
-    padding: 30px 20px 15px 20px;
-    gap: 20px;
+    border-radius: 0 10px 10px 10px;
+
 }
 
 .sec01 .select .common .direct .basic{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1124px;
-    gap: 30px;
+    padding: 10px 0;
+    /* width: 1124px; */
+    gap: 15px;
 }
 
 .sec01 .select .common .direct .basic div {
@@ -228,31 +223,34 @@ header .side .right.side {
     align-items: center;
     gap: 20px;
 
-    font-weight: 600;
-    font-size: 1.125rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #00000090;
 }
 .sec01 .select .common .direct .basic .D03 {
     width: 150px;
     height: 120px;
     background-color: #093B82;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
 
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .sec01 .select .common .direct .basic div div{
-    width: 420px;
+    width: 400px;
     height: 50px;
-    border-radius: 10px;
-    background-color: #fff;
+    /* border: 0.5px solid #00000020; */
+    border-radius: 5px;
+    background-color: #62ADD030;
 }
 
 .sec01 .select .common .direct .button {
     background: url(../img/home/event/ticket/option_arrow.png) no-repeat center;
     text-indent: -9999px;
     overflow: hidden;
+    background-color: #093B8210;
 }
 
 .sec01 .select .common .direct .button:hover {cursor: pointer;}
@@ -262,9 +260,7 @@ header .side .right.side {
     overflow: hidden;
 }
 
-.sec02 h3 {
-    margin: 25px 0;
-}
+.sec02 h3 {margin: 10px 0 35px 0;}
 
 .swiper.mySwiper02 {
     width: 100%;
@@ -342,7 +338,7 @@ header .side .right.side {
 /* ////////// .sec03  //////////*/
 .sec03{position: relative;}
 
-.sec03 h3 { margin: 25px 0}
+.sec03 h3 {margin: 10px 0 35px 0;}
 
 .swiper.mySwiper03 {
     width: 100%;
@@ -474,11 +470,11 @@ header .side .right.side {
 
 /* //////////.sec04////////// */
 .sec04 .list01{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .sec04 .list01 h2,
-.sec04 .list02 .BT{margin: 25px 0;}
+.sec04 .list02 .BT{margin: 10px 0 35px 0;}
 
 .sec04 .list01 .card {
     display: flex;
@@ -508,48 +504,51 @@ header .side .right.side {
 
 .sec04 .list02 .BT a{
     padding : 5px 20px;
+    border: 0.5px solid #00000020;
     border-radius: 999px;
 }
 
 .sec04 .list02 .pkg {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .sec04 .list02 .pkg > div {
-    padding: 30px;
-    border-radius: 30px;
-    background-color: aliceblue;
-    gap: 20px;
+    padding: 20px;
+    border: 0.5px solid #00000020;
+    border-radius: 10px;
 }
 
 .sec04 .list02 .pkg > div img {
     height: 255px;
     width: 325px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .sec04 .list02 .pkg > div .txt {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    /* height: 120px; */
     justify-content: space-between;
     text-align: start;
+    margin-top: 10px;
 }
 
 .sec04 .list02 .pkg > div .txt .top h3 {font-weight: 700; font-size: 1.3rem;}
 
 .sec04 .list02 .pkg > div .txt .tag.box {
     display: flex;
-    gap: 10px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-weight: 400;
     font-size: 0.9rem;
+    color: #00000090;
 }
 .sec04 .list02 .pkg > div .txt .bottom{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 5px;
 }
 .sec04 .list02 .pkg > div .txt .bottom .price{
     display: flex;
@@ -557,22 +556,17 @@ header .side .right.side {
     gap: 5px;
 }
 
-.sec04 .list02 .pkg > div .txt .bottom .price .number{font-weight: 400; font-size: 2.625rem;}
-.sec04 .list02 .pkg > div .txt .bottom .price .won{font-weight: 400; font-size: 1.125rem;}
-.sec04 .list02 .pkg > div .txt .bottom .inquiry{font-weight: 400; font-size: 0.9375rem; line-height: 33px; color: #616161;}
+.sec04 .list02 .pkg > div .txt .bottom .price .number{font-weight: 700; font-size: 2.4rem;}
+.sec04 .list02 .pkg > div .txt .bottom .price .won{font-weight: 400; font-size: 1.2rem;line-height: 40px;}
+.sec04 .list02 .pkg > div .txt .bottom .inquiry{font-weight: 400; font-size: 0.8rem; line-height: 40px; color: #616161;}
 
 /*  //////////.sec05 ////////// */
 .sec05 {
     display: flex;
     align-items: flex-end;
     gap: 20px;
+    margin-bottom:100px ;
 }
-
-/*  */
-.sec05 .Notice ul .Notice02,
-.sec05 .Notice ul .Notice03 {
-    display : none;}
-/* */
 
 .sec05 .Notice {
     display: flex;
@@ -586,47 +580,95 @@ header .side .right.side {
 
 .sec05 .Notice .tab li h5{
     display: flex;
-    font-weight: 900;
-    font-size: 1.125px;
-    border-radius: 20px 20px 0 0;
-    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+    background-color: #D7D7D7;
 }
 
 .sec05 .Notice .content{
     background-color: #093B82;
     display: flex;
     text-align: start;
-    border-radius: 0 20px 20px 20px;
-    padding: 20px;
+    height: 210px;
+    border-radius: 0 10px 10px 10px;
+    /* padding: 20px; */
 }
 
-.sec05 .Notice .content li ul {
-    width: 437px;
+.sec05 .Notice .content > div {
+    width: 100%;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.sec05 .Notice .content li ul li a{
+.sec05 .Notice .content div div:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background-color: #ffffff50;
+    margin: 5px 0;
+}
+
+.sec05 .Notice .content div div a{
     color: #fff;
-    font-weight: 400;
-    font-size: 0.9px;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
+/*  */
+.sec05 .Notice div .Notice02,
+.sec05 .Notice div .Notice03 {
+    display : none;}
+/* */
+
 
 /* 상담 2nd section */
 
 .sec05 .consult {
+    width: 285px;
+    height: 210px;
     display: flex;
     flex-direction: column;
-    width: 285px;
+    justify-content: center;
     background-color: #62ADD0;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .sec05 .consult .call{
     display: flex;
-    width: 285px;
+    width: 243px;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+}
+
+.sec05 .consult .call div h5 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.sec05 .consult .call div p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.sec05 .consult .time{
+    margin-top: 10px;
+}
+
+.sec05 .consult .time h5 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.sec05 .consult .time p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
 /* 버튼 3rd section */
@@ -642,8 +684,10 @@ header .side .right.side {
     flex: 1 1 40%;
     justify-content: center;
     align-items: center;
-    height: 72px;
-    border-radius: 20px;
+    height: 60px;
+
+    border: 0.5px solid #00000020;
+    border-radius: 15px;
 }
 
 /* ////////// footer ////////// */
@@ -651,7 +695,7 @@ footer {
     background-color: #D7D7D7;
     padding: 50px 0 ;
 }
-footer,
+
 footer .F01 .terms,
 footer .F02,
 footer .F02 .info {
@@ -662,6 +706,35 @@ footer .F01 {
     display: flex;
     justify-content: space-between;
 }
+
+footer .F01 .terms {
+    font-weight: 500;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+
+footer .F02{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+footer .F02 .logo{
+    width: 204px;
+    background: url(../img/logo/temporary.svg) no-repeat center;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+footer .F02 .info {
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 0.8rem;
+    gap: 10px;
+} 
 
 
 footer .F01 .family.site{display: none;}
