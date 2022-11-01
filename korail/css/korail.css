@@ -105,7 +105,7 @@ header .side .right.side {
 /* .event배경으로 깔린거 */
 .swiper.mySwiper01 {
     width: 100%;
-    height: 80vh;
+    height: 720px;
   }
 
 .swiper.mySwiper01 .swiper-slide {
