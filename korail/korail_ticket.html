@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>Let's Korail</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../korail/css/korail_ticket.css">
+</head>
+
+<body>
+    <header> 
+        <div class="top">
+            <div class="inner">
+                <div class="left">
+                    <a href="#">코레일 홈페이지</a>
+                    <a href="#">기업은행</a>
+                </div>
+                <div class="right">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                    <select name="lang" id="lang">
+                        <option>언어</option>
+                        <option>한국어</option>
+                        <option>English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="inner">
+                <a href="../korail/korail.html" class="logo">logo</a>
+                <div class="menu">
+                    <a href="#">승차권예매</a>
+                    <a href="#">관광열차</a>
+                    <a href="#">자유여행</a>
+                    <a href="#">여행상품</a>
+                    <a href="#">코레일소식</a>
+                    <a href="#">전체메뉴</a>
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="left side">
+                <a href="#">페이스북</a>
+                <a href="#">유투브</a>
+                <a href="#">인스타그램</a>
+                <a href="#">블로그</a>
+                <a href="#">트위터</a>
+            </div>
+            <div class="right side">
+                <a href="#">종합이용안내</a>
+                <a href="#">코레일멤버십</a>
+                <a href="#">기차역정보</a>
+                <a href="#">노선정보</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="inner content">
+        <div class="title">
+            <div>
+            <p><a href="../korail/korail.html">홈</a> > <a href="#">승차권예매</a></p>
+            <p>(rul공유)</p>
+        </div>
+        <h1>승차권 예매</h1>
+
+        </div>
+        <div class="sec01">
+            <div class="inner">
+                <ul class="ticket">
+                    <li><h5>일반승차권</h5></li>
+                    <li><h5>할인승차권</h5></li>
+                    <li><h5>4인동반석</h5></li>
+                    <li><h5>관광열차</h5></li>
+                </ul>
+                <div class="select">
+                    <div class="common">
+                        <ul class="tab">
+                            <li><a href="#">직통</a></li>
+                            <li><a href="#">환승</a></li>
+                            <li><a href="#">왕복</a></li>
+                        </ul>
+                        <div class="direct">
+                            <div class="basic">
+                                <div class="D01">
+                                    <div>출발역</div>
+                                    <div>가는날</div>
+                                </div>
+                                <div class="D02">
+                                    <div>도착역</div>
+                                    <div>가는시간</div>
+                                </div>
+                                <div class="D03">검색</div>
+                            </div>
+                            <div class="button">option</div>
+                            <div class="option">
+                                <div>인접역포함</div>
+                                <ul class="tab">
+                                    <li>전체</li>
+                                    <li>KTX/SRT</li>
+                                    <li>ITX-청춘</li>
+                                    <li>새마을호/ITX-새마을</li>
+                                    <li>무궁화호/누리호</li>
+                                    <li>통근열차</li>
+                                </ul>
+                                <div>
+                                    <div class="People">
+                                        <h5>인원정보</h5>
+                                        <p>어른 <input type="number" min="0" value="1"></p>
+                                        <p>만 6세~ 12세 <input type="number" min="0" value="0"></p>
+                                        <p>만 6세 미만 <input type="number" min="0" value="0"></p>
+                                        <p>민 65세이상 <input type="number" min="0" value="0"></p>
+                                    </div>
+                                    <div class="obstacle">
+                                        <h5>장애정도</h5>
+                                        <p>중증 <input type="number" min="0" value="0"></p>
+                                        <p>경증 <input type="number" min="0" value="0"></p>
+                                    </div>
+                                    <div class="seat">
+                                        <h5>좌석종류</h5>
+                                        <select name="seat" id="seatCommon">
+                                            <option value="">기본</option>
+                                            <option value="">1인석</option>
+                                            <option value="">창측좌석</option>
+                                            <option value="">내측좌석</option>
+                                        </select>
+                                        <select name="seat" id="seatDirection">
+                                            <option value="">좌석방향</option>
+                                            <option value="">순방향석</option>
+                                            <option value="">역방향석</option>
+                                        </select>
+                                        <select name="seat" id="seatAdd">
+                                            <option value="">기본</option>
+                                            <option value="">유아동반</option>
+                                            <option value="">편한대화</option>
+                                            <option value="">노트북</option>
+                                            <option value="">수동휠체어석</option>
+                                            <option value="">전동휠체어석</option>
+                                            <option value="">수유실인접</option>
+                                            <option value="">2층석</option>
+                                            <option value="">자전거거치대</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transfer"></div>
+                        <div class="roundTrip"></div>
+                    </div>
+                    <div class="discont">
+                        <div class="1"></div>
+                        <div class="2"></div>
+                        <div class="3"></div>
+                        <div class="4"></div>
+                        <div class="5"></div>
+                        <div class="6"></div>
+                        <div class="7"></div>
+                    </div>
+                    <div class="fourGp">
+                        <h5>(아직내용안넣음)</h5>
+                    </div>
+                    <div class="trip">
+                        <div class="1"></div>
+                        <div class="2"></div>
+                        <div class="3"></div>
+                        <div class="4"></div>
+                        <div class="5"></div>
+                        <div class="6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec02">
+            <div class="Frame F01">
+                <h1>서울</h1>
+                <h1> -> </h1>
+                <h1>부산</h1>
+            </div>
+            <div class="Frame F02">표</div>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="F01">
+                <ul class="terms">
+                    <li><a href="#">고객서비스 현장</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">홈페이지이용약관</a></li>
+                    <li><a href="#">여객운송약관/부속약관</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">러브포인트</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+                <ul class="family site">
+                    <li><a href="#">코레일 Family</a></li>
+                    <li><a href="#">코레일 홈페이지</a></li>
+                    <li><a href="#">물류정보</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">이사회 커뮤니티</a></li>
+                    <li><a href="#">조달/입찰</a></li>
+                    <li><a href="#">철도박물관</a></li>
+                    <li><a href="#">코레일뉴스</a></li>
+                    <li><a href="#">코레일웹진</a></li>
+                </ul>
+            </div>
+            <div class="F02">
+                <div class="logo">레츠코레일 로고</div>
+                <div class="info">
+                    <div>대표자 : 나희승</div>
+                    <div>사호 : 한국철도공사</div>
+                    <div>사업자등록 : 314-82-10024</div>
+                    <div>통신판매업신고 : 대전동구-0233호</div>
+                    <div>주소 : (34618) 대전광역시 동구 중앙로 240</div>
+                    <div>TEL : 1544-7788</div>
+                    <div>FAX : 02-361-8385</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../korail/js/korail.js"></script>
+</body>
+
+</html>
