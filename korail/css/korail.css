@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -18,7 +18,6 @@ body {min-width: 1024px;}
     flex-direction: column;
     max-width: 1200px;
     text-align: center;
-    /* align-items: center; */
     margin: 0 auto;
     position: relative;
 }
@@ -55,11 +54,10 @@ header .top .inner div a{
     font-size: 0.75rem;
 }
 
-/* header .top .inner div a::after{
-
-} */
+/* nav */
 header .nav .inner {
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
@@ -79,6 +77,7 @@ header .nav .inner .Lmenu .logo {
 }
 
 header .nav .inner .Lmenu .menu {
+    display: flex;
     margin: auto 0;
 }
 
@@ -89,23 +88,65 @@ header .nav .inner .Lmenu .menu a{
 
 header .nav .inner .Lmenu .menu a:last-child {margin : 0;}
 
-/* #Mmenu */
-#Mmenu > ul {
+header .nav .inner .Lmenu .menu div a {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+header .nav .inner .Lmenu .menu > div.on > a,
+header .nav .inner .Lmenu .menu > div:hover > a {
+    color: #093B82;
+    border-bottom: 2px solid #093B82;
+}
+
+
+/* 메뉴속 메뉴.. */
+/* #MenuTicket01 */
+#MenuTicket01 {display: none;}
+
+#MenuTicket01.on {
     display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     justify-content: center;
-    gap: 20px;
+    gap: 0;
+    z-index: 2;
+    background-color: #eeeeee;
 }
 
-#Mmenu > ul > li {
-    width: 200px;
+#MenuTicket01.on > li {
+    width: 240px;
+    margin: 20px 0;
+    text-align: center;
+}
+#MenuTicket01.on li h1 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+#MenuTicket01.on div:hover,
+#MenuTicket01.on > li:hover > div > ul > li > a:hover {
+    color: #093B82;
 }
 
-#Mmenu ul li ul{
+#MenuTicket01.on li ul{
+    display: none;
+}
+
+#MenuTicket01.on li:hover ul{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
 }
 
+#MenuTicket01.on > li:hover > div > ul > li > a{
+    padding: 0;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
 
 
 

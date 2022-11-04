@@ -1,5 +1,10 @@
-
-
+// nav
+$(function () {
+  $("#frame01").hover(function () {
+    $(this).toggleClass('on');
+    $(this).children("ul").toggleClass('on');
+  });
+});
 
 // sec01 이벤트 베너
 var swiper = new Swiper(".mySwiper01", {
