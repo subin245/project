@@ -1,6 +1,6 @@
 // nav
 $(function () {
-  $("#frame01").hover(function () {
+  $("#menu").children("div").hover(function () {
     $(this).toggleClass('on');
     $(this).children("ul").toggleClass('on');
   });

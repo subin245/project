@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -76,25 +76,25 @@ header .nav .inner .Lmenu .logo {
     overflow: hidden;
 }
 
-header .nav .inner .Lmenu .menu {
+header .nav .inner .Lmenu #menu {
     display: flex;
     margin: auto 0;
 }
 
-header .nav .inner .Lmenu .menu a{
+header .nav .inner .Lmenu #menu a{
     display: inline-block;
     padding: 20px;
 }
 
-header .nav .inner .Lmenu .menu a:last-child {margin : 0;}
+header .nav .inner .Lmenu #menu a:last-child {margin : 0;}
 
-header .nav .inner .Lmenu .menu div a {
+header .nav .inner .Lmenu #menu div a {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
-header .nav .inner .Lmenu .menu > div.on > a,
-header .nav .inner .Lmenu .menu > div:hover > a {
+header .nav .inner .Lmenu #menu > div.on > a,
+header .nav .inner .Lmenu #menu > div:hover > a {
     color: #093B82;
     border-bottom: 2px solid #093B82;
 }
@@ -102,9 +102,9 @@ header .nav .inner .Lmenu .menu > div:hover > a {
 
 /* 메뉴속 메뉴.. */
 /* #MenuTicket01 */
-#MenuTicket01 {display: none;}
+#menu > div > ul {display: none;}
 
-#MenuTicket01.on {
+#menu > div > ul.on {
     display: flex;
     position: absolute;
     left: 50%;
@@ -116,25 +116,25 @@ header .nav .inner .Lmenu .menu > div:hover > a {
     background-color: #eeeeee;
 }
 
-#MenuTicket01.on > li {
+#menu > div > ul.on > li {
     width: 240px;
     margin: 20px 0;
     text-align: center;
 }
-#MenuTicket01.on li h1 {
+#menu > div > ul.on li h1 {
     font-weight: 500;
     font-size: 1rem;
 }
-#MenuTicket01.on div:hover,
-#MenuTicket01.on > li:hover > div > ul > li > a:hover {
+#menu > div > ul.on h1:hover,
+#menu > div > ul.on > li:hover > ul > li > a:hover {
     color: #093B82;
 }
 
-#MenuTicket01.on li ul{
+#menu > div > ul.on li ul{
     display: none;
 }
 
-#MenuTicket01.on li:hover ul{
+#menu > div > ul.on > li:hover > ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,14 +142,14 @@ header .nav .inner .Lmenu .menu > div:hover > a {
     margin: 10px 0;
 }
 
-#MenuTicket01.on > li:hover > div > ul > li > a{
+#menu > div > ul.on > li:hover > ul > li a {
     padding: 0;
     font-weight: 400;
     font-size: 0.9rem;
 }
 
 
-
+/* header */
 header .side {
     position: relative;
     display: flex;
