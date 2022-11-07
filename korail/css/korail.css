@@ -44,7 +44,9 @@ header .top .inner {
     display: flex;
     flex-direction: row;
     text-align: start;
+    align-items: center;
     justify-content: space-between;
+    height: 40px;
 }
 
 header .top .inner div a{
@@ -52,6 +54,19 @@ header .top .inner div a{
     color: #fff;
     font-weight: 600;
     font-size: 0.75rem;
+}
+
+header .top .inner div a::after{
+    content: "";
+    width: 2px;
+    height: 0.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 0 0 8px;
+}
+
+header .top .inner div a:last-child::after{
+    display: none;
 }
 
 /* nav */
@@ -130,8 +145,8 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     font-size: 1rem;
     padding: 0 0 10px 0;
 }
-#menu > div:nth-child(2) {
-}
+/* #menu > div:nth-child(2) {
+} */
 #menu > div:nth-child(2) > ul.on {
     display: flex;
     flex-wrap: wrap;
