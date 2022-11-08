@@ -242,6 +242,7 @@ header .side .right.side {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
   }
 
   .swiper.mySwiper01 {
@@ -626,6 +627,11 @@ header .side .right.side {
     border-radius: 999px;
 }
 
+.sec04 .list02 .BT a:hover{
+    background-color: #57c0e0;
+    color: #fff;
+}
+
 .sec04 .list02 .pkg {
     display: flex;
     justify-content: center;
@@ -636,6 +642,10 @@ header .side .right.side {
     padding: 20px;
     border: 0.5px solid #00000020;
     border-radius: 10px;
+}
+
+.sec04 .list02 .pkg > div:hover {
+    background-color: #57c0e0;
 }
 
 .sec04 .list02 .pkg > div img {
@@ -740,7 +750,7 @@ header .side .right.side {
 .sec05 .Notice .content div div a{
     color: #fff;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .sec05 .Notice .content .Notice01,
@@ -758,6 +768,7 @@ header .side .right.side {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #57c0e0;
     color: #fff;
     border-radius: 10px;
@@ -783,6 +794,7 @@ header .side .right.side {
 
 .sec05 .consult .time{
     margin-top: 10px;
+    width: 243px;
 }
 
 .sec05 .consult .time h5 {
@@ -868,7 +880,7 @@ footer .F02 .info {
 } 
 
 
-/* footer .F01 .family.site{display: none;} */
+footer .F01 .family.site{display: none;}
 
 
 /* ///////////////////////////////////////// */
