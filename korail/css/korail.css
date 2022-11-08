@@ -387,6 +387,7 @@ header .side .right.side {
   }
 
 .swiper.mySwiper02 .swiper-slide {
+    flex: 1 0 175px;
     border-radius: 999px;
     height: 175px;
     color: #fff;
@@ -397,6 +398,8 @@ header .side .right.side {
     align-items: center;
     font-size: 18px;
     overflow: hidden;
+
+    cursor: pointer;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -573,6 +576,7 @@ header .side .right.side {
 .sec04 .list01 .card {
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 
 .sec04 .list01 .card div{
@@ -580,6 +584,7 @@ header .side .right.side {
     height: 340px;
     border-radius: 30px;
     overflow: hidden;
+    box-shadow: 0 0 10px #093B8240;
 }
 
 .sec04 .list01 .card div img{
@@ -619,15 +624,22 @@ header .side .right.side {
 
 .sec04 .list02 .pkg > div {
     padding: 20px;
-    border: 0.5px solid #00000020;
+    /* border: 0.5px solid #00000020; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #093B8240;
+    cursor: pointer;
 }
 
 .sec04 .list02 .pkg > div:hover {
-    background-color: #57c0e0;
+    background-color: #093B82;
     transform: translate(0, -10px);
-    transition: all 0.3s;
+    transition: all 0.5s;
+}
+
+.sec04 .list02 .pkg > div:hover .txt,
+.sec04 .list02 .pkg > div:hover .txt .top .tag p,
+.sec04 .list02 .pkg > div:hover .txt .bottom .inquiry {
+    color: #fff;
 }
 
 .sec04 .list02 .pkg > div img {
@@ -687,15 +699,18 @@ header .side .right.side {
 
 .sec05 .Notice .tab{
     display: flex;
+    /* gap: 5px; */
 }
 
 .sec05 .Notice .tab li h5{
     display: flex;
     font-weight: 500;
     font-size: 0.9rem;
-    border: 1px solid #093B82;
+    border: 0.25px solid #093B8210;
+    box-shadow: 0 0 5px #093B8220;
     border-radius: 10px 10px 0 0;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .sec05 .Notice .tab li h5.on{
@@ -709,7 +724,7 @@ header .side .right.side {
     text-align: start;
     height: 210px;
     border-radius: 0 10px 10px 10px;
-    /* padding: 20px; */
+    box-shadow: 3px 3px 10px #093B8240;
 }
 
 .sec05 .Notice .content div.on {
@@ -755,6 +770,7 @@ header .side .right.side {
     color: #fff;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 3px 3px 10px #093B8240;
 }
 
 .sec05 .consult .call{
@@ -798,6 +814,7 @@ header .side .right.side {
     gap: 15px;
     flex-wrap: wrap;
 }
+
 .sec05 .bt a {
     display: flex;
     flex: 1 1 40%;
@@ -805,12 +822,12 @@ header .side .right.side {
     align-items: center;
     height: 60px;
 
-    border: 0.5px solid #00000020;
     border-radius: 15px;
+    box-shadow: 3px 3px 10px #093B8240;
 }
 
 .sec05 .bt a:hover {
-    background-color: #57c0e0;
+    background-color: #093B82;
     color: #fff;
     border: none;
 }
