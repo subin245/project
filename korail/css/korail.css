@@ -292,6 +292,17 @@ header .side .right.side {
     border-radius: 10px 10px 0 0;
     background-color: #093B82;
     color: #fff;
+    cursor: pointer;
+}
+.sec01 .ticket li h5:hover{
+    font-weight: 500;
+    background-color: #2d68b9;
+    /* color: #000; */
+}
+.sec01 .ticket li h5.on{
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
 }
 .sec01 .select {
     display: flex;
@@ -357,6 +368,10 @@ header .side .right.side {
     font-size: 1.2rem;
 }
 
+.sec01 .select .common .direct .basic .D03 a:hover{
+    background-color: #2d68b9;
+}
+
 .sec01 .select .common .direct .basic div div{
     width: 400px;
     height: 50px;
@@ -391,7 +406,7 @@ header .side .right.side {
     border-radius: 999px;
     height: 175px;
     color: #fff;
-    background-color: gray;
+    box-shadow: 0 0 10px #093B8240;
 
     display: flex;
     justify-content: center;
@@ -624,22 +639,15 @@ header .side .right.side {
 
 .sec04 .list02 .pkg > div {
     padding: 20px;
-    /* border: 0.5px solid #00000020; */
     border-radius: 10px;
     box-shadow: 0 0 10px #093B8240;
     cursor: pointer;
 }
 
 .sec04 .list02 .pkg > div:hover {
-    background-color: #093B82;
-    transform: translate(0, -10px);
-    transition: all 0.5s;
-}
 
-.sec04 .list02 .pkg > div:hover .txt,
-.sec04 .list02 .pkg > div:hover .txt .top .tag p,
-.sec04 .list02 .pkg > div:hover .txt .bottom .inquiry {
-    color: #fff;
+    transform: translate(0, -10px);
+    transition: all 0.3s ease-in-out;;
 }
 
 .sec04 .list02 .pkg > div img {
@@ -824,6 +832,8 @@ header .side .right.side {
 
     border-radius: 15px;
     box-shadow: 3px 3px 10px #093B8240;
+
+    transition: all 0.5s ease-in-out;
 }
 
 .sec05 .bt a:hover {

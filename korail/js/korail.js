@@ -1,16 +1,16 @@
-var image = new Image();
-// Image for transition
-image.src = "geek.png";
-image.onload = function () {
-  $(".element").css("background-image", 
-                    "url('" + image.src + "')");
-};
-
 // nav
 $(function () {
   $("#menu").children("div").hover(function () {
     $(this).toggleClass('on');
     $(this).children("ul").toggleClass('on');
+  });
+});
+
+// ticket
+$(function () {
+  $(".sec01 .inner .ticket").children("li").click(function () {
+    $(".sec01 .inner .ticket li").children("h5").removeClass('on');;
+    $(this).children("h5").toggleClass('on');
   });
 });
 
