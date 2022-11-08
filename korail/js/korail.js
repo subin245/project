@@ -40,3 +40,25 @@ var swiper = new Swiper(".mySwiper01", {
       clickable: true,
     },
   });
+
+  //sec05 Notice
+  $(function () {
+    $(".sec05 .Notice .tab li:eq(0)").click(function () {
+      $(".sec05 .Notice .tab li h5").removeClass('on');
+      $(this).children("h5").toggleClass('on');
+      $(".sec05 .Notice .content div").removeClass('on');
+      $(".sec05 .Notice .content .Notice01").toggleClass('on');
+    });
+    $(".sec05 .Notice .tab li:eq(1)").click(function () {
+      $(".sec05 .Notice .tab li h5").removeClass('on');
+      $(this).children("h5").toggleClass('on');
+      $(".sec05 .Notice .content div").removeClass('on');
+      $(".sec05 .Notice .content .Notice02").toggleClass('on');
+    });
+    $(".sec05 .Notice .tab li:eq(2)").click(function () {
+      $(".sec05 .Notice .tab li h5").removeClass('on');
+      $(this).children("h5").toggleClass('on');
+      $(".sec05 .Notice .content div").removeClass('on');
+      $(".sec05 .Notice .content .Notice03").toggleClass('on');
+    });
+  });

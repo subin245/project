@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -125,7 +125,7 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 1200px;
     justify-content: center;
     gap: 0;
     z-index: 2;
@@ -146,8 +146,7 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     font-size: 1rem;
     padding: 0 0 10px 0;
 }
-/* #menu > div:nth-child(2) {
-} */
+
 #menu > div:nth-child(2) > ul.on {
     display: flex;
     flex-wrap: wrap;
@@ -679,6 +678,7 @@ header .side .right.side {
 .sec04 .list02 .pkg > div .txt .bottom .price .won{font-weight: 400; font-size: 1.2rem;line-height: 40px;}
 .sec04 .list02 .pkg > div .txt .bottom .inquiry{font-weight: 400; font-size: 0.8rem; line-height: 40px; color: #616161;}
 
+
 /*  //////////.sec05 ////////// */
 .sec05 {
     display: flex;
@@ -701,9 +701,14 @@ header .side .right.side {
     display: flex;
     font-weight: 500;
     font-size: 0.9rem;
+    border: 1px solid #093B82;
     border-radius: 10px 10px 0 0;
     padding: 10px 20px;
-    background-color: #D7D7D7;
+}
+
+.sec05 .Notice .tab li h5.on{
+    background-color: #093B82;
+    color: #fff;
 }
 
 .sec05 .Notice .content{
@@ -715,7 +720,7 @@ header .side .right.side {
     /* padding: 20px; */
 }
 
-.sec05 .Notice .content > div {
+.sec05 .Notice .content div.on {
     width: 100%;
     margin: 30px 20px;
     display: flex;
@@ -723,7 +728,7 @@ header .side .right.side {
     justify-content: space-between;
 }
 
-.sec05 .Notice .content div div:after {
+.sec05 .Notice .content > div > div:after {
     content: "";
     display: block;
     width: 100%;
@@ -735,13 +740,14 @@ header .side .right.side {
 .sec05 .Notice .content div div a{
     color: #fff;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
-/*  */
-.sec05 .Notice div .Notice02,
-.sec05 .Notice div .Notice03 {
+
+.sec05 .Notice .content .Notice01,
+.sec05 .Notice .content .Notice02,
+.sec05 .Notice .content .Notice03 {
     display : none;}
-/* */
+
 
 
 /* 상담 2nd section */
@@ -752,7 +758,7 @@ header .side .right.side {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #62ADD0;
+    background-color: #57c0e0;
     color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -809,6 +815,12 @@ header .side .right.side {
     border-radius: 15px;
 }
 
+.sec05 .bt a:hover {
+    background-color: #57c0e0;
+    color: #fff;
+    border: none;
+}
+
 /* ////////// footer ////////// */
 footer {
     background-color: #D7D7D7;
@@ -839,24 +851,24 @@ footer .F02{
 }
 
 footer .F02 .logo{
-    width: 204px;
-    background: url(../img/logo/temporary.svg) no-repeat center;
+    width: 200px;
     text-indent: -999px;
     overflow: hidden;
+    background: url(../img/logo/temporary.svg) no-repeat;
+    background-size: 150px;
 }
 
 footer .F02 .info {
     display: flex;
-    width: 900px;
+    width: 950px;
     flex-wrap: wrap;
-    justify-content: end;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     gap: 10px;
 } 
 
 
-footer .F01 .family.site{display: none;}
+/* footer .F01 .family.site{display: none;} */
 
 
 /* ///////////////////////////////////////// */
