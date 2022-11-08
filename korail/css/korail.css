@@ -421,11 +421,12 @@ header .side .right.side {
     object-position: top;
     transition: all 1s;
     z-index: -1;
-    filter: brightness(70%);
+    filter: brightness(50%);
   }
 
   .swiper.mySwiper02 .swiper-slide img:hover{
-    transform: scale(1.1);
+    transform: scale(1.3);
+    filter: brightness(80%);
   }
 
 /* ////////// .sec03  //////////*/
