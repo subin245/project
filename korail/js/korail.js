@@ -1,3 +1,11 @@
+var image = new Image();
+// Image for transition
+image.src = "geek.png";
+image.onload = function () {
+  $(".element").css("background-image", 
+                    "url('" + image.src + "')");
+};
+
 // nav
 $(function () {
   $("#menu").children("div").hover(function () {
