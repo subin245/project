@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -34,7 +34,12 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 
 
 /*  //////////header ////////// */
-
+header {
+    position: sticky;
+    z-index: 3;
+    top: -45px;
+    background-color: #fff;
+}
 
 header .top {
     background-color: #093B82;
@@ -209,7 +214,7 @@ header .side .right.side {
 
 
 header .side .left.side {
-    left: 0;
+    left: 50px;
 }
 
 header .side .right.side {
@@ -315,15 +320,28 @@ header .side .right.side {
 
 .sec01 .select .common .tab {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    margin: 0 0  10px 0;
 }
+
 .sec01 .select .common .tab li{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
     font-weight: 500;
     font-size: 1.1rem;
+}
+.sec01 .select .common .tab li a {
+    padding: 3px 10px;
+    border: 0.5px solid rgb(206, 206, 206);
+    border-radius: 8px;
+}
+.sec01 .select .common .tab li a:hover{
+    border: 0.5px solid  rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    /* color: #093B82; */
 }
 
 .sec01 .select .common .direct {
@@ -893,4 +911,4 @@ footer .F01 .family.site{display: none;}
 
 
 /* ///////////////////////////////////////// */
-header .side {display:none;}
+/* header .side {display:none;} */
