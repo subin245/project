@@ -75,7 +75,7 @@ header .top .inner .right a:nth-child(3):after{
     display: none;
 }
 
-/* nav */
+/* nav n01 */
 header .nav .inner {
     display: flex;
     position: relative;
@@ -100,24 +100,24 @@ header .nav .inner .Lmenu .logo {
 }
 
 header .nav .inner .Lmenu .bugger,
-header .nav .inner .Lmenu #menu {
+header .nav .inner .Lmenu .menu {
     display: flex;
 }
 
 header .nav .inner .Lmenu .bugger a,
-header .nav .inner .Lmenu #menu div > a{
+header .nav .inner .Lmenu .menu a{
     display: inline-block;
     padding: 10px 20px;
 }
 
 header .nav .inner .Lmenu .bugger a ,
-header .nav .inner .Lmenu #menu > div > a {
+header .nav .inner .Lmenu .menu > a {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
-#menu > div.on > a,
-header .nav .inner .Lmenu #menu > div:hover > a {
+.menu > div.on > a,
+header .nav .inner .Lmenu .menu a:hover {
     color: #093B82;
     border-bottom: 2px solid #093B82;
 }
@@ -125,9 +125,9 @@ header .nav .inner .Lmenu #menu > div:hover > a {
 
 /* 메뉴속 메뉴.. */
 /* #MenuTicket01 */
-#menu > div > ul {display: none;}
+/* .menu > div > ul {display: none;}
 
-#menu > div > ul.on {
+.menu > div > ul.on {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -140,28 +140,28 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     background-color: #eeeeee;
 }
 
-#menu > div > ul.on > li {
+.menu > div > ul.on > li {
     margin: 10px 0;
     text-align: center;
 }
 
-#menu > div:nth-child(1) > ul.on > li {width: 240px;}
-#menu > div:nth-child(3) > ul.on > li {width: 240px;}
-#menu > div:nth-child(4) > ul.on > li {width: 200px;}
-#menu > div:nth-child(5) > ul.on > li {width: 240px;}
-#menu > div > ul.on li h1 {
+.menu > div:nth-child(1) > ul.on > li {width: 240px;}
+.menu > div:nth-child(3) > ul.on > li {width: 240px;}
+.menu > div:nth-child(4) > ul.on > li {width: 200px;}
+.menu > div:nth-child(5) > ul.on > li {width: 240px;}
+.menu > div > ul.on li h1 {
     font-weight: 500;
     font-size: 1rem;
     padding: 0 0 10px 0;
 }
 
-#menu > div:nth-child(2) > ul.on {
+.menu > div:nth-child(2) > ul.on {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
 }
 
-#menu > div:nth-child(2) > ul.on > li > ul {
+.menu > div:nth-child(2) > ul.on > li > ul {
     position: absolute;
     left: 50%;
     top: 110%;
@@ -169,22 +169,22 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     background-color: #eeeeee;
 }
 
-#menu > div:nth-child(2) > ul.on > li {
+.menu > div:nth-child(2) > ul.on > li {
     width: 245px;
 }
 
-#menu > div > ul.on li:hover h1,
-#menu > div > ul.on > li:hover > ul > li > a:hover {
+.menu > div > ul.on li:hover h1,
+.menu > div > ul.on > li:hover > ul > li > a:hover {
     color: #093B82;
     border-bottom: 2px solid #093B82;
 }
 
-#menu > div > ul.on li ul{
+.menu > div > ul.on li ul{
     display: none;
     width: 100%;
 }
 
-#menu > div > ul.on > li:hover > ul{
+.menu > div > ul.on > li:hover > ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,12 +192,12 @@ header .nav .inner .Lmenu #menu > div:hover > a {
     margin: 10px 0;
 }
 
-#menu > div > ul.on > li:hover > ul > li a {
+.menu > div > ul.on > li:hover > ul > li a {
     display: inline-block;
     padding: 0;
     font-weight: 400;
     font-size: 0.8rem;
-}
+} */
 
 
 /* side */
