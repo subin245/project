@@ -6,11 +6,41 @@ $(function () {
   });
 });
 
-// ticket
+// side
+$(function () {
+  $("#Roffbt").click(function () {
+    $("header .side .right.side").toggleClass('off');
+  });
+  $("#Loffbt").click(function () {
+    $("header .side .left.side").toggleClass('off');
+  });
+});
+
+// sec01 - ticket
 $(function () {
   $(".sec01 .inner .ticket").children("li").click(function () {
     $(".sec01 .inner .ticket li").children("h5").removeClass('on');;
     $(this).children("h5").toggleClass('on');
+  });
+});
+
+// sec01 - select
+$(function () {
+  $(".sec01 .inner .ticket .common").click(function () {
+    $(".sec01 .inner .select").children().addClass('hide'),
+    $(".sec01 .inner .select").children(".common").removeClass('hide')
+  });
+  $(".sec01 .inner .ticket .discount").click(function () {
+    $(".sec01 .inner .select").children().addClass('hide'),
+    $(".sec01 .inner .select").children(".discount").removeClass('hide')
+  });
+  $(".sec01 .inner .ticket .fourGp").click(function () {
+    $(".sec01 .inner .select").children().addClass('hide'),
+    $(".sec01 .inner .select").children(".fourGp").removeClass('hide')
+  });
+  $(".sec01 .inner .ticket .trip").click(function () {
+    $(".sec01 .inner .select").children().addClass('hide'),
+    $(".sec01 .inner .select").children(".trip").removeClass('hide')
   });
 });
 

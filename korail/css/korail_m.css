@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* 코레일 home mobile */
+
+body {min-width: 320px;}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* sec01 */
+.sec01 .inner .ticket,
+.sec01 .inner .select{
+    display: none;
+}
+
+.sec01 .inner .mobileBT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #093B82;
+    box-shadow: 0 0 10px #093B8240;
+
+    width: 60vw;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sec01 .inner .mobileBT a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.sec01 .inner .mobileBT:hover{
+    transform: translate(0, -5px);
+}
+
+/* sec03 */
+.swiper.mySwiper03 .swiper-slide:nth-child(1),
+.swiper.mySwiper03 .swiper-slide:nth-child(2) {
+    flex: 0 0 90vw;
+}
+
+.swiper.mySwiper03 .swiper-slide .text.card div p{
+    display: none;
+}
+
+/* .sec04 */
+.sec04 .list01 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec04 .list01 .card div{
+    flex: 1 0 340px;
+    height: 300px;
+}
+
+.sec04 .list02 .BT a{
+    padding : 2px 7px;
+    border: 0.5px solid #00000020;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.sec04 .list02 .pkg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec04 .list02 .pkg > div img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec04 .list02 .pkg > div .txt .top h3 {font-weight: 700; font-size: 1rem;}
+.sec04 .list02 .pkg > div .txt .bottom .price .number{font-weight: 700; font-size: 2rem;}
+.sec04 .list02 .pkg > div .txt .bottom .price .won{font-weight: 400; font-size: 1rem;line-height: 40px;}
+
+
+/* .sec05 */
+.sec05 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec05 .Notice,
+.sec05 .consult,
+.sec05 .bt {
+    width: 90vw;
+    margin: 0 auto;
+}

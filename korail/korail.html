@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../korail/css/korail.css">
-    <link rel="stylesheet" media="all and (max-width: 640px)" href="../korail/css/korail_t.css">
+    <link rel="stylesheet" media="all and (max-width: 1200px)" href="../korail/css/korail_t.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="../korail/css/korail_m.css">
 </head>
 
 <body>
@@ -197,26 +198,28 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="frame06">
-                            <a href="#">전체메뉴</a>
-                        </div>
+                    </div>
+                    <div class="bugger">
+                        <a href="#">전체메뉴</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="side">
             <div class="left side">
-                <a href="#">페이스북</a>
-                <a href="#">유투브</a>
-                <a href="#">인스타그램</a>
-                <a href="#">블로그</a>
-                <a href="#">트위터</a>
+                <a href="https://www.facebook.com/KoreaRailroad" target="_blank"><img src="../korail/img/sns/facebook.svg" alt="페이스북"></a>
+                <a href="https://www.youtube.com/c/%ED%95%9C%EA%B5%AD%EC%B2%A0%EB%8F%84TV" target="_blank"><img src="../korail/img/sns/youtube.svg" alt="유투브"></a>
+                <a href="https://www.instagram.com/korail_official_/" target="_blank"><img src="../korail/img/sns/instar.svg" alt="인스타그램"></a>
+                <a href="https://blog.naver.com/korailblog" target="_blank"><img src="../korail/img/sns/blog.svg" alt="네이버블로그"></a>
+                <a href="https://twitter.com/korail_official" target="_blank"><img src="../korail/img/sns/twitter.svg" alt="트위터"></a>
+                <a href="#" id="Loffbt">접기</a>
             </div>
             <div class="right side">
                 <a href="#">종합이용안내</a>
                 <a href="#">코레일멤버십</a>
                 <a href="#">기차역정보</a>
-                <a href="#">노선정보</a>
+                <a href="https://info.korail.com/info/contents.do?key=857" target="_blank">노선정보</a>
+                <a href="#" id="Roffbt">접기</a>
             </div>
         </div>
     </header>
@@ -233,22 +236,21 @@
         <div class="swiper-pagination"></div> -->
     </div>
     <div class="inner content">
-        <!-- 할게 많네..? -->
         <div class="sec01">
             <div class="inner">
                 <!-- 큰탭 -->
                 <ul class="ticket">
                     <li>
-                        <h5 class="on">일반승차권</h5>
+                        <h5 class="common on">일반승차권</h5>
                     </li>
                     <li>
-                        <h5>할인승차권</h5>
+                        <h5 class="discount">할인승차권</h5>
                     </li>
                     <li>
-                        <h5>4인동반석</h5>
+                        <h5 class="fourGp">4인동반석</h5>
                     </li>
                     <li>
-                        <h5>관광열차</h5>
+                        <h5 class="trip">관광열차</h5>
                     </li>
                 </ul>
                 <div class="select">
@@ -325,33 +327,73 @@
                         </div>
                         <div class="transfer"></div>
                         <div class="roundTrip"></div>
-                
-                    <!-- 다른탭/할인승차권,4인동반석,관광열차     -->
                     </div>
                     <!-- 할인승차권 탭 -->
-                    <div class="discont">
-                        <div class="1"></div>
-                        <div class="2"></div>
-                        <div class="3"></div>
-                        <div class="4"></div>
-                        <div class="5"></div>
-                        <div class="6"></div>
-                        <div class="7"></div>
+                    <div class="discount hide">
+                        <ul class="tab">
+                            <li>청소년드림<input type="radio" name="discount" checked></li>
+                            <li>힘내라 청춘<input type="radio" name="discount"></li>
+                            <li>맘편한 KTX<input type="radio" name="discount"></li>
+                            <li>다자녀 행복<input type="radio" name="discount"></li>
+                            <li>가차누리<input type="radio" name="discount"></li>
+                            <li>KTX5000특가<input type="radio" name="discount"></li>
+                            <li>단체<input type="radio" name="discount"></li>
+                        </ul>
+                        <div class="direct">
+                            <div class="basic">
+                                <div class="D01">
+                                    <div>출발역</div>
+                                    <div>가는날</div>
+                                </div>
+                                <div class="D02">
+                                    <div>도착역</div>
+                                    <div>가는시간</div>
+                                </div>
+                                <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
+                            </div>
+                        </div>
                     </div>
                     <!-- 4인동방석 탭 -->
-                    <div class="fourGp">
-                        <h5>(아직내용안넣음)</h5>
+                    <div class="fourGp hide">
+                        <div class="basic">
+                            <div class="D01">
+                                <div>출발역</div>
+                                <div>가는날</div>
+                            </div>
+                            <div class="D02">
+                                <div>도착역</div>
+                                <div>가는시간</div>
+                            </div>
+                            <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
+                        </div>
                     </div>
                     <!-- 관광열차 탭 -->
-                    <div class="trip">
-                        <div class="1"></div>
-                        <div class="2"></div>
-                        <div class="3"></div>
-                        <div class="4"></div>
-                        <div class="5"></div>
-                        <div class="6"></div>
+                    <div class="trip hide">
+                        <ul class="tab">
+                            <li>동해산타열차<input type="radio" name="discount" checked></li>
+                            <li>서해금빛열차<input type="radio" name="discount"></li>
+                            <li>V-train<input type="radio" name="discount"></li>
+                            <li>S-train<input type="radio" name="discount"></li>
+                            <li>DMZ-train<input type="radio" name="discount"></li>
+                            <li>A-train<input type="radio" name="discount"></li>
+                        </ul>
+                        <div class="direct">
+                            <div class="basic">
+                                <div class="D01">
+                                    <div>출발역</div>
+                                    <div>가는날</div>
+                                </div>
+                                <div class="D02">
+                                    <div>도착역</div>
+                                    <div>가는시간</div>
+                                </div>
+                                <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- 모바일용 -->
+                <div class="mobileBT"><a>기차표 예약하기</a></div>
             </div>
         </div>
         <div class="sec02">
