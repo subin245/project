@@ -122,7 +122,8 @@ header .nav .inner .Lmenu .menu a:hover {
     border-bottom: 2px solid #093B82;
 }
 
-
+header .nav.n02{display: none;}
+/* !!!!!!!!!!!!!!!!!!!!변경!!!!!!!!!!!!!!!!!!!! */
 /* 메뉴속 메뉴.. */
 /* #MenuTicket01 */
 /* .menu > div > ul {display: none;}
