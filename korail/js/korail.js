@@ -13,7 +13,7 @@ $(function () {
     let $2menuindex = $(this).index();
     let $2menu = $(this).parent("ul").next("div").children('.contentlist');
     $(this).click(function() {
-        $(this).addClass('on').siblings().removeClass('on');
+        // $(this).addClass('on').siblings().removeClass('on');
         $($2menu).eq($2menuindex).addClass('on').siblings().removeClass('on');
     });
 });
