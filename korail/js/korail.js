@@ -1,9 +1,22 @@
 // nav
 $(function () {
-  $(".menu").children("div").hover(function () {
-    $(this).toggleClass('on');
-    $(this).children("ul").toggleClass('on');
+  $(".nav.n01 .inner .Lmenu .menu a").each(function() {
+    let $1menuindex = $(this).index();
+    let $1menu = $(".nav.n02 .inner .menu").children("div");
+    $(this).click(function() {
+      // $(this).addClass('on').siblings().removeClass('on');
+      $($1menu).eq($1menuindex).addClass('on').siblings().removeClass('on');
   });
+  });
+
+  $('.nav.n02 .inner .menu div li.more').each(function() {
+    let $2menuindex = $(this).index();
+    let $2menu = $(this).parent("ul").next("div").children('.contentlist');
+    $(this).click(function() {
+        $(this).addClass('on').siblings().removeClass('on');
+        $($2menu).eq($2menuindex).addClass('on').siblings().removeClass('on');
+    });
+});
 });
 
 // side
