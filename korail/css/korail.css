@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -122,10 +122,43 @@ header .nav .inner .Lmenu .menu a:hover {
     border-bottom: 2px solid #093B82;
 }
 
-header .nav.n02{display: none;}
+/* header .nav.n02 *{border: 1px solid red;} */
+header .nav.n02 .menu div {display: none;}
 /* !!!!!!!!!!!!!!!!!!!!변경!!!!!!!!!!!!!!!!!!!! */
 /* 메뉴속 메뉴.. */
 /* #MenuTicket01 */
+
+/* 대분류 */
+header .nav.n02 .menu #frame01 {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+header .nav.n02 .menu #frame01 > a{
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* 중분류 */
+header .nav.n02 .menu #frame01 ul li{
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+    text-align: left;
+}
+header .nav.n02 .menu #frame01 ul li h1{
+    width: 170px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* 소분류 */
+header .nav.n02 .menu #frame01 ul li ul li{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 7px;
+}
+
+/* #MenuTicket01-전작업인데 지워도되나..? */
 /* .menu > div > ul {display: none;}
 
 .menu > div > ul.on {
