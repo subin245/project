@@ -75,6 +75,35 @@ header .top .inner .right a:nth-child(3):after{
     display: none;
 }
 
+/* 전체 메뉴버튼 */
+header .menuBt {
+    display: flex;
+    justify-content: center;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #2d68b9;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+header .menuBt:hover{
+    filter: brightness(130%)
+}
+
+.menuBt .bar1,
+.menuBt .bar2,
+.menuBt .bar3{
+    margin-top: 5px;
+    background: #ffffff;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+}
+
+.menuBt .bar2 {margin-top: 15px;}
+.menuBt .bar3 {margin-top: 25px;}
+
 /* nav n01 */
 header .nav .inner {
     display: flex;
@@ -120,11 +149,9 @@ header .nav .inner .Lmenu .menu a:hover {
     color: #093B82;
     border-bottom: 2px solid #093B82;
 }
-/* header .nav.n02 *{border: 1px solid red;} */
-/* !!!!!!!!!!!!!!!!!!!!변경!!!!!!!!!!!!!!!!!!!! */
-/* 메뉴속 메뉴.. */
-/* #MenuTicket01 */
 
+
+/* #MenuTicket01 */
 /* 대분류 */
 header .nav.n02 .menu > div {display: none;}
 header .nav.n02 .menu > div.on {
@@ -213,6 +240,7 @@ header .side .right.side {
     display: flex;
     flex-direction: column;
     position: fixed;
+    margin-top: 30px;
 }
     /* .left */
 header .side .left.side {
