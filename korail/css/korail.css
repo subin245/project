@@ -36,7 +36,7 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 /*  //////////header ////////// */
 header {
     position: sticky;
-    z-index: 3;
+    z-index: 999;
     top: -45px;
     background-color: #fff;
 }
@@ -153,8 +153,20 @@ header .nav .inner .Lmenu .menu a:hover {
 
 /* #MenuTicket01 */
 /* 대분류 */
-header .nav.n02 .menu > div {display: none;}
-header .nav.n02 .menu div.on {display: flex;}
+header .nav.n02 {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 100vw;
+}
+
+header .nav.n02 .menu > div {
+    display: none;
+    
+}
+header .nav.n02 .menu div.on {
+    display: flex;
+}
 
 header .nav.n02 .menu div.on p{
     display: block;
@@ -173,7 +185,7 @@ header .nav.n02 .menu div.on ul li{
     text-align: left;
 }
 
-header .nav.n02 .menu div.on ul {
+header .nav.n02 .menu div.on > ul {
     border-left: 2px solid #2d68b9;
     padding: 10px 20px 15px 20px;
     background-color: rgb(243, 243, 243);
@@ -222,9 +234,9 @@ header .nav.n02 .menu div.on div .contentlist.on li a:hover {
     font-weight: 600;
 }
 
-header .nav.n02 .menu div.on div .contentlist li a {
+header .nav.n02 .menu div.on > div .contentlist li a {
     padding: 5px 0;
-    color: rgb(80, 80, 80);
+    /* color: rgb(80, 80, 80); */
 }
 
 
@@ -233,7 +245,7 @@ header .side {
     position: relative;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    /* z-index: 1; */
     top: 150px;
 } 
 
