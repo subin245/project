@@ -154,11 +154,9 @@ header .nav .inner .Lmenu .menu a:hover {
 /* #MenuTicket01 */
 /* 대분류 */
 header .nav.n02 .menu > div {display: none;}
-header .nav.n02 .menu > div.on {
-    display: flex;
-    /* margin: 0 0 20px 0; */
-}
-header .nav.n02 .menu > div.on > p{
+header .nav.n02 .menu div.on {display: flex;}
+
+header .nav.n02 .menu div.on p{
     display: block;
     width: 200px;
     font-weight: 500;
@@ -166,34 +164,35 @@ header .nav.n02 .menu > div.on > p{
     margin-top: 10px;
     color: rgb(70, 70, 70);
 }
+
 /* 중분류 */
-header .nav.n02 .menu > div.on ul li{
+header .nav.n02 .menu div.on ul li{
     display: flex;
     margin: 10px 0;
     align-items: center;
     text-align: left;
 }
 
-header .nav.n02 .menu > div.on > ul {
+header .nav.n02 .menu div.on ul {
     border-left: 2px solid #2d68b9;
     padding: 10px 20px 15px 20px;
     background-color: rgb(243, 243, 243);
 }
-header .nav.n02 .menu > div.on ul li h1{
+header .nav.n02 .menu div.on ul li h1{
     width: 160px;
     font-weight: 500;
     font-size: 0.95rem;
     cursor: pointer;
 }
 
-header .nav.n02 .menu > div.on ul li.on,
+header .nav.n02 .menu div.on ul li.on,
 header .nav.n02 .menu div.on div.on,
-header .nav.n02 .menu > div.on ul li h1:hover {
+header .nav.n02 .menu div.on ul li h1:hover {
     color: #2d68b9;
 }
 
 /* 소분류 */
-header .nav.n02 .menu div > div {
+header .nav.n02 .menu div div {
     width: 500px;
     border-left: 1px solid #093B82;
     padding: 15px 0 20px 0;
@@ -235,6 +234,7 @@ header .side {
     display: flex;
     flex-direction: column;
     z-index: 1;
+    top: 150px;
 } 
 
 header .side .left.side,
@@ -402,13 +402,16 @@ header .side .right.side.off {
 
     width: 160px;
     height: 50px;
-    font-weight: 400;
-    font-size: 1.2rem;
-
+   
     border-radius: 10px 10px 0 0;
     background-color: #093B82;
-    color: #fff;
+    
     cursor: pointer;
+}
+.sec01 .ticket li h5 a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
 }
 .sec01 .ticket li h5:hover{
     font-weight: 500;
@@ -421,6 +424,11 @@ header .side .right.side.off {
     color: #000;
 }
 
+.sec01 .ticket li h5.on a{
+    font-weight: 500;
+
+    color: #000;
+}
 .sec01 .select {
     display: flex;
     justify-content: center;
