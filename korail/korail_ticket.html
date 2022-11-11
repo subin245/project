@@ -242,12 +242,12 @@
                         <div class="direct">
                             <div class="basic">
                                 <div class="D01">
-                                    <div>출발역</div>
-                                    <div>가는날</div>
+                                    <div><input id="departure" type="text" placeholder="출발역"></div>
+                                    <div><input id="daytogo" type="text" placeholder="가는날"></div>
                                 </div>
                                 <div class="D02">
-                                    <div>도착역</div>
-                                    <div>가는시간</div>
+                                    <div><input id="arrival" type="text" placeholder="도착역"></div>
+                                    <div><input id="timetogo" type="text" placeholder="가는시간"></div>
                                 </div>
                                 <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                             </div>
@@ -320,7 +320,7 @@
                     </div>
                 </div>
                 <!-- 모바일용 -->
-                <div class="mobileBT"><a>기차표 예약하기</a></div>
+                <!-- <div class="mobileBT"><a>기차표 예약하기</a></div> -->
             </div>
         </div>
         
@@ -330,7 +330,23 @@
                 <h1> -> </h1>
                 <h1>부산</h1>
             </div>
-            <div class="Frame F02">표</div>
+            <table class="Frame F02">
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>열차번호</th>
+                        <th>출발</th>
+                        <th>도착</th>
+                        <th>운임요금</th>
+                        <th>소요시간</th>
+                    </tr>
+                </thead>
+                <tbody class="bookresult">
+                    <tr class="noBook">
+                        <td colspan="6">아직 책을 검색하지 않았습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <footer>
