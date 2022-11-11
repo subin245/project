@@ -4,8 +4,14 @@ $(function () {
     let $1menuindex = $(this).index();
     let $1menu = $(".nav.n02 .inner .menu").children("div");
     $(this).click(function() {
-      // $(this).addClass('on').siblings().removeClass('on');
       $($1menu).eq($1menuindex).addClass('on').siblings().removeClass('on');
+      if ($(this).hasClass('on')) {
+        $(this).removeClass('on');
+        $($1menu).removeClass('on').children().removeClass('on');
+    } else {
+        $("nav").addClass('on');
+        $(this).addClass('on').siblings().removeClass('on');
+    }
   });
   });
 
@@ -13,10 +19,13 @@ $(function () {
     let $2menuindex = $(this).index();
     let $2menu = $(this).parent("ul").next("div").children('.contentlist');
     $(this).click(function() {
-        // $(this).addClass('on').siblings().removeClass('on');
+        $(this).addClass('on').siblings().removeClass('on');
         $($2menu).eq($2menuindex).addClass('on').siblings().removeClass('on');
     });
-});
+  });
+  $('.contentlist li a').click(function() {
+      $(this).addClass('on').parent('li').siblings().children('a').removeClass('on');
+  });
 });
 
 // side
