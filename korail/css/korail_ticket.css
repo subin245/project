@@ -66,22 +66,25 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 
 
 /*  //////////.sec01 ////////// */
+.sec01 .inner .mobileBT{
+    display: none;
+}
+
 .sec01 { 
     position: relative;
 }
 
-/*  */
-.sec01 .inner .select .common .option,
-.sec01 .inner .select .discont,
-.sec01 .inner .select .fourGp,
-.sec01 .inner .select .trip
+.sec01 .inner .select .common.hide,
+.sec01 .inner .select .discount.hide,
+.sec01 .inner .select .fourGp.hide,
+.sec01 .inner .select .trip.hide
 {display: none;}
 
-/*  */
-
-
 /* 티켓버튼 */
-.sec01 .inner{
+.sec01{
+    display: flex;
+    justify-content: left;
+    align-items: center;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0);
@@ -99,53 +102,98 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 
     width: 160px;
     height: 50px;
-    font-weight: 400;
-    font-size: 1.2rem;
-
+   
     border-radius: 10px 10px 0 0;
     background-color: #093B82;
-    color: #fff;
+    
+    cursor: pointer;
+}
+.sec01 .ticket li h5 a{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(245, 245, 245);
+}
+.sec01 .ticket li h5:hover{
+    font-weight: 500;
+    background-color: #2d68b9;
+    /* color: #000; */
+}
+.sec01 .ticket li h5.on{
+    font-weight: 500;
+    background-color: rgb(245, 245, 245);
+    color: #000;
 }
 
+.sec01 .ticket li h5.on a{
+    font-weight: 500;
+
+    color: #000;
+}
 .sec01 .select {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
-    background-color: #fff;
+    background-color: rgb(245, 245, 245);
     border-radius: 0 10px 10px 10px;
+   
+    width: 1055px;
+    height: 240px;
 }
 
+    /* 일반 승차권 */
 .sec01 .select .common .tab {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    margin: 0 0  10px 0;
 }
+
 .sec01 .select .common .tab li{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
     font-weight: 500;
     font-size: 1.1rem;
 }
+.sec01 .select .common .tab li a {
+    padding: 3px 10px;
+    border: 0.5px solid rgb(206, 206, 206);
+    border-radius: 8px;
+}
+.sec01 .select .common .tab li a:hover{
+    border: 0.5px solid  rgb(206, 206, 206);
+    background-color: rgb(206, 206, 206);
+    /* color: #093B82; */
+}
 
-.sec01 .select .common .direct {
+.sec01 .select .common .direct,
+.sec01 .select .discount .direct,
+.sec01 .select .fourGp,
+.sec01 .select .trip .direct {
     display: flex;
     flex-direction: column;
     border-radius: 0 10px 10px 10px;
 
 }
 
-.sec01 .select .common .direct .basic{
+.sec01 .select .common .direct .basic,
+.sec01 .select .discount .direct .basic,
+.sec01 .select .fourGp .basic,
+.sec01 .select .trip .direct .basic {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    width: 1124px;
+    /* width: 1124px; */
     gap: 15px;
 }
 
-.sec01 .select .common .direct .basic div {
+.sec01 .select .common .direct .basic div,
+.sec01 .select .discount .direct .basic div,
+.sec01 .select .fourGp .basic div,
+.sec01 .select .trip .direct .basic div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,8 +204,16 @@ h3 { font-weight: 400; font-size: 1.125rem;}
     font-size: 1.1rem;
     color: #00000090;
 }
-.sec01 .select .common .direct .basic .D03{
-    width: 156px;
+
+.sec01 .select .common .direct .basic .D03 a,
+.sec01 .select .discount .direct .basic .D03 a,
+.sec01 .select .fourGp .basic .D03 a,
+.sec01 .select .trip .direct .basic .D03 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 150px;
     height: 120px;
     background-color: #093B82;
     color: #fff;
@@ -167,8 +223,18 @@ h3 { font-weight: 400; font-size: 1.125rem;}
     font-size: 1.2rem;
 }
 
-.sec01 .select .common .direct .basic div div{
-    width: 470px;
+.sec01 .select .common .direct .basic .D03 a:hover,
+.sec01 .select .discount .direct .basic .D03 a:hover,
+.sec01 .select .fourGp .basic .D03 a:hover,
+.sec01 .select .trip .direct .basic .D03 a:hover{
+    background-color: #2d68b9;
+}
+
+.sec01 .select .common .direct .basic div div,
+.sec01 .select .discount .direct .basic div div,
+.sec01 .select .fourGp .basic div div,
+.sec01 .select .trip .direct .basic div div{
+    width: 400px;
     height: 50px;
     /* border: 0.5px solid #00000020; */
     border-radius: 5px;
@@ -182,13 +248,28 @@ h3 { font-weight: 400; font-size: 1.125rem;}
     background-color: #093B8210;
 }
 
-.sec01 .select .common .direct .button:hover {cursor: pointer;}
+.sec01 .select .common .direct .button:hover,
+.sec01 .select .discount .direct .button:hover,
+.sec01 .select .fourGp .button:hover,
+.sec01 .select .trip .direct .button:hover {cursor: pointer;}
+
+    /* 할인승차권, 관광열차 탭 */
+.discount .tab,
+.trip .tab {
+    display: flex;
+    margin-bottom: 10px;
+}
+.discount .tab li,
+.trip .tab li{
+    width: 120px;
+}
 
 
 /* ////////// .sec02 ////////// */
 .sec02 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
@@ -197,7 +278,7 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 .sec02 .Frame.F01 {
     display: flex;
     justify-content: center;
-
+    width: 1055px;
     gap: 10px;
     padding: 20px 0;
     border: 1px solid #000;
@@ -210,6 +291,7 @@ h3 { font-weight: 400; font-size: 1.125rem;}
 }
 
 .sec02 .Frame.F02{
+    width: 1055px;
     padding: 20px 0;
     border: 1px solid #000;
     border-radius: 10px;
