@@ -4,6 +4,7 @@ $(function () {
     let $1menuindex = $(this).index();
     let $1menu = $(".nav.n02 .inner .menu").children("div");
     $(this).click(function() {
+      $(".nav.n02 .inner .menu").children("div").removeClass('on');
       $($1menu).eq($1menuindex).addClass('on').siblings().removeClass('on');
       if ($(this).hasClass('on')) {
         $(this).removeClass('on');
