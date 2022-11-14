@@ -242,12 +242,12 @@
                         <div class="direct">
                             <div class="basic">
                                 <div class="D01">
-                                    <div><input id="departure" type="text" placeholder="출발역"></div>
-                                    <div><input id="daytogo" type="text" placeholder="가는날"></div>
+                                    <div><input class="departure" type="text" placeholder="출발역"></div>
+                                    <div><input class="daytogo" type="text" placeholder="가는날"></div>
                                 </div>
                                 <div class="D02">
-                                    <div><input id="arrival" type="text" placeholder="도착역"></div>
-                                    <div><input id="timetogo" type="text" placeholder="가는시간"></div>
+                                    <div><input class="arrival" type="text" placeholder="도착역"></div>
+                                    <div><input class="timetogo" type="text" placeholder="가는시간"></div>
                                 </div>
                                 <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                             </div>
@@ -269,12 +269,12 @@
                         <div class="direct">
                             <div class="basic">
                                 <div class="D01">
-                                    <div>출발역</div>
-                                    <div>가는날</div>
+                                    <div><input class="departure" type="text" placeholder="출발역"></div>
+                                    <div><input class="daytogo" type="text" placeholder="가는날"></div>
                                 </div>
                                 <div class="D02">
-                                    <div>도착역</div>
-                                    <div>가는시간</div>
+                                    <div><input class="arrival" type="text" placeholder="도착역"></div>
+                                    <div><input class="timetogo" type="text" placeholder="가는시간"></div>
                                 </div>
                                 <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                             </div>
@@ -282,16 +282,18 @@
                     </div>
                     <!-- 4인동방석 탭 -->
                     <div class="fourGp hide">
-                        <div class="basic">
-                            <div class="D01">
-                                <div>출발역</div>
-                                <div>가는날</div>
+                        <div class="direct">
+                            <div class="basic">
+                                <div class="D01">
+                                    <div><input class="departure" type="text" placeholder="출발역"></div>
+                                    <div><input class="daytogo" type="text" placeholder="가는날"></div>
+                                </div>
+                                <div class="D02">
+                                    <div><input class="arrival" type="text" placeholder="도착역"></div>
+                                    <div><input class="timetogo" type="text" placeholder="가는시간"></div>
+                                </div>
+                                <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                             </div>
-                            <div class="D02">
-                                <div>도착역</div>
-                                <div>가는시간</div>
-                            </div>
-                            <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                         </div>
                     </div>
                     <!-- 관광열차 탭 -->
@@ -307,12 +309,12 @@
                         <div class="direct">
                             <div class="basic">
                                 <div class="D01">
-                                    <div>출발역</div>
-                                    <div>가는날</div>
+                                    <div><input class="departure" type="text" placeholder="출발역"></div>
+                                    <div><input class="daytogo" type="text" placeholder="가는날"></div>
                                 </div>
                                 <div class="D02">
-                                    <div>도착역</div>
-                                    <div>가는시간</div>
+                                    <div><input class="arrival" type="text" placeholder="도착역"></div>
+                                    <div><input class="timetogo" type="text" placeholder="가는시간"></div>
                                 </div>
                                 <div class="D03"><a href="../korail/korail_ticket.html">검색</a></div>
                             </div>
@@ -334,16 +336,17 @@
                 <thead>
                     <tr>
                         <th>구분</th>
-                        <th>열차번호</th>
+                        <th>츌발시간</th>
+                        <th>도착시간</th>
                         <th>출발</th>
                         <th>도착</th>
                         <th>운임요금</th>
-                        <th>소요시간</th>
+                        <th>열차번호</th>
                     </tr>
                 </thead>
-                <tbody class="bookresult">
-                    <tr class="noBook">
-                        <td colspan="6">아직 책을 검색하지 않았습니다.</td>
+                <tbody id="result">
+                    <tr class="noResult">
+                        <td colspan="7">아직 검색하지 않았습니다.</td>
                     </tr>
                 </tbody>
             </table>
@@ -397,6 +400,8 @@
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../korail/js/korail.js"></script>
+        <script src="../korail/js/korail_ticketAPI.js"></script>
+
 </body>
 
 </html>

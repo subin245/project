@@ -502,19 +502,16 @@ header .side .right.side.off {
     gap: 15px;
 }
 
-.sec01 .select .common .direct .basic div,
-.sec01 .select .discount .direct .basic div,
-.sec01 .select .fourGp .basic div,
-.sec01 .select .trip .direct .basic div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: #00000090;
+.direct .basic div input{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #00000050;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: #000;
 }
 
 .sec01 .select .common .direct .basic .D03 a,
@@ -530,6 +527,7 @@ header .side .right.side.off {
     background-color: #093B82;
     color: #fff;
     border-radius: 5px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 1.2rem;
@@ -540,17 +538,6 @@ header .side .right.side.off {
 .sec01 .select .fourGp .basic .D03 a:hover,
 .sec01 .select .trip .direct .basic .D03 a:hover{
     background-color: #2d68b9;
-}
-
-.sec01 .select .common .direct .basic div div,
-.sec01 .select .discount .direct .basic div div,
-.sec01 .select .fourGp .basic div div,
-.sec01 .select .trip .direct .basic div div{
-    width: 400px;
-    height: 50px;
-    /* border: 0.5px solid #00000020; */
-    border-radius: 5px;
-    background-color: #62ADD030;
 }
 
 .sec01 .select .common .direct .button {
