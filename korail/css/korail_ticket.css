@@ -340,6 +340,7 @@ h3 { font-weight: 400; font-size: 1.125rem;}
     font-weight: 200;
     font-size: 0.9rem;
     color: #000;
+    cursor: pointer;
 }
 
 .sec01 .select .common .direct .basic .D03 a,
