@@ -66,3 +66,18 @@ $(function () {
     $(".sec01 .inner .select").children(".trip").removeClass('hide')
   });
 });
+
+// .popup
+$(function () {
+  $(".departure").click(function () {
+    $(".popup").removeClass('hide')
+  });
+
+  $(".arrival").click(function () {
+    $(".popup").removeClass('hide')
+  });
+
+  $(".popup button.close").click(function () {
+    $(".popup").addClass('hide')
+  });
+});

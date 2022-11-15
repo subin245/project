@@ -63,6 +63,136 @@ h3 { font-weight: 400; font-size: 1.125rem;}
     font-size: 1.7rem;
 }
 
+/*  //////////.popup ////////// */
+.popup.hide{display: none;}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+
+}
+.popup .content {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 50vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(4px);
+}
+
+.popup dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.popup dl dt{
+    width: 100%;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #5d8ed3;
+}
+
+.popup dl dd{
+    display: flex;
+    width: 15%;
+    height: 30px;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px 10px;
+    background-color: #5d8ed320;
+    border-radius: 5px;
+
+    font-weight: 300;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.popup dl dd.KTX{
+    border: none;
+    background-color: #5d8ed350;
+}
+
+.popup dl dd:hover{
+    background-color: #5d8ed3;
+    color: #fff;
+}
+
+.popup ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.popup ul li{
+    margin: 5px;
+    padding: 3px 10px;
+    background-color: #5d8ed320;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup ul li:hover {
+    background-color: #5d8ed3;
+    border: none;
+    color: #fff;
+}
+
+.popup ul > li:first-child{
+    width: 100%;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid #5d8ed3;
+}
+.popup ul li:first-child:hover{
+    background-color: #fff;
+    border-bottom: 1.5px solid #5d8ed3;
+    color: #000;
+    cursor: auto;
+}
+
+.popup ul li h1 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.popup button{
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 0.5px solid #00000050;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover{
+    background-color: #00000010;
+}
 
 /*  //////////.sec01 ////////// */
 .sec01 .inner .mobileBT{

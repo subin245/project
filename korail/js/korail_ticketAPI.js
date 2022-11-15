@@ -16,13 +16,13 @@ const url4 = `https://apis.data.go.kr/1613000/TrainInfoService/getCtyCodeList?se
 $.getJSON(url1, function (result) {
     console.log(result.response.body.items)
     
-    let Array = result.response.body.items.item[0];
+    let Result = result.response.body.items.item[0];
 
-    Nb.innerText = Array.trainno;
-    DepartTime.innerText = Array.arrplandtime;
-    ArrivalTime.innerText = Array.depplandtime;
-    Depart.innerText = Array.arrplacename;
-    Arrival.innerText = Array.depplacename;
-    Price.innerText = Array.adultcharge;
-    TrainNb.innerText = Array.traingradename;
+    Nb.innerText = Result.trainno;
+    DepartTime.innerText = Result.arrplandtime;
+    ArrivalTime.innerText = Result.depplandtime;
+    Depart.innerText = Result.arrplacename;
+    Arrival.innerText = Result.depplacename;
+    Price.innerText = Result.adultcharge;
+    TrainNb.innerText = Result.traingradename;
 })
