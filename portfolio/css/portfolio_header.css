@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* Portfolio header */
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Michroma&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 0.25px solid red; */
+    font-family: 'Michroma', sans-serif;
+    /* font-family: 'Gruppo', cursive; */
+}
+
+li {list-style: none;}
+a {text-decoration: none; color: #000;}
+
+
+/* header */
+header {
+    border-bottom: 2px solid #000;
+}
+
+header .inner{
+    display: flex;
+    justify-content: start;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+header .inner ul {
+    display: flex;
+    gap: 60px;
+}
+header .inner ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .inner ul li a{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+header .inner ul li div {
+    position: absolute;
+    top: 13px;
+    z-index: -1;
+    height: 50px;
+    /* width: 120px; */
+    border-radius: 999px;
+    background-color: mediumslateblue;
+    filter: blur(10px);
+    font-size: 0.5rem;
+    color: #00000000;
+    padding: 0 35px;
+}

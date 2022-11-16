@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Portfolio about */
+
+* {
+    border: 0.25px solid red;
+    font-family: 'Michroma', sans-serif;
+    /* font-family: 'Gruppo', cursive; */
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+    gap: 50px;
+}
+
+.inner .sec01,
+.inner .sec02 {
+    display: flex;
+    justify-content: space-between;
+}
