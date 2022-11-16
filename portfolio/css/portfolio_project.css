@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* Portfolio about */
+
+* {
+    /* border: 0.25px solid red; */
+    font-family: 'Michroma', sans-serif;
+    /* font-family: 'Gruppo', cursive; */
+}
+
+.inner .sec02 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec02 .card {
+    display: flex;
+    position: relative;
+    width: 30vw;
+    height: 600px;
+}
+
+.sec02 .card .txt {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom: 0;
+    margin: 10px;
+    color: #fff;
+    gap: 10px;
+}
+.sec02 .card .img{
+    background: url(../../jellycat/img/card01.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
