@@ -1,7 +1,6 @@
 //인증키
 const key = '5965EJRdBGHjG4eGQZWF%2Fp2mReN24j61ZywRPMfS1adDWiSGt7rCo2HjqIT2IRvZ%2BTKlJmQo%2FsqYBH1GB8gAdw%3D%3D';
 
-
 // 1. 출/도착지기반열차정보 조회 //차량종류코드=00
 const url1= `https://apis.data.go.kr/1613000/TrainInfoService/getStrtpntAlocFndTrainInfo?serviceKey=5965EJRdBGHjG4eGQZWF%2Fp2mReN24j61ZywRPMfS1adDWiSGt7rCo2HjqIT2IRvZ%2BTKlJmQo%2FsqYBH1GB8gAdw%3D%3D&pageNo=1&_type=json&depPlaceId=NAT010032&arrPlaceId=NAT050044&depPlandTime=20221115&trainGradeCode=00`;
 // NAT050044 기차역 ID 오송
@@ -41,16 +40,15 @@ $.getJSON(url1, function (data) {
         // DepartTime.innerText = trainData.arrplandtime;
         function arrplandtimeTD(index){
             let td = document.createElement('td')
-            let txt = document.createTextNode(trainData[index].depplandtime)
+            let txt = document.createTextNode(trainData[index].arrplandtime)
             td.appendChild(txt)
             tr.appendChild(td)
-            console.log()
         }
         // 출발시간
         // ArrivalTime.innerText = trainData.depplandtime;
         function depplandtimeTD(index){
             let td = document.createElement('td')
-            let txt = document.createTextNode(trainData[index].arrplandtime)
+            let txt = document.createTextNode(trainData[index].depplandtime)
             td.appendChild(txt)
             tr.appendChild(td)
         }
@@ -58,7 +56,7 @@ $.getJSON(url1, function (data) {
         // Depart.innerText = trainData.arrplacename;
         function arrplacenameTD(index){
             let td = document.createElement('td')
-            let txt = document.createTextNode(trainData[index].depplacename)
+            let txt = document.createTextNode(trainData[index].arrplacename)
             td.appendChild(txt)
             tr.appendChild(td)
         }
@@ -66,7 +64,7 @@ $.getJSON(url1, function (data) {
         // Arrival.innerText = trainData.depplacename;
         function depplacenameTD(index){
             let td = document.createElement('td')
-            let txt = document.createTextNode(trainData[index].arrplacename)
+            let txt = document.createTextNode(trainData[index].depplacename)
             td.appendChild(txt)
             tr.appendChild(td)
         }
