@@ -146,8 +146,14 @@ header .nav .inner .Lmenu .menu > a {
 }
 
 header .nav .inner .Lmenu .menu a:hover {
-    color: #093B82;
-    border-bottom: 2px solid #093B82;
+    color: #638fcc;
+    border-bottom: none;
+}
+
+
+header .nav .inner .Lmenu .menu > a.on {
+    color: #638fcc;
+    border-bottom: 2px solid #638fcc;
 }
 
 
@@ -345,8 +351,8 @@ header .side .right.side.off {
 
 /* .event배경으로 깔린거 */
 .swiper.mySwiper01 {
-    width: 100%;
-    height: 720px;
+    width: 100vw;
+    height: 85vh;
   }
 
 .swiper.mySwiper01 .swiper-slide {
@@ -366,17 +372,15 @@ header .side .right.side.off {
 
 .swiper.mySwiper01 .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    top: 0;
     object-fit: cover;
-
   }
 
   .swiper.mySwiper01 {
     margin-left: auto;
     margin-right: auto;
   }
-  
 
 /*  //////////.sec01 ////////// */
 .sec01 .inner .mobileBT{
@@ -561,6 +565,142 @@ header .side .right.side.off {
 .trip .tab li{
     width: 120px;
 }
+
+/*  //////////.popup ////////// */
+.popup.hide{display: none;}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    
+}
+.popup .content {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    min-width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(4px);
+}
+
+.popup dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.popup dl dt{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #5d8ed3;
+}
+
+.popup dl dd{
+    display: flex;
+    width: 15%;
+    height: 30px;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px 10px;
+    background-color: #5d8ed320;
+    border-radius: 5px;
+
+    font-weight: 300;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.popup dl dd.KTX{
+    border: none;
+    background-color: #5d8ed350;
+}
+
+.popup dl dd:hover{
+    background-color: #5d8ed3;
+    color: #fff;
+}
+
+.popup ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.popup ul li{
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+    padding: 3px 10px;
+    background-color: #5d8ed320;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup ul li:hover {
+    background-color: #5d8ed3;
+    border: none;
+    color: #fff;
+}
+
+.popup ul > li:first-child{
+    width: 100%;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid #5d8ed3;
+}
+.popup ul li:first-child:hover{
+    background-color: #fff;
+    border-bottom: 1.5px solid #5d8ed3;
+    color: #000;
+    cursor: auto;
+}
+
+.popup ul li h1 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.popup button{
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 0.5px solid #00000050;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover{
+    background-color: #00000010;
+}
+
 
 /*  //////////.sec02 ////////// */
 .sec02 {
