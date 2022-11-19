@@ -1,14 +1,19 @@
 @charset "UTF-8";
 /* portfolio */
 
-@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet');
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'SUIT Variable', sans-serif;
+    font-family: 'SUIT', sans-serif;
     border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .inner{
@@ -32,32 +37,64 @@ header .inner{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: start;
     width: 100vw;
     margin-top: 20px;
 }
-
-header .inner > div {
-    display: inline-block;
+header .inner > div {display: none;}
+header .inner > div.on {
+    display: inline-flex;
     margin: 0 auto;
     flex-direction: column;
 }
 
-hr {
-    width: 1200px;
-}
-header .inner div {
+hr {width: 1200px;}
+header .inner div.on { display: flex;}
+
+header .inner div.on .txt,
+header .inner div.on .txt div{
     display: flex;
 }
 
+header .inner div.on .txt h1 {width: 120px;font-weight: 700; font-size: 1.1rem;}
+header .inner div.on .txt h2 {width: 120px;font-weight: 500; font-size: 1.1rem;}
+header .inner div.on .txt h3 {width: 100px;font-weight: 400; font-size: 1.1rem;}
+header .inner div.on .txt .web h3:nth-child(4) {width: 140px;}
+header .inner div.on .txt .brand h3 {width: auto; margin-right: 30px;}
+
+/* 메뉴버튼 */
 header .inner .menubar{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
     align-items: flex-end;
 }
-
-header .inner div .txt h1,
-header .inner div .txt h2,
-header .inner div .txt h3 {
-    width: 120px;
+  header .menubar .menuBt {
+    display: flex;
+    justify-content: center;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 5px 0 0 0;
+    cursor: pointer;
 }
+
+.menubar .menuBt .bar1,
+.menubar .menuBt .bar2 {
+    /* margin-top: 10px; */
+    background: #000;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    margin: 20px;
+    /* -webkit-transform: rotate(-180deg); */
+    /* transform: rotate(-180deg); */
+    /* transition: all 0.5s ease-in; */
+}
+
+.menubar .menuBt .bar2{ margin-top: 15px; }
+
+
 
 /* footer */
 footer{
@@ -99,6 +136,12 @@ div.sec{
 .sec .inner .info {
     position: absolute;
     top: 60px;
+    left: 10px;
+}
+
+.sec .inner .info.move {
+    position: absolute;
+    top: 180px;
     left: 10px;
 }
 

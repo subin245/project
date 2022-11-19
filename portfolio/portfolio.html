@@ -15,26 +15,29 @@
         <div class="inner">
             <!-- button -->
             <div class="menubar"> 
-                <div>menubar</div>
+                <a href="javascript:click()" class="menuBt">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                </a>
                 <hr>
             </div>
             <!-- 대메뉴 -->
             <div class="Lmenu">
                 <div class="txt">
-                    <h1>Home</h1>
-                    <h1>Profile</h1>
-                    <h1>Project</h1>
+                    <a href="javascript:click()"><h1>Home</h1></a>
+                    <a href="javascript:click()"><h1>Profile</h1></a>
+                    <a href="javascript:click()" class="ck"><h1>Project</h1></a>
                 </div>
                 <hr>
             </div>
             <!-- 중메뉴 -->
             <div class="Mmenu">
                 <div class="txt">
-                    <div></div>
-                    <div></div>
-                    <h2>Web</h2>
-                    <div></div>
-                    <h2>Brand</h2>
+                    <h2></h2>
+                    <h2></h2>
+                    <a href="javascript:click()" class="web"><h2>Web</h2></a>
+                    <h2></h2>
+                    <a href="javascript:click()" class="brand"><h2>Brand</h2></a>
                 </div>
                 <hr>
             </div>
@@ -43,13 +46,13 @@
                 <div class="txt">
                     <!-- web -->
                     <div class="web">
-                        <div></div>
-                        <div></div>
+                        <h2></h2>
+                        <h2></h2>
                         <h3>Jellycat</h3>
                         <h3>Let's Korail</h3>
                     </div>
                     <!-- brand -->
-                    <div class="Brand">
+                    <div class="brand">
                         <h3>Farmercy</h3>
                         <h3>Forabit</h3>
                         <h3>PLACCU</h3>
@@ -122,13 +125,15 @@
     <footer>
         <div class="inner">
             <div class="button">
-                <div class="up">up</div>
+                <a href="javascript:click()"><div class="up">up</div></a>
                 <hr>
-                <div class="down">down</div>
+                <a href="javascript:click()"><div class="down">down</div></a>
             </div>
             <hr>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../portfolio/js/portfolio.js"></script>
 </body>
 
 </html>
