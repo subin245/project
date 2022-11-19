@@ -1,2 +1,110 @@
 @charset "UTF-8";
-/* Portfolio home */
+/* portfolio */
+
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'SUIT Variable', sans-serif;
+    border: 1px solid red;
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .inner{
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    margin-top: 20px;
+}
+
+header .inner > div {
+    display: inline-block;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+hr {
+    width: 1200px;
+}
+header .inner div {
+    display: flex;
+}
+
+header .inner .menubar{
+    align-items: flex-end;
+}
+
+header .inner div .txt h1,
+header .inner div .txt h2,
+header .inner div .txt h3 {
+    width: 120px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+}
+
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    margin-bottom: 30px;
+} 
+footer .inner .button hr {
+    width: 20px;
+}
+
+/* section */
+div.sec{
+    height: 100vh;
+}
+
+.sec.one {background-color: aliceblue;}
+.sec.two {background-color: antiquewhite;}
+.sec.three {background-color: aliceblue;}
+.sec.four {background-color: antiquewhite;}
+.sec.five {background-color: aliceblue;}
+.sec.six {background-color: antiquewhite;}
+.sec.seven {background-color: aliceblue;}
+.sec.eight {background-color: antiquewhite;}
+.sec.nine {background-color: aliceblue;}
+
+.sec .inner {
+    position: relative;
+}
+.sec .inner .info {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.sec .inner .overview {
+    position: absolute;
+    width: 683px;
+    bottom: 60px;
+    left: 10px;
+}
