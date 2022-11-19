@@ -12,6 +12,14 @@ body {min-width: 320px;}
     position: relative;
 }
 
+.nav.n01 .inner .Lmenu .menu {display: none;}
+
+/* .event배경으로 깔린거 */
+.swiper.mySwiper01 {
+    width: 100vw;
+    height: 720px;
+    /* height: 85vh; */
+}
 
 /* sec01 */
 .sec01 .inner .ticket,

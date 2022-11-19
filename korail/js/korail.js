@@ -1,3 +1,5 @@
+function click() {return;}
+
 // nav
 $(function () {
   $(".nav.n01 .inner .Lmenu .menu a").each(function() {
@@ -42,7 +44,7 @@ $(function () {
 // sec01 - ticket
 $(function () {
   $(".sec01 .inner .ticket").children("li").click(function () {
-    $(".sec01 .inner .ticket li").children("h5").removeClass('on');;
+    $(".sec01 .inner .ticket li").children("h5").removeClass('on');
     $(this).children("h5").toggleClass('on');
   });
 });
@@ -67,6 +69,28 @@ $(function () {
   });
 });
 
+//sec05
+$(function () {
+  $("#notice").click(function () {
+    $(".sec05 .Notice .tab li").children("h5").removeClass('on');
+    $(this).addClass('on');
+    $(".sec05 .Notice .content").children("div").removeClass('on');
+    $(".sec05 .Notice .content").children(".Notice01").addClass('on');
+  });
+  $("#Announcement").click(function () {
+    $(".sec05 .Notice .tab li").children("h5").removeClass('on');
+    $(this).addClass('on');
+    $(".sec05 .Notice .content").children("div").removeClass('on');
+    $(".sec05 .Notice .content").children(".Notice02").addClass('on');
+  });
+  $("#event").click(function () {
+    $(".sec05 .Notice .tab li").children("h5").removeClass('on');
+    $(this).addClass('on');
+    $(".sec05 .Notice .content").children("div").removeClass('on');
+    $(".sec05 .Notice .content").children(".Notice03").addClass('on');
+  });
+});
+
 // .popup
 $(function () {
   $(".departure").click(function () {
@@ -86,7 +110,7 @@ $(function () {
 // sec01배경
 var swiper = new Swiper(".mySwiper01", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -101,6 +125,16 @@ var swiper = new Swiper(".mySwiper01", {
 // sec02
 var swiper = new Swiper(".mySwiper02", {
   slidesPerView: 6,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// sec03
+var swiper = new Swiper(".mySwiper03", {
+  slidesPerView: "auto",
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
