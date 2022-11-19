@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* Portfolio about */
 
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     /* border: 0.25px solid red; */
     font-family: 'Michroma', sans-serif;
@@ -12,4 +19,20 @@
 .inner .sec02 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+.inner .sec02 div {
+    width: 400px;
+}
+
+.inner .sec02 div h3,
+.inner .sec02 div li {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+}
+
+.inner .sec02 .tool img{
+    width: 50px;
+    height: 50px;
 }

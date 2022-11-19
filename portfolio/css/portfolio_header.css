@@ -20,7 +20,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 0.25px solid red; */
+    border: 0.25px solid red;
     font-family: 'Michroma', sans-serif;
     /* font-family: 'Gruppo', cursive; */
 }
@@ -32,6 +32,9 @@ a {text-decoration: none; color: #000;}
 /* header */
 header {
     border-bottom: 2px solid #000;
+    background-color: #fff;
+    position: sticky;
+    top: -20px;
 }
 
 header .inner{
@@ -53,20 +56,25 @@ header .inner ul li {
 
 header .inner ul li a{
     font-size: 1rem;
-    color: #fff;
+    color: #000;
 }
 
-header .inner ul li div {
+header .inner ul li div{
+    display: flex;
     position: absolute;
-    top: 36px;
+    top: 35px;
     z-index: -1;
     height: 30px;
     border-radius: 999px;
-    background-color: mediumslateblue;
+    background-color: rgb(218, 255, 178);
     filter: blur(8px);
     font-size: 0.5rem;
     color: #00000000;
     padding: 0 25px;
+}
+
+header .inner ul li div.on {
+    background-color: mediumslateblue;
 }
 
 .inner {
@@ -85,16 +93,13 @@ header .inner ul li div {
 .inner .sec01 h1{
     width: 30vw;
     font-size: 2.7rem;
-    /* border-bottom: 1.5px solid #000; */
     padding: 20px 0;
 }
 
 .inner .sec01 p{
     width: 62vw;
-    /* font-family: 'YUniverse-B'; */
     font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.1rem;
-    /* border-bottom: 1.5px solid #000; */
     padding: 30px 5px;
     line-height: 32px;
     letter-spacing: -0.15px;
