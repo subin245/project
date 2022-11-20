@@ -147,6 +147,29 @@ div.sec{
 .sec.nine {background:url(../img/bg/bg09.svg)no-repeat 50% 50% / cover;}
 .sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
 
+
+.sec.five a {color: #1d50a2;}
+.sec.six a {color: #ea5504;}
+.sec.seven a {color: #fff;}
+.sec.eight a {color: #fbd083;}
+
+.sec .inner .detail{
+    position: absolute;
+    left: 10px;
+    top: 75%;
+}
+.sec .inner .detail::after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #000;
+}
+.sec.five .inner .detail::after{background-color: #1d50a2;}
+.sec.six .inner .detail::after{background-color: #ea5504;}
+.sec.seven .inner .detail::after{background-color: #fff;}
+.sec.eight .inner .detail::after{background-color: #fbd083;}
+
 .sec .inner .logo{
     position: absolute;
     left: 50%;
