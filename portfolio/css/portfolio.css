@@ -8,12 +8,24 @@
     padding: 0;
     margin: 0;
     font-family: 'SUIT', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#content{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .inner{
@@ -23,25 +35,28 @@ a {
     margin: 0 auto;
     width: 1200px;
     height: 100%;
+    scroll-snap-align: start;
 }
 
 /* header */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header .inner{
-    position: absolute;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
-    width: 100vw;
-    margin-top: 20px;
 }
-header .inner > div {display: none;}
+
+header .inner > div {
+    display: none;
+}
+
 header .inner > div.on {
     display: inline-flex;
     margin: 0 auto;
@@ -98,19 +113,20 @@ header .inner .menubar{
 
 /* footer */
 footer{
-    display: flex;
-    position: sticky;
-    bottom: 0;
-    z-index: 999;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 footer .inner {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
     margin-bottom: 30px;
 } 
+
 footer .inner .button hr {
     width: 20px;
 }
@@ -120,34 +136,67 @@ div.sec{
     height: 100vh;
 }
 
-.sec.one {background-color: aliceblue;}
+.sec.one {background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;}
 .sec.two {background-color: antiquewhite;}
-.sec.three {background-color: aliceblue;}
+.sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
 .sec.four {background-color: antiquewhite;}
-.sec.five {background-color: aliceblue;}
-.sec.six {background-color: antiquewhite;}
-.sec.seven {background-color: aliceblue;}
-.sec.eight {background-color: antiquewhite;}
-.sec.nine {background-color: aliceblue;}
+.sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;}
+.sec.six {background:url(../img/bg/bg06.svg)no-repeat 50% 50% / cover;}
+.sec.seven {background:url(../img/bg/bg07.png)no-repeat 50% 50% / cover;}
+.sec.eight {background:url(../img/bg/bg08.svg)no-repeat 50% 50% / cover;}
+.sec.nine {background:url(../img/bg/bg09.svg)no-repeat 50% 50% / cover;}
+.sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
 
 .sec .inner {
     position: relative;
 }
+
+/* 왼쪽상단 인포 */
 .sec .inner .info {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 10px;
+    gap: 17px;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
 }
 
 .sec .inner .info.move {
     position: absolute;
-    top: 180px;
+    top: 150px;
     left: 10px;
 }
 
+.sec .inner .info .txtGp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec .inner .info .txtGp > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sec .inner .info h1 {font-weight:700; font-size: 2.1rem;transition: all 0.3s ease-in-out;}
+.sec .inner .info.move h1 {font-weight:800; font-size: 1.5rem;}
+.sec .inner .info .txtGp h5 {font-weight:800; font-size: 0.9rem;}
+.sec .inner .info .txtGp h6 {font-weight:500;font-size: 0.8rem;}
+
+/* 왼쪽하단 오버뷰 */
 .sec .inner .overview {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     width: 683px;
     bottom: 60px;
     left: 10px;
+    gap: 5px;
 }
+
+.sec .inner .overview h5 {font-weight:900; font-size: 0.95rem;}
+.sec .inner .overview p {font-weight:400;font-size: 0.8rem;line-height: 17px;}
+

@@ -2,9 +2,7 @@ function click() {return;}
 
 $(function () {
     $("header .inner").children(".menubar").children("a").click(function() {
-        $("header .inner .Mmenu").toggleClass('on');
-        $("header .inner .Smenu").toggleClass('on');
-        $("header .inner .Lmenu").toggleClass('on').end();
+        $("header .inner").children().toggleClass('on');
     });
 
     $("header .inner div").click(function() {
