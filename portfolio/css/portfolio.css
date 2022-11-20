@@ -140,12 +140,47 @@ div.sec{
 .sec.two {background-color: antiquewhite;}
 .sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
 .sec.four {background-color: antiquewhite;}
-.sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;}
-.sec.six {background:url(../img/bg/bg06.svg)no-repeat 50% 50% / cover;}
-.sec.seven {background:url(../img/bg/bg07.png)no-repeat 50% 50% / cover;}
-.sec.eight {background:url(../img/bg/bg08.svg)no-repeat 50% 50% / cover;}
+.sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;color: #1d50a2;}
+.sec.six {background:url(../img/bg/bg06.svg)no-repeat 50% 50% / cover; color: #ea5504;}
+.sec.seven {background:url(../img/bg/bg07.png)no-repeat 50% 50% / cover;color: #fff;}
+.sec.eight {background:url(../img/bg/bg08.svg)no-repeat 50% 50% / cover;color: #fbd083;}
 .sec.nine {background:url(../img/bg/bg09.svg)no-repeat 50% 50% / cover;}
 .sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
+
+.sec .inner .logo{
+    position: absolute;
+    left: 50%;
+    top:45%;
+    transform: translate(-50%,-50%);
+}
+.sec.five .inner .logo {
+    top: 40%;
+    width: 360px;
+    object-fit: cover;
+}
+.sec.six .inner .logo {
+    width: 330px;
+    object-fit: cover;
+}
+.sec.seven .inner .logo {
+    width: 380px;
+    object-fit: cover;
+}
+.sec.eight .inner .logo {
+    width: 150px;
+    object-fit: cover;
+}
+.sec.nine .inner .logo {
+    top: 52%;
+    left: 20%;
+    width: 420px;
+    object-fit: cover;
+}
+.sec.ten .inner .logo {
+    top: 28%;
+    width: 180px;
+    object-fit: cover;
+}
 
 .sec .inner {
     position: relative;
