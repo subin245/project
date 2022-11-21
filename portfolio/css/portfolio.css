@@ -77,6 +77,11 @@ header .inner div.on .txt h3 {width: 100px;font-weight: 400; font-size: 1.1rem;}
 header .inner div.on .txt .web h3:nth-child(4) {width: 140px;}
 header .inner div.on .txt .brand h3 {width: auto; margin-right: 30px;}
 
+h2.empty{
+    overflow: hidden;
+    text-indent: -999px;
+}
+
 /* 메뉴버튼 */
 header .inner .menubar{
     display: flex;
