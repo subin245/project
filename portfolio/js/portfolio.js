@@ -12,4 +12,15 @@ $(function () {
             $(".sec .inner .info").removeClass('move');
         }
     });
+
+    $(".button span").each(function() {
+        var thisOffset = $("." + $(this).data('id')).offset().top;
+
+        $(this).click(function() {
+            $("html, body").animate({
+                scrollTop: thisOffset
+            }, 1000);
+        });
+    });
 });
+

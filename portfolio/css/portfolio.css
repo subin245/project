@@ -18,8 +18,7 @@ a {
 
 html,
 body {
-  height: 100vh;
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #content{
@@ -43,7 +42,7 @@ header {
     position: fixed;
     top: 20px;
     z-index: 2;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
 }
 
@@ -63,7 +62,6 @@ header .inner > div.on {
     flex-direction: column;
 }
 
-hr {width: 1200px;}
 header .inner div.on { display: flex;}
 
 header .inner div.on .txt,
@@ -89,6 +87,7 @@ header .inner .menubar{
     flex-direction: column;
     align-items: flex-end;
 }
+
   header .menubar .menuBt {
     display: flex;
     justify-content: center;
@@ -132,19 +131,26 @@ footer .inner {
     margin-bottom: 30px;
 } 
 
-footer .inner .button hr {
-    width: 20px;
+/* nav.footer line */
+header .inner > div::after {
+    display: block;
+    content: "";
+    width: 1210px;
+    height: 2px;
+    background-color: #00000030;
+    margin-top: 0.25px;
 }
 
 /* section */
 div.sec{
     height: 100vh;
+    min-height: 720px;
 }
 
 .sec.one {background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;}
-.sec.two {background-color: antiquewhite;}
+.sec.two {background-color: #fff;}
 .sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
-.sec.four {background-color: antiquewhite;}
+.sec.four {background-color: #EDEDED;}
 .sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;color: #1d50a2;}
 .sec.six {background:url(../img/bg/bg06.svg)no-repeat 50% 50% / cover; color: #ea5504;}
 .sec.seven {background:url(../img/bg/bg07.png)no-repeat 50% 50% / cover;color: #fff;}
@@ -153,27 +159,37 @@ div.sec{
 .sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
 
 
-.sec.five a {color: #1d50a2;}
+/* .sec.five a {color: #1d50a2;}
 .sec.six a {color: #ea5504;}
+.sec.eight a {color: #fbd083;} */
 .sec.seven a {color: #fff;}
-.sec.eight a {color: #fbd083;}
 
-.sec .inner .detail{
+/* .sec.five .inner .detail::after{background-color: #1d50a2;}
+.sec.six .inner .detail::after{background-color: #ea5504;}
+.sec.eight .inner .detail::after{background-color: #fbd083;} */
+.sec.seven .inner .detail::after{background-color: #fff;}
+
+.sec .inner > a{
     position: absolute;
     left: 10px;
-    top: 75%;
+    z-index: 5;
 }
-.sec .inner .detail::after{
+
+.sec .inner .PDF {top: 67%;}
+.sec .inner .link {top: 70%;}
+.sec .inner .detail {top: 73%;}
+
+.sec .inner > a::after{
     display: block;
     content: "";
     height: 1px;
     width: 60px;
     background-color: #000;
 }
-.sec.five .inner .detail::after{background-color: #1d50a2;}
-.sec.six .inner .detail::after{background-color: #ea5504;}
-.sec.seven .inner .detail::after{background-color: #fff;}
-.sec.eight .inner .detail::after{background-color: #fbd083;}
+
+.sec .inner > a:hover {transform: translate(-5%,-5%);}
+
+
 
 .sec .inner .logo{
     position: absolute;
@@ -261,5 +277,104 @@ div.sec{
 }
 
 .sec .inner .overview h5 {font-weight:900; font-size: 0.95rem;}
-.sec .inner .overview p {font-weight:400;font-size: 0.8rem;line-height: 17px;}
+.sec .inner .overview p {
+    font-weight:400;
+    font-size: 0.8rem;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+}
 
+/* 화면 목업 */
+.sec .inner .mockup {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 1200px;
+    height: 400px;
+}
+.sec .inner .mockup a {
+    position: absolute;
+    border-radius: 7px;
+    text-indent: -999px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #00000050;
+}
+
+.sec.three .inner .mockup .PC:hover {background: url("../img/web/jellycat_pc.jpg") no-repeat 0% 100% / cover;}
+.sec.three .inner .mockup .tablet:hover {background: url("../img/web/jellycat_t.jpg") no-repeat 0% 100% / cover;}
+.sec.three .inner .mockup .mobile:hover {background: url("../img/web/jellycat_m.jpg") no-repeat 0% 100% / cover;}
+
+.sec.three .inner .mockup .PC {
+    width: 520px;
+    height: 360px;
+    right: 15%;
+    top: 0;
+    background: url("../img/web/jellycat_pc.jpg") no-repeat 0% 0% / cover;
+    transition: 3s all ease-in-out;
+}
+
+.sec.three .inner .mockup .tablet {
+    width: 360px;
+    height: 240px;
+    left: 30%;
+    bottom: 3%;
+    z-index: 1;
+    background: url("../img/web/jellycat_t.jpg") no-repeat 0% 0% / cover;
+    transition: 4s all ease-in-out;
+}
+
+.sec.three .inner .mockup .mobile {
+    width: 92px;
+    height: 161px;
+    left: 25%;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 5px;
+    background: url("../img/web/jellycat_m.jpg") no-repeat 0% 0% / cover;
+    transition: 4s all ease-in-out;
+}
+
+.sec.four .inner .mockup .PC:hover {background: url("../img/web/korail_pc.jpg") no-repeat 0% 100% / cover;}
+
+.sec.four .inner .mockup .PC {
+    width: 520px;
+    height: 360px;
+    right: 15%;
+    top: 0;
+    background: url("../img/web/korail_pc.jpg") no-repeat 0% 0% / cover;
+    transition: 3s all ease-in-out;
+}
+
+/* sec02 profile */
+.sec.two .inner .txtGp{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    justify-content: space-between;
+    width: 1200px;
+    transform: translateX(-50%);
+}
+
+.sec.two .inner .txtGp div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sec.two .inner .txtGp div h5 {font-weight:900; font-size: 1rem;}
+.sec.two .inner .txtGp div h6 {font-weight:500;font-size: 0.9rem; color: rgb(65, 65, 65);letter-spacing: -0.7px;}
+
+.sec.two .inner .txtGp div h5::after {
+    display: block;
+    content: "";
+    width: 105%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 3px;
+}
+
+footer .inner .button span {
+    cursor: pointer;
+}
