@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* portfolio */
 
-@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet');
+/* @import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet'); */
 
 * {
     box-sizing: border-box;
@@ -10,22 +10,33 @@
     font-family: 'SUIT', sans-serif;
     /* border: 1px solid red; */
 }
-
+body{
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 a {
     text-decoration: none;
     color: #000;
 }
-
-html,
-body {
-    overflow: hidden;
-}
-
-#content{
+.wrap{
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
+.wrap > div{
+    scroll-snap-align: start;
+}
+#content{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    z-index: 5;
+    top: 0;
+}
+
 
 .inner{
     display: flex;
@@ -44,6 +55,7 @@ header {
     z-index: 2;
     left: 49%;
     transform: translateX(-50%);
+    z-index: 10;
 }
 
 header .inner{
@@ -69,10 +81,10 @@ header .inner div.on .txt div{
     display: flex;
 }
 
-header .inner div.on .txt h1 {width: 120px;font-weight: 700; font-size: 1.1rem;}
-header .inner div.on .txt h2 {width: 120px;font-weight: 500; font-size: 1.1rem;}
-header .inner div.on .txt h3 {width: 100px;font-weight: 400; font-size: 1.1rem;}
-header .inner div.on .txt .web h3:nth-child(4) {width: 140px;}
+header .inner div.on .txt h1 {width: 120px;font-weight: 700; font-size: 1.1rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt h2 {width: 120px;font-weight: 600; font-size: 1.05rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt h3 {width: 100px;font-weight: 500; font-size: 0.95rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt .web a:nth-child(4) {width: 140px;}
 header .inner div.on .txt .brand h3 {width: auto; margin-right: 30px;}
 
 h2.empty{
@@ -88,7 +100,7 @@ header .inner .menubar{
     align-items: flex-end;
 }
 
-  header .menubar .menuBt {
+header .menubar .menuBt {
     display: flex;
     justify-content: center;
     right: 0;
@@ -100,54 +112,78 @@ header .inner .menubar{
 
 .menubar .menuBt .bar1,
 .menubar .menuBt .bar2 {
-    /* margin-top: 10px; */
     background: #000;
     width: 20px;
     height: 2px;
     position: absolute;
     margin: 20px;
-    /* -webkit-transform: rotate(-180deg); */
-    /* transform: rotate(-180deg); */
-    /* transition: all 0.5s ease-in; */
 }
 
 .menubar .menuBt .bar2{ margin-top: 15px; }
 
 
 
-/* footer */
-footer{
+/* side */
+/* .side{
     position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
     z-index: 2;
 }
 
-footer .inner {
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
-    margin-bottom: 30px;
+.side .inner {
+    justify-content: end;
 } 
 
-/* nav.footer line */
+.side .inner .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.side .inner .button span {
+    cursor: pointer;
+    width: 25px;
+    text-align: center;
+}
+.side .inner .button span:hover{color: rgb(160, 160, 160);}
+.side .inner .button span:hover::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: rgb(160, 160, 160);
+} */
+
+/* nav line */
 header .inner > div::after {
     display: block;
     content: "";
     width: 1210px;
     height: 2px;
     background-color: #00000030;
-    margin-top: 0.25px;
+    margin: 3.5px 0;
 }
 
+
 /* section */
+#section1 {
+    background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;
+    height: 100vh;
+    min-height: 720px;
+    position: relative;
+    z-index: 100;
+    top: 0;
+}
 div.sec{
     height: 100vh;
     min-height: 720px;
 }
-
-.sec.one {background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;}
 .sec.two {background-color: #fff;}
 .sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
 .sec.four {background-color: #EDEDED;}
@@ -244,7 +280,7 @@ div.sec{
 
 .sec .inner .info.move {
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 10px;
 }
 
@@ -261,7 +297,7 @@ div.sec{
 }
 
 .sec .inner .info h1 {font-weight:700; font-size: 2.1rem;transition: all 0.3s ease-in-out;}
-.sec .inner .info.move h1 {font-weight:800; font-size: 1.5rem;}
+.sec .inner .info.move h1 {font-weight:800; font-size: 1.8rem;}
 .sec .inner .info .txtGp h5 {font-weight:800; font-size: 0.9rem;}
 .sec .inner .info .txtGp h6 {font-weight:500;font-size: 0.8rem;}
 
@@ -279,7 +315,7 @@ div.sec{
 .sec .inner .overview h5 {font-weight:900; font-size: 0.95rem;}
 .sec .inner .overview p {
     font-weight:400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: -0.5px;
     line-height: 20px;
 }
@@ -350,7 +386,7 @@ div.sec{
     display: flex;
     gap: 50px;
     position: absolute;
-    bottom: 70px;
+    bottom: 100px;
     left: 50%;
     justify-content: space-between;
     width: 1200px;
@@ -361,20 +397,31 @@ div.sec{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 180px;
+}
+.sec.two .inner .txtGp .experience{
+    width: 210px;
 }
 
-.sec.two .inner .txtGp div h5 {font-weight:900; font-size: 1rem;}
-.sec.two .inner .txtGp div h6 {font-weight:500;font-size: 0.9rem; color: rgb(65, 65, 65);letter-spacing: -0.7px;}
+.sec.two .inner .txtGp div h5 {font-weight:700; font-size: 1rem;}
+.sec.two .inner .txtGp div h6 {
+    font-weight:500;
+    font-size: 0.9rem; 
+    color: rgb(90, 90, 90); 
+    letter-spacing: -0.7px;
+    line-height: 22px;
+}
+
+.sec.two .inner .txtGp .certificate h6,
+.sec.two .inner .txtGp .skill h6 {
+    line-height: 18px;
+}
 
 .sec.two .inner .txtGp div h5::after {
     display: block;
     content: "";
     width: 105%;
     height: 2px;
-    background-color: #000;
-    margin-top: 3px;
-}
-
-footer .inner .button span {
-    cursor: pointer;
+    background-color: rgb(150, 150, 150);
+    margin: 3px 0;
 }

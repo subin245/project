@@ -1,11 +1,11 @@
-function click() {return;}
-
 $(function () {
-    $("header .inner").children(".menubar").children("a").click(function() {
+    $("header .inner").children(".menubar").children("a").click(function(e) {
         $("header .inner").children().toggleClass('on');
+        e.preventDefault()
+
     });
 
-    $("header .inner div").click(function() {
+    $("header .inner > div:first-child").click(function() {
         if($(this).next(".Lmenu").hasClass('on')) {
             $("body div.sec .inner .info").addClass('move');
         } else {
@@ -13,14 +13,15 @@ $(function () {
         }
     });
 
-    $(".button span").each(function() {
-        var thisOffset = $("." + $(this).data('id')).offset().top;
+    // $('.txt a').click(function(e){
+    //     var projectname = $(this).attr('class')
+    //     var secHeight = $(".sec").height()
+    //     var gotoProject = $('#'+ projectname).offset().top
+    //     console.log(gotoProject)
 
-        $(this).click(function() {
-            $("html, body").animate({
-                scrollTop: thisOffset
-            }, 1000);
-        });
-    });
+    //     $("#content").animate({
+    //         scrollTop: gotoProject
+    //     }, 1000);
+    //     e.preventDefault()
+    // });
 });
-
