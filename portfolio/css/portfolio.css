@@ -88,25 +88,46 @@ header .inner div.on .txt h3 {width: 100px;font-weight: 500; font-size: 0.95rem;
 header .inner div.on .txt .web a:nth-child(4) {width: 140px;}
 header .inner div.on .txt .brand h3 {width: auto; margin-right: 30px;}
 
+
 /* farmercy nav 블루로 변경 */
-/* header .inner.bl div.on .txt h1,
+header .inner.bl > div::after {background-color: #1d50a2; height: 1px;}
+
+header .inner.bl .menubar .menuBt .bar1,
+header .inner.bl .menubar .menuBt .bar2 {background: #1d50a2;}
+
+header .inner.bl div.on .txt h1,
 header .inner.bl div.on .txt h2,
-header .inner.bl div.on .txt h3 {color: #1d50a2;} */
+header .inner.bl div.on .txt h3 {color: #1d50a2;}
 
 /* forabit nav 오렌즈로 변경 */
-/* header .inner.or div.on .txt h1,
+header .inner.or > div::after {background-color: #ea5504; height: 1px;}
+
+header .inner.or .menubar .menuBt .bar1,
+header .inner.or .menubar .menuBt .bar2 {background: #ea5504;}
+
+header .inner.or div.on .txt h1,
 header .inner.or div.on .txt h2,
-header .inner.or div.on .txt h3 {color: #ea5504;} */
+header .inner.or div.on .txt h3 {color: #ea5504;}
 
 /* placcu nav 화이트로 변경 */
+header .inner.wh > div::after {background-color: #fff; height: 1px;}
+
+header .inner.wh .menubar .menuBt .bar1,
+header .inner.wh .menubar .menuBt .bar2 {background: #fff;}
+
 header .inner.wh div.on .txt h1,
 header .inner.wh div.on .txt h2,
 header .inner.wh div.on .txt h3 {color: #fff;}
 
 /* 숨뜰 nav 골드로 변경 */
-/* header .inner.gd div.on .txt h1,
+header .inner.gd > div::after {background-color: #fbd083; height: 1px;}
+
+header .inner.gd .menubar .menuBt .bar1,
+header .inner.gd .menubar .menuBt .bar2 {background: #fbd083;}
+
+header .inner.gd div.on .txt h1,
 header .inner.gd div.on .txt h2,
-header .inner.gd div.on .txt h3 {color: #fbd083;} */
+header .inner.gd div.on .txt h3 {color: #fbd083;}
 
 h2.empty{
     overflow: hidden;
@@ -140,11 +161,7 @@ header .menubar .menuBt {
     margin: 20px;
 }
 
-/* 어두울때 화이트로 변경 */
-header .inner.wh .menubar .menuBt .bar1,
-header .inner.wh .menubar .menuBt .bar2 {
-    background: #fff;
-}
+
 
 .menubar .menuBt .bar2{ margin-top: 15px; }
 
@@ -159,11 +176,7 @@ header .inner > div::after {
     margin: 3.5px 0;
 }
 
-/* 어두울때 화이트로 변경 */
-header .inner.wh > div::after {
-    background-color: #fff;
-    height: 1px;
-}
+
 
 
 /* section */
@@ -190,14 +203,14 @@ div.sec{
 .sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
 
 
-/* .sec.five a {color: #1d50a2;}
+.sec.five a {color: #1d50a2;}
 .sec.six a {color: #ea5504;}
-.sec.eight a {color: #fbd083;} */
+.sec.eight a {color: #fbd083;}
 .sec.seven a {color: #fff;}
 
-/* .sec.five .inner .detail::after{background-color: #1d50a2;}
+.sec.five .inner .detail::after{background-color: #1d50a2;}
 .sec.six .inner .detail::after{background-color: #ea5504;}
-.sec.eight .inner .detail::after{background-color: #fbd083;} */
+.sec.eight .inner .detail::after{background-color: #fbd083;} 
 .sec.seven .inner .detail::after{background-color: #fff;}
 
 .sec .inner > a{
@@ -210,7 +223,7 @@ div.sec{
 .sec .inner .link {top: 70%;}
 .sec .inner .detail {top: 73%;}
 
-.sec .inner > a::after{
+.sec .inner > a.detail::after{
     display: block;
     content: "";
     height: 1px;
@@ -218,44 +231,31 @@ div.sec{
     background-color: #000;
 }
 
-.sec .inner > a:hover {transform: translate(-5%,-5%);}
+.sec .inner > a.detail:hover {transform: translate(-5%,-5%);}
+/* .sec .inner > a.logo:hover {transform: translate(-55%,-55%)} */
 
 
 
-.sec .inner .logo{
-    position: absolute;
-    left: 50%;
-    top:45%;
-    transform: translate(-50%,-50%);
-}
-.sec.five .inner .logo {
-    top: 40%;
-    width: 360px;
-    object-fit: cover;
-}
-.sec.six .inner .logo {
-    width: 330px;
-    object-fit: cover;
-}
-.sec.seven .inner .logo {
-    width: 380px;
-    object-fit: cover;
-}
-.sec.eight .inner .logo {
-    width: 150px;
-    object-fit: cover;
-}
-.sec.nine .inner .logo {
-    top: 52%;
-    left: 20%;
-    width: 420px;
-    object-fit: cover;
-}
-.sec.ten .inner .logo {
-    top: 28%;
-    width: 180px;
-    object-fit: cover;
-}
+.sec .inner .logo{position: absolute;transform: translate(-50%,-50%);}
+.sec .inner .logo img {object-fit: cover;}
+
+.sec.five .inner .logo {top: 40%; left: 50%;}
+.sec.five .inner .logo img {width: 360px;}
+
+.sec.six .inner .logo {top: 40%; left: 50%;}
+.sec.six .inner .logo img {width: 360px;}
+
+.sec.seven .inner .logo {top: 48%; left: 20%;}
+.sec.seven .inner .logo img {width: 440px;}
+
+.sec.eight .inner .logo {top: 40%; left: 50%;}
+.sec.eight .inner .logo img {width: 180px;}
+
+.sec.nine .inner .logo {top: 48%; left: 20%;}
+.sec.nine .inner .logo img {width: 420px;}
+
+.sec.ten .inner .logo  {top: 28%; left: 50%;}
+.sec.ten .inner .logo img {width: 180px;}
 
 .sec .inner {
     position: relative;
