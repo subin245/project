@@ -170,7 +170,7 @@ header .inner.wh > div::after {
 #section1 {
     background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;
     height: 100vh;
-    min-height: 720px;
+    /* min-height: 720px; */
     position: relative;
     z-index: 100;
     top: 0;
