@@ -223,6 +223,8 @@ div.sec{
 .sec .inner .link {top: 70%;}
 .sec .inner .detail {top: 73%;}
 
+.sec .inner > a.PDF::after,
+.sec .inner > a.link::after,
 .sec .inner > a.detail::after{
     display: block;
     content: "";
