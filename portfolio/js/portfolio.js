@@ -24,4 +24,40 @@ $(function () {
     //     }, 1000);
     //     e.preventDefault()
     // });
+
 });
+
+
+
+
+
+
+
+
+
+
+$("#content").scroll(function(){
+    if ($(this).scrollTop() >= 5280 && $(this).scrollTop() < 7392){
+        $("header .inner").addClass("wh");
+    } else{
+        $("header .inner").removeClass("wh");
+    }
+    var scrollValue = $("#content").scrollTop(); 
+    console.log(scrollValue); 
+
+});
+
+
+// function vh(v) {
+//     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+//     return (v * h) / 100;
+// }
+//   $(function() {
+//     $("#content").on("scroll", function() {
+//         if($("#content").scrollTop() > vh(470) && $("#content").scrollTop() < vh(700)) {
+//             $("header .inner").addClass("wh");
+//         } else {
+//             $("header .inner").removeClass("wh");
+//         }
+//     });
+// });
