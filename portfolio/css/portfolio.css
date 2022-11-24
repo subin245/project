@@ -178,16 +178,15 @@ header .inner > div::after {
 
 
 
-
 /* section */
 #section1 {
-    background:url(../img/bg/solen-feyissa--kAcMeVoEwU-unsplash.jpg)no-repeat 50% 50% / cover;
+    background:rgb(236, 232, 235);
     height: 100vh;
-    /* min-height: 720px; */
     position: relative;
     z-index: 100;
     top: 0;
 }
+
 div.sec{
     height: 100vh;
     min-height: 720px;
@@ -233,6 +232,8 @@ div.sec{
     background-color: #000;
 }
 
+.sec .inner > a.PDF:hover,
+.sec .inner > a.link:hover,
 .sec .inner > a.detail:hover {transform: translate(-5%,-5%);}
 /* .sec .inner > a.logo:hover {transform: translate(-55%,-55%)} */
 
