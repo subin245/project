@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* portfolio_Sumdduel */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}

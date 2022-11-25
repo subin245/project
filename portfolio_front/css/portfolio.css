@@ -1,0 +1,425 @@
+@charset "UTF-8"; 
+/* portfolio */
+
+/* @import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet'); */
+@media (prefers-color-scheme: dark) {}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'SUIT', sans-serif;
+    /* border: 1px solid red; */
+}
+body{
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.wrap{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.wrap > div{
+    scroll-snap-align: start;
+}
+#content{
+    height: 100vh;
+    min-height: 90vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    z-index: 5;
+    top: 0;
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+header .inner{
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+header .inner > div {
+    display: none;
+}
+
+header .inner > div.on {
+    display: inline-flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+header .inner div.on { display: flex;}
+
+header .inner div.on .txt,
+header .inner div.on .txt div{
+    display: flex;
+}
+
+header .inner div.on .txt h1 {width: 120px;font-weight: 700; font-size: 1.1rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt h2 {width: 120px;font-weight: 600; font-size: 1.05rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt h3 {width: 100px;font-weight: 500; font-size: 0.95rem; color: rgb(56, 56, 56);}
+header .inner div.on .txt .web a:nth-child(4) {width: 140px;}
+header .inner div.on .txt .brand h3 {width: auto; margin-right: 30px;}
+
+
+/* farmercy nav 블루로 변경 */
+header .inner.bl > div::after {background-color: #1d50a2; height: 1px;}
+
+header .inner.bl .menubar .menuBt .bar1,
+header .inner.bl .menubar .menuBt .bar2 {background: #1d50a2;}
+
+header .inner.bl div.on .txt h1,
+header .inner.bl div.on .txt h2,
+header .inner.bl div.on .txt h3 {color: #1d50a2;}
+
+/* forabit nav 오렌즈로 변경 */
+header .inner.or > div::after {background-color: #ea5504; height: 1px;}
+
+header .inner.or .menubar .menuBt .bar1,
+header .inner.or .menubar .menuBt .bar2 {background: #ea5504;}
+
+header .inner.or div.on .txt h1,
+header .inner.or div.on .txt h2,
+header .inner.or div.on .txt h3 {color: #ea5504;}
+
+/* placcu nav 화이트로 변경 */
+header .inner.wh > div::after {background-color: #fff; height: 1px;}
+
+header .inner.wh .menubar .menuBt .bar1,
+header .inner.wh .menubar .menuBt .bar2 {background: #fff;}
+
+header .inner.wh div.on .txt h1,
+header .inner.wh div.on .txt h2,
+header .inner.wh div.on .txt h3 {color: #fff;}
+
+/* 숨뜰 nav 골드로 변경 */
+header .inner.gd > div::after {background-color: #fbd083; height: 1px;}
+
+header .inner.gd .menubar .menuBt .bar1,
+header .inner.gd .menubar .menuBt .bar2 {background: #fbd083;}
+
+header .inner.gd div.on .txt h1,
+header .inner.gd div.on .txt h2,
+header .inner.gd div.on .txt h3 {color: #fbd083;}
+
+h2.empty{
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+/* 메뉴버튼 */
+header .inner .menubar{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .menubar .menuBt {
+    display: flex;
+    justify-content: center;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 5px 0 0 0;
+    cursor: pointer;
+}
+
+.menubar .menuBt .bar1,
+.menubar .menuBt .bar2 {
+    background: #000;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    margin: 20px;
+}
+
+
+
+.menubar .menuBt .bar2{ margin-top: 15px; }
+
+
+/* nav line */
+header .inner > div::after {
+    display: block;
+    content: "";
+    width: 1210px;
+    height: 2px;
+    background-color: #00000030;
+    margin: 3.5px 0;
+}
+
+
+
+/* section */
+#section1 {
+    background:rgb(236, 232, 235);
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    top: 0;
+}
+
+div.sec{
+    height: 100vh;
+    min-height: 720px;
+}
+.sec.two {background-color: #fff;}
+.sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
+.sec.four {background-color: #EDEDED;}
+.sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;color: #1d50a2;}
+.sec.six {background:url(../img/bg/bg06.svg)no-repeat 50% 50% / cover; color: #ea5504;}
+.sec.seven {background:black url(../img/bg/bg07.png)no-repeat 50% 50% / cover;color: #fff;}
+.sec.eight {background:black url(../img/bg/bg08.svg)no-repeat 50% 50% / cover;color: #fbd083;}
+.sec.nine {background:url(../img/bg/bg09.svg)no-repeat 50% 50% / cover;}
+.sec.ten {background:url(../img/bg/bg10.svg)no-repeat 50% 50% / cover;}
+
+
+.sec.five a {color: #1d50a2;}
+.sec.six a {color: #ea5504;}
+.sec.eight a {color: #fbd083;}
+.sec.seven a {color: #fff;}
+
+.sec.five .inner .detail::after{background-color: #1d50a2;}
+.sec.six .inner .detail::after{background-color: #ea5504;}
+.sec.eight .inner .detail::after{background-color: #fbd083;} 
+.sec.seven .inner .detail::after{background-color: #fff;}
+
+.sec .inner > a{
+    position: absolute;
+    left: 10px;
+    z-index: 5;
+}
+
+.sec .inner .PDF {top: 67%;}
+.sec .inner .link {top: 70%;}
+.sec .inner .detail {top: 73%;}
+
+.sec .inner > a.PDF::after,
+.sec .inner > a.link::after,
+.sec .inner > a.detail::after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #000;
+}
+
+.sec .inner > a.PDF:hover,
+.sec .inner > a.link:hover,
+.sec .inner > a.detail:hover {transform: translate(-5%,-5%);}
+/* .sec .inner > a.logo:hover {transform: translate(-55%,-55%)} */
+
+
+
+.sec .inner .logo{position: absolute;transform: translate(-50%,-50%);}
+.sec .inner .logo img {object-fit: cover;}
+
+.sec.five .inner .logo {top: 40%; left: 50%;}
+.sec.five .inner .logo img {width: 360px;}
+
+.sec.six .inner .logo {top: 40%; left: 50%;}
+.sec.six .inner .logo img {width: 360px;}
+
+.sec.seven .inner .logo {top: 48%; left: 20%;}
+.sec.seven .inner .logo img {width: 440px;}
+
+.sec.eight .inner .logo {top: 40%; left: 50%;}
+.sec.eight .inner .logo img {width: 180px;}
+
+.sec.nine .inner .logo {top: 48%; left: 20%;}
+.sec.nine .inner .logo img {width: 420px;}
+
+.sec.ten .inner .logo  {top: 28%; left: 50%;}
+.sec.ten .inner .logo img {width: 180px;}
+
+.sec .inner {
+    position: relative;
+}
+
+/* 왼쪽상단 인포 */
+.sec .inner .info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    gap: 17px;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+}
+
+.sec .inner .info.move {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+}
+
+.sec .inner .info .txtGp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec .inner .info .txtGp > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sec .inner .info h1 {font-weight:700; font-size: 2.1rem;transition: all 0.3s ease-in-out;}
+.sec .inner .info.move h1 {font-weight:800; font-size: 1.8rem;}
+.sec .inner .info .txtGp h5 {font-weight:800; font-size: 0.9rem;}
+.sec .inner .info .txtGp h6 {font-weight:500;font-size: 0.8rem;}
+
+/* 왼쪽하단 오버뷰 */
+.sec .inner .overview {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 683px;
+    bottom: 60px;
+    left: 10px;
+    gap: 5px;
+}
+
+.sec .inner .overview h5 {font-weight:900; font-size: 0.95rem;}
+.sec .inner .overview p {
+    font-weight:400;
+    font-size: 0.9rem;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+}
+
+/* 화면 목업 */
+.sec .inner .mockup {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 1200px;
+    height: 400px;
+}
+.sec .inner .mockup a {
+    position: absolute;
+    border-radius: 7px;
+    text-indent: -999px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #00000050;
+}
+
+.sec.three .inner .mockup .PC:hover {background: url("../img/web/jellycat_pc.jpg") no-repeat 0% 100% / cover;}
+.sec.three .inner .mockup .tablet:hover {background: url("../img/web/jellycat_t.jpg") no-repeat 0% 100% / cover;}
+.sec.three .inner .mockup .mobile:hover {background: url("../img/web/jellycat_m.jpg") no-repeat 0% 100% / cover;}
+
+.sec.three .inner .mockup .PC {
+    width: 520px;
+    height: 360px;
+    right: 15%;
+    top: 0;
+    background: url("../img/web/jellycat_pc.jpg") no-repeat 0% 0% / cover;
+    transition: 3s all ease-in-out;
+}
+
+.sec.three .inner .mockup .tablet {
+    width: 360px;
+    height: 240px;
+    left: 30%;
+    bottom: 3%;
+    z-index: 1;
+    background: url("../img/web/jellycat_t.jpg") no-repeat 0% 0% / cover;
+    transition: 4s all ease-in-out;
+}
+
+.sec.three .inner .mockup .mobile {
+    width: 92px;
+    height: 161px;
+    left: 25%;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 5px;
+    background: url("../img/web/jellycat_m.jpg") no-repeat 0% 0% / cover;
+    transition: 4s all ease-in-out;
+}
+
+.sec.four .inner .mockup .PC:hover {background: url("../img/web/korail_pc.jpg") no-repeat 0% 100% / cover;}
+
+.sec.four .inner .mockup .PC {
+    width: 520px;
+    height: 360px;
+    right: 15%;
+    top: 0;
+    background: url("../img/web/korail_pc.jpg") no-repeat 0% 0% / cover;
+    transition: 3s all ease-in-out;
+}
+
+/* sec02 profile */
+.sec.two .inner .txtGp{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    justify-content: space-between;
+    width: 1200px;
+    transform: translateX(-50%);
+}
+
+.sec.two .inner .txtGp div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 180px;
+}
+.sec.two .inner .txtGp .experience{
+    width: 210px;
+}
+
+.sec.two .inner .txtGp div h5 {font-weight:700; font-size: 1rem;}
+.sec.two .inner .txtGp div h6 {
+    font-weight:500;
+    font-size: 0.9rem; 
+    color: rgb(90, 90, 90); 
+    letter-spacing: -0.7px;
+    line-height: 22px;
+}
+
+.sec.two .inner .txtGp .certificate h6,
+.sec.two .inner .txtGp .skill h6 {
+    line-height: 18px;
+}
+
+.sec.two .inner .txtGp div h5::after {
+    display: block;
+    content: "";
+    width: 105%;
+    height: 2px;
+    background-color: rgb(150, 150, 150);
+    margin: 3px 0;
+}
