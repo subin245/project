@@ -384,8 +384,9 @@ div.sec{
 
 /* sec02 profile */
 .sec.two {
-    background:url(../img/Profile_p.png) no-repeat -200px 20% / 1200px, url(../img/profile_bg.png) no-repeat 50% 50% / cover
+    background:url(../img/Profile_p.png) no-repeat -200px 20% / 1200px, url(../img/profile_bg.png) no-repeat 50% 50% / cover;
 }
+
 
 .sec.two .inner .txtGp{
     display: flex;
