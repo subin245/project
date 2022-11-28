@@ -180,7 +180,10 @@ header .inner > div::after {
 
 /* section */
 #section1 {
-    background: url("../img/bg.jpg") no-repeat 50% 50% / cover;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     /* background:rgb(236, 232, 235); */
     height: 100vh;
     position: relative;
@@ -384,7 +387,10 @@ div.sec{
 
 /* sec02 profile */
 .sec.two {
-    background:url("../img/Profile_p.png") no-repeat -200px 20% / 1200px, url("../img/bg.jpg") no-repeat 50% 50% / cover;
+    background-image:url("../img/Profile_p.png"), url("../img/bg.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1200px, cover;
+    background-position: -200px 20%, 50% 50%;
 }
 
 
