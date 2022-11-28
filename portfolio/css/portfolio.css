@@ -180,7 +180,8 @@ header .inner > div::after {
 
 /* section */
 #section1 {
-    background:rgb(236, 232, 235);
+    background: url(../img/profile_bg.png) no-repeat 50% 50% / cover;
+    /* background:rgb(236, 232, 235); */
     height: 100vh;
     position: relative;
     z-index: 100;
@@ -191,7 +192,7 @@ div.sec{
     height: 100vh;
     min-height: 720px;
 }
-.sec.two {background-color: #fff;}
+/* .sec.two {background-color: #fff;} */
 .sec.three {background:url(../img/bg/bg03.svg)no-repeat 50% 50% / cover;}
 .sec.four {background-color: #EDEDED;}
 .sec.five {background:url(../img/bg/bg05.svg)no-repeat 50% 80% / cover;color: #1d50a2;}
@@ -379,7 +380,7 @@ div.sec{
     transition: 3s all ease-in-out;
 }
 
-#section1 {background: url(../img/profile_bg.png) no-repeat 50% 50% / cover}
+
 
 /* sec02 profile */
 .sec.two {
