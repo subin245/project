@@ -6,4 +6,48 @@
     padding: 0;
     margin: 0;
     width: 100vw;
+    /* border: 1px solid red; */
 }
+
+/* body{
+    overflow: hidden;
+} */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#content{
+    /* overflow-y: scroll; */
+    /* scroll-snap-type: y mandatory; */
+    /* height: 100vh; */
+    /* min-height: 90vh; */
+    /* background-color: aqua; */
+    position: relative;
+    /* top: 0; */
+}
+
+#content .sec {
+    /* scroll-snap-align: start; */
+    width: 100vw;
+    /* height: 100vh; */
+    /* min-height: 90vh; */
+}
+
+
+
+/* #content .sec.one {background: #000; height: 100vh;}
+#content .sec.two {background: #fff; height: 100vh;}
+#content .sec.three {background: url("../img/jpg/tea/tea00.png") no-repeat 50% 50% / cover;}
+#content .sec.four {background: url("../img/jpg/tea/tea01.png") no-repeat 50% 50% / cover;}
+#content .sec.five {background: url("../img/jpg/tea/tea02.png") no-repeat 50% 50% / cover;}
+#content .sec.six {background: url("../img/jpg/tea/tea03.png") no-repeat 50% 50% / cover;}
+#content .sec.seven {background: url("../img/jpg/tea/tea04.png") no-repeat 50% 50% / cover;}
+#content .sec.eight {background: url("../img/jpg/tea/tea05.png") no-repeat 50% 50% / cover;}
+#content .sec.nine {background: url("../img/jpg/tea/tea06.png") no-repeat 50% 50% / cover;}
+#content .sec.ten {background: url("../img/jpg/tea/tea07.png") no-repeat 50% 50% / cover;} */

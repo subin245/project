@@ -195,7 +195,7 @@ div.sec{
     height: 100vh;
     min-height: 720px;
 }
-/* .sec.two {background-color: #fff;} */
+
 .sec.three {background:url("../img/bg/bg03.svg")no-repeat 50% 50% / cover;}
 .sec.four {background-color: #EDEDED;}
 .sec.five {background:url("../img/bg/bg05.svg")no-repeat 50% 80% / cover;color: #1d50a2;}
@@ -206,12 +206,10 @@ div.sec{
 .sec.ten {background:url("../img/bg/bg10.svg")no-repeat 50% 50% / cover;}
 
 
-/* .sec.five a {color: #1d50a2;} */
 .sec.six a {color: #ea5504;}
 .sec.eight a {color: #fbd083;}
 .sec.seven a {color: #fff;}
 
-/* .sec.five .inner .detail::after{background-color: #1d50a2;} */
 .sec.six .inner .detail::after{background-color: #ea5504;}
 .sec.eight .inner .detail::after{background-color: #fbd083;} 
 .sec.seven .inner .detail::after{background-color: #fff;}
@@ -249,13 +247,13 @@ div.sec{
 .sec.five .inner .logo {top: 40%; left: 50%;}
 .sec.five .inner .logo img {width: 360px;}
 
-.sec.six .inner .logo {top: 40%; left: 50%;}
+.sec.six .inner .logo {top: 45%; left: 50%;}
 .sec.six .inner .logo img {width: 360px;}
 
 .sec.seven .inner .logo {top: 48%; left: 20%;}
 .sec.seven .inner .logo img {width: 440px;}
 
-.sec.eight .inner .logo {top: 40%; left: 50%;}
+.sec.eight .inner .logo {top: 45%; left: 50%;}
 .sec.eight .inner .logo img {width: 180px;}
 
 .sec.nine .inner .logo {top: 48%; left: 20%;}
@@ -393,14 +391,14 @@ div.sec{
     background-position: -200px 20%, 50% 50%;
 }
 
-
 .sec.two .inner .txtGp{
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    width: 40vw;
+    min-width: 550px;
+    gap: 60px;
     position: absolute;
     right: 0;
-    width: 45vw;
 }
 
 .sec.two .inner .txtGp div{
@@ -410,11 +408,11 @@ div.sec{
     width: 210px;
 }
 
-.sec.two .inner .txtGp div h5 {font-weight:700; font-size: 1rem; color: #fff;}
+.sec.two .inner .txtGp div h5 {font-weight:700; font-size: 1rem; color: #fff765;}
 .sec.two .inner .txtGp div h6 {
     font-weight: 300;
     font-size: 0.9rem; 
-    color: #fff; 
+    color: #ffff; 
     letter-spacing: -0.7px;
     line-height: 22px;
 }
@@ -429,6 +427,6 @@ div.sec{
     content: "";
     width: 105%;
     height: 1px;
-    background-color: #fff;
+    background-color: #16250a;
     margin: 3px 0;
 }
