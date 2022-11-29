@@ -177,19 +177,49 @@ header .inner > div::after {
 }
 
 
-
+/* /////////////////////////////////////////// */
 /* section */
 #section1 {
-    /* background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%; */
     background:rgb(236, 232, 235);
     height: 100vh;
     position: relative;
     z-index: 100;
     top: 0;
 }
+#section1 .inner .top {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    position: absolute;
+    top: 25px;
+}
+
+#section1 .inner .top h1{font-weight:700; font-size: 1rem; color: rgb(32, 32, 32);}
+#section1 .inner .text_box{
+    width: 1200px;
+}
+#section1 .inner .text_box .text {
+    font-weight: 200; 
+    font-size: 2.5rem; 
+    color: rgb(32, 32, 32);
+}
+#section1 .inner .text_box .blink {
+    font-weight: 500; 
+    font-size: 3rem;
+    color: rgb(32, 32, 32);
+}
+
+#section1 .inner .text_box .blink {
+    animation: blink 0.5s infinite;
+    font-size: 2.5rem;
+  }
+  
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+
 
 div.sec{
     height: 100vh;
@@ -237,8 +267,6 @@ div.sec{
 .sec .inner > a.PDF:hover,
 .sec .inner > a.link:hover,
 .sec .inner > a.detail:hover {transform: translate(-5%,-5%);}
-/* .sec .inner > a.logo:hover {transform: translate(-55%,-55%)} */
-
 
 
 .sec .inner .logo{position: absolute; transform: translate(-50%,-50%);}
@@ -436,10 +464,6 @@ div.sec{
     margin: 3px 0;
 }
 
-/* .sec.two .inner .txtGp .skill{
-    width: 100px;
-} */
-
 .sec.two .inner .txtGp .skill .icon{
     display: flex;
     flex-wrap: wrap;
@@ -449,4 +473,28 @@ div.sec{
 
 .sec.two .inner .txtGp .skill .icon img{
     width: 40px;
+}
+
+
+
+
+/* 마지막 */
+.sec.end .inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+}
+
+.sec.end .inner h1 {
+    font-weight: 800;
+    font-size: 1.7rem; 
+    color: rgb(36, 36, 36); 
+}
+
+.sec.end .inner p {
+    font-weight: 100;
+    font-size: 2.5rem; 
+    color: rgb(77, 77, 77); 
+    line-height: 58px;
 }

@@ -1,3 +1,18 @@
+// 홈화면 타이핑효과
+const content = "안녕하세요. \n 경험을 담아 성장하는 퍼블리셔 김수빈입니다.";
+const text = document.querySelector(".text");
+let i = 0;
+function typing(){
+    if (i < content.length) {
+    let txt = content.charAt(i);
+    text.innerHTML += txt=== "\n" ? "<br/>": txt;
+    i++;
+    }
+}
+setInterval(typing, 200)
+
+
+
 $(function () {
     $("header .inner").children(".menubar").children("a").click(function(e) {
         $("header .inner").children().toggleClass('on');
