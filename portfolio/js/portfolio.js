@@ -31,12 +31,7 @@ $("#content").scroll(function(){
     // } else{
     //     $("header .inner").removeClass("wh");
     // }
-    if (scroll >= 0 && scroll < scroll0){
-        $("header .inner").removeClass("bl");
-        $("header .inner").removeClass("or");
-        $("header .inner").removeClass("gd");
-        $("header .inner").addClass("wh");
-    } else if (scroll > scroll2 && scroll < scroll4){
+    if (scroll > scroll2 && scroll < scroll4){
         $("header .inner").removeClass("wh");
         $("header .inner").removeClass("or");
         $("header .inner").removeClass("gd");
