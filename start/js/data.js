@@ -9,7 +9,7 @@
 // 'monkey', 8
 // 'chick', 9
 // 'dog', 10
-// 'pig', 11
+// 'pig', 11 
 
 const qnaList = [
   {
